@@ -1,19 +1,172 @@
-gdjs.Carmo_32EnigmaCode = {};
-gdjs.Carmo_32EnigmaCode.GDscoreObjects1= [];
-gdjs.Carmo_32EnigmaCode.GDscoreObjects2= [];
-gdjs.Carmo_32EnigmaCode.GDokObjects1= [];
-gdjs.Carmo_32EnigmaCode.GDokObjects2= [];
-gdjs.Carmo_32EnigmaCode.GDseguinteObjects1= [];
-gdjs.Carmo_32EnigmaCode.GDseguinteObjects2= [];
-gdjs.Carmo_32EnigmaCode.GDfundoObjects1= [];
-gdjs.Carmo_32EnigmaCode.GDfundoObjects2= [];
-gdjs.Carmo_32EnigmaCode.GDclueObjects1= [];
-gdjs.Carmo_32EnigmaCode.GDclueObjects2= [];
-gdjs.Carmo_32EnigmaCode.GDanswerObjects1= [];
-gdjs.Carmo_32EnigmaCode.GDanswerObjects2= [];
+gdjs.S_46_32Roque_32fimCode = {};
+gdjs.S_46_32Roque_32fimCode.GDscoreObjects1= [];
+gdjs.S_46_32Roque_32fimCode.GDscoreObjects2= [];
+gdjs.S_46_32Roque_32fimCode.GDscoreObjects3= [];
+gdjs.S_46_32Roque_32fimCode.GDnext_95sceneObjects1= [];
+gdjs.S_46_32Roque_32fimCode.GDnext_95sceneObjects2= [];
+gdjs.S_46_32Roque_32fimCode.GDnext_95sceneObjects3= [];
+gdjs.S_46_32Roque_32fimCode.GDURLObjects1= [];
+gdjs.S_46_32Roque_32fimCode.GDURLObjects2= [];
+gdjs.S_46_32Roque_32fimCode.GDURLObjects3= [];
+gdjs.S_46_32Roque_32fimCode.GDURLdesvioObjects1= [];
+gdjs.S_46_32Roque_32fimCode.GDURLdesvioObjects2= [];
+gdjs.S_46_32Roque_32fimCode.GDURLdesvioObjects3= [];
+gdjs.S_46_32Roque_32fimCode.GDDesvioObjects1= [];
+gdjs.S_46_32Roque_32fimCode.GDDesvioObjects2= [];
+gdjs.S_46_32Roque_32fimCode.GDDesvioObjects3= [];
+gdjs.S_46_32Roque_32fimCode.GDokdesvioObjects1= [];
+gdjs.S_46_32Roque_32fimCode.GDokdesvioObjects2= [];
+gdjs.S_46_32Roque_32fimCode.GDokdesvioObjects3= [];
+gdjs.S_46_32Roque_32fimCode.GDprox_95localObjects1= [];
+gdjs.S_46_32Roque_32fimCode.GDprox_95localObjects2= [];
+gdjs.S_46_32Roque_32fimCode.GDprox_95localObjects3= [];
+gdjs.S_46_32Roque_32fimCode.GDnoObjects1= [];
+gdjs.S_46_32Roque_32fimCode.GDnoObjects2= [];
+gdjs.S_46_32Roque_32fimCode.GDnoObjects3= [];
+gdjs.S_46_32Roque_32fimCode.GDyesObjects1= [];
+gdjs.S_46_32Roque_32fimCode.GDyesObjects2= [];
+gdjs.S_46_32Roque_32fimCode.GDyesObjects3= [];
+gdjs.S_46_32Roque_32fimCode.GDfundoObjects1= [];
+gdjs.S_46_32Roque_32fimCode.GDfundoObjects2= [];
+gdjs.S_46_32Roque_32fimCode.GDfundoObjects3= [];
+gdjs.S_46_32Roque_32fimCode.GDtask_95confirmationObjects1= [];
+gdjs.S_46_32Roque_32fimCode.GDtask_95confirmationObjects2= [];
+gdjs.S_46_32Roque_32fimCode.GDtask_95confirmationObjects3= [];
 
 
-gdjs.Carmo_32EnigmaCode.eventsList0 = function(runtimeScene) {
+gdjs.S_46_32Roque_32fimCode.eventsList0 = function(runtimeScene) {
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(10724700);
+}
+if (isConditionTrue_0) {
+{gdjs.evtTools.firebaseTools.firestore.writeField("Users", gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Progress", gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2))), runtimeScene.getScene().getVariables().get("error"), true);
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(10726644);
+}
+if (isConditionTrue_0) {
+{gdjs.evtTools.sound.playSound(runtimeScene, "click-21156.mp3", false, 0, 1);
+}{gdjs.evtTools.sound.playSound(runtimeScene, "correct-2-46134.mp3", false, 0, 1);
+}}
+
+}
+
+
+};gdjs.S_46_32Roque_32fimCode.eventsList1 = function(runtimeScene) {
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(10733132);
+}
+if (isConditionTrue_0) {
+{gdjs.evtTools.sound.playSound(runtimeScene, "click-21156.mp3", false, 100, 1);
+}}
+
+}
+
+
+};gdjs.S_46_32Roque_32fimCode.eventsList2 = function(runtimeScene) {
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(10735404);
+}
+if (isConditionTrue_0) {
+{gdjs.evtTools.sound.playSound(runtimeScene, "click-21156.mp3", false, 100, 1);
+}}
+
+}
+
+
+};gdjs.S_46_32Roque_32fimCode.eventsList3 = function(runtimeScene) {
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(10736900);
+}
+if (isConditionTrue_0) {
+{gdjs.evtTools.sound.playSound(runtimeScene, "click-21156.mp3", false, 100, 1);
+}}
+
+}
+
+
+};gdjs.S_46_32Roque_32fimCode.eventsList4 = function(runtimeScene) {
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(10740068);
+}
+if (isConditionTrue_0) {
+{gdjs.evtTools.firebaseTools.firestore.writeField("Users", gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Score", gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(1))), runtimeScene.getScene().getVariables().get("error"), true);
+}{gdjs.evtTools.sound.playSound(runtimeScene, "correct-2-46134.mp3", false, 100, 1);
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+gdjs.copyArray(runtimeScene.getObjects("next_scene"), gdjs.S_46_32Roque_32fimCode.GDnext_95sceneObjects1);
+{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "next scene");
+}{gdjs.evtTools.runtimeScene.pauseTimer(runtimeScene, "next scene");
+}{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, (( gdjs.S_46_32Roque_32fimCode.GDnext_95sceneObjects1.length === 0 ) ? "" :gdjs.S_46_32Roque_32fimCode.GDnext_95sceneObjects1[0].getString()), false);
+}}
+
+}
+
+
+};gdjs.S_46_32Roque_32fimCode.eventsList5 = function(runtimeScene) {
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+gdjs.copyArray(runtimeScene.getObjects("next_scene"), gdjs.S_46_32Roque_32fimCode.GDnext_95sceneObjects1);
+{runtimeScene.getGame().getVariables().getFromIndex(2).setNumber(5);
+}{for(var i = 0, len = gdjs.S_46_32Roque_32fimCode.GDnext_95sceneObjects1.length ;i < len;++i) {
+    gdjs.S_46_32Roque_32fimCode.GDnext_95sceneObjects1[i].setString("Percurso Carmo");
+}
+}}
+
+}
+
+
+{
+
+
+
+}
+
 
 {
 
@@ -22,38 +175,27 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("answer"), gdjs.Carmo_32EnigmaCode.GDanswerObjects1);
-gdjs.copyArray(runtimeScene.getObjects("clue"), gdjs.Carmo_32EnigmaCode.GDclueObjects1);
-gdjs.copyArray(runtimeScene.getObjects("ok"), gdjs.Carmo_32EnigmaCode.GDokObjects1);
-{for(var i = 0, len = gdjs.Carmo_32EnigmaCode.GDokObjects1.length ;i < len;++i) {
-    gdjs.Carmo_32EnigmaCode.GDokObjects1[i].setX((gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) - (gdjs.Carmo_32EnigmaCode.GDokObjects1[i].getWidth())) / 2);
+gdjs.copyArray(runtimeScene.getObjects("next_scene"), gdjs.S_46_32Roque_32fimCode.GDnext_95sceneObjects1);
+gdjs.copyArray(runtimeScene.getObjects("no"), gdjs.S_46_32Roque_32fimCode.GDnoObjects1);
+gdjs.copyArray(runtimeScene.getObjects("task_confirmation"), gdjs.S_46_32Roque_32fimCode.GDtask_95confirmationObjects1);
+gdjs.copyArray(runtimeScene.getObjects("yes"), gdjs.S_46_32Roque_32fimCode.GDyesObjects1);
+{for(var i = 0, len = gdjs.S_46_32Roque_32fimCode.GDnoObjects1.length ;i < len;++i) {
+    gdjs.S_46_32Roque_32fimCode.GDnoObjects1[i].hide();
 }
-}{for(var i = 0, len = gdjs.Carmo_32EnigmaCode.GDanswerObjects1.length ;i < len;++i) {
-    gdjs.Carmo_32EnigmaCode.GDanswerObjects1[i].setX((gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) - (gdjs.Carmo_32EnigmaCode.GDanswerObjects1[i].getWidth())) / 2);
+}{for(var i = 0, len = gdjs.S_46_32Roque_32fimCode.GDyesObjects1.length ;i < len;++i) {
+    gdjs.S_46_32Roque_32fimCode.GDyesObjects1[i].hide();
 }
-}{runtimeScene.getScene().getVariables().get("clue").setNumber(0);
-}{gdjs.evtTools.runtimeScene.pauseTimer(runtimeScene, "clue");
-}{for(var i = 0, len = gdjs.Carmo_32EnigmaCode.GDclueObjects1.length ;i < len;++i) {
-    gdjs.Carmo_32EnigmaCode.GDclueObjects1[i].hide();
+}{for(var i = 0, len = gdjs.S_46_32Roque_32fimCode.GDtask_95confirmationObjects1.length ;i < len;++i) {
+    gdjs.S_46_32Roque_32fimCode.GDtask_95confirmationObjects1[i].hide();
 }
-}{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "clue");
-}}
-
+}{for(var i = 0, len = gdjs.S_46_32Roque_32fimCode.GDnext_95sceneObjects1.length ;i < len;++i) {
+    gdjs.S_46_32Roque_32fimCode.GDnext_95sceneObjects1[i].hide();
 }
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().get("score")) < 10;
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("score"), gdjs.Carmo_32EnigmaCode.GDscoreObjects1);
-{for(var i = 0, len = gdjs.Carmo_32EnigmaCode.GDscoreObjects1.length ;i < len;++i) {
-    gdjs.Carmo_32EnigmaCode.GDscoreObjects1[i].setString("00" + gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().get("score")));
+}{gdjs.evtTools.runtimeScene.pauseTimer(runtimeScene, "next scene");
 }
-}}
+{ //Subevents
+gdjs.S_46_32Roque_32fimCode.eventsList0(runtimeScene);} //End of subevents
+}
 
 }
 
@@ -63,185 +205,11 @@ gdjs.copyArray(runtimeScene.getObjects("score"), gdjs.Carmo_32EnigmaCode.GDscore
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().get("score")) >= 10;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(1)) < 10;
 if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().get("score")) < 100;
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("score"), gdjs.Carmo_32EnigmaCode.GDscoreObjects1);
-{for(var i = 0, len = gdjs.Carmo_32EnigmaCode.GDscoreObjects1.length ;i < len;++i) {
-    gdjs.Carmo_32EnigmaCode.GDscoreObjects1[i].setString("0" + gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().get("score")));
-}
-}}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().get("score")) >= 100;
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("score"), gdjs.Carmo_32EnigmaCode.GDscoreObjects1);
-{for(var i = 0, len = gdjs.Carmo_32EnigmaCode.GDscoreObjects1.length ;i < len;++i) {
-    gdjs.Carmo_32EnigmaCode.GDscoreObjects1[i].setString(gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().get("score")));
-}
-}}
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("seguinte"), gdjs.Carmo_32EnigmaCode.GDseguinteObjects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.Carmo_32EnigmaCode.GDseguinteObjects1.length;i<l;++i) {
-    if ( gdjs.Carmo_32EnigmaCode.GDseguinteObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
-        isConditionTrue_0 = true;
-        gdjs.Carmo_32EnigmaCode.GDseguinteObjects1[k] = gdjs.Carmo_32EnigmaCode.GDseguinteObjects1[i];
-        ++k;
-    }
-}
-gdjs.Carmo_32EnigmaCode.GDseguinteObjects1.length = k;
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("fundo"), gdjs.Carmo_32EnigmaCode.GDfundoObjects1);
-{for(var i = 0, len = gdjs.Carmo_32EnigmaCode.GDfundoObjects1.length ;i < len;++i) {
-    gdjs.Carmo_32EnigmaCode.GDfundoObjects1[i].setAnimation((gdjs.Carmo_32EnigmaCode.GDfundoObjects1[i].getAnimation()) + 1);
-}
-}}
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("fundo"), gdjs.Carmo_32EnigmaCode.GDfundoObjects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.Carmo_32EnigmaCode.GDfundoObjects1.length;i<l;++i) {
-    if ( gdjs.Carmo_32EnigmaCode.GDfundoObjects1[i].getAnimation() == 3 ) {
-        isConditionTrue_0 = true;
-        gdjs.Carmo_32EnigmaCode.GDfundoObjects1[k] = gdjs.Carmo_32EnigmaCode.GDfundoObjects1[i];
-        ++k;
-    }
-}
-gdjs.Carmo_32EnigmaCode.GDfundoObjects1.length = k;
-if (isConditionTrue_0) {
-/* Reuse gdjs.Carmo_32EnigmaCode.GDfundoObjects1 */
-{for(var i = 0, len = gdjs.Carmo_32EnigmaCode.GDfundoObjects1.length ;i < len;++i) {
-    gdjs.Carmo_32EnigmaCode.GDfundoObjects1[i].setAnimation(0);
-}
-}}
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("answer"), gdjs.Carmo_32EnigmaCode.GDanswerObjects1);
-gdjs.copyArray(runtimeScene.getObjects("clue"), gdjs.Carmo_32EnigmaCode.GDclueObjects1);
-gdjs.copyArray(runtimeScene.getObjects("ok"), gdjs.Carmo_32EnigmaCode.GDokObjects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.Carmo_32EnigmaCode.GDclueObjects1.length;i<l;++i) {
-    if ( !(gdjs.Carmo_32EnigmaCode.GDclueObjects1[i].isVisible()) ) {
-        isConditionTrue_0 = true;
-        gdjs.Carmo_32EnigmaCode.GDclueObjects1[k] = gdjs.Carmo_32EnigmaCode.GDclueObjects1[i];
-        ++k;
-    }
-}
-gdjs.Carmo_32EnigmaCode.GDclueObjects1.length = k;
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.Carmo_32EnigmaCode.GDanswerObjects1.length;i<l;++i) {
-    if ( gdjs.Carmo_32EnigmaCode.GDanswerObjects1[i].getString() != "7961" ) {
-        isConditionTrue_0 = true;
-        gdjs.Carmo_32EnigmaCode.GDanswerObjects1[k] = gdjs.Carmo_32EnigmaCode.GDanswerObjects1[i];
-        ++k;
-    }
-}
-gdjs.Carmo_32EnigmaCode.GDanswerObjects1.length = k;
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.Carmo_32EnigmaCode.GDokObjects1.length;i<l;++i) {
-    if ( gdjs.Carmo_32EnigmaCode.GDokObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
-        isConditionTrue_0 = true;
-        gdjs.Carmo_32EnigmaCode.GDokObjects1[k] = gdjs.Carmo_32EnigmaCode.GDokObjects1[i];
-        ++k;
-    }
-}
-gdjs.Carmo_32EnigmaCode.GDokObjects1.length = k;
-}
-}
-if (isConditionTrue_0) {
-{runtimeScene.getScene().getVariables().get("clue").add(1);
-}{gdjs.evtTools.runtimeScene.unpauseTimer(runtimeScene, "clue");
-}}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("clue")) == 1;
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "clue") > 0.3;
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("answer"), gdjs.Carmo_32EnigmaCode.GDanswerObjects1);
-gdjs.copyArray(runtimeScene.getObjects("clue"), gdjs.Carmo_32EnigmaCode.GDclueObjects1);
-{for(var i = 0, len = gdjs.Carmo_32EnigmaCode.GDclueObjects1.length ;i < len;++i) {
-    gdjs.Carmo_32EnigmaCode.GDclueObjects1[i].hide(false);
-}
-}{for(var i = 0, len = gdjs.Carmo_32EnigmaCode.GDclueObjects1.length ;i < len;++i) {
-    gdjs.Carmo_32EnigmaCode.GDclueObjects1[i].setAnimation(0);
-}
-}{for(var i = 0, len = gdjs.Carmo_32EnigmaCode.GDanswerObjects1.length ;i < len;++i) {
-    gdjs.Carmo_32EnigmaCode.GDanswerObjects1[i].setString("");
-}
-}{for(var i = 0, len = gdjs.Carmo_32EnigmaCode.GDanswerObjects1.length ;i < len;++i) {
-    gdjs.Carmo_32EnigmaCode.GDanswerObjects1[i].hide();
-}
-}}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("clue")) == 2;
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "clue") > 0.3;
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("answer"), gdjs.Carmo_32EnigmaCode.GDanswerObjects1);
-gdjs.copyArray(runtimeScene.getObjects("clue"), gdjs.Carmo_32EnigmaCode.GDclueObjects1);
-{for(var i = 0, len = gdjs.Carmo_32EnigmaCode.GDclueObjects1.length ;i < len;++i) {
-    gdjs.Carmo_32EnigmaCode.GDclueObjects1[i].hide(false);
-}
-}{for(var i = 0, len = gdjs.Carmo_32EnigmaCode.GDclueObjects1.length ;i < len;++i) {
-    gdjs.Carmo_32EnigmaCode.GDclueObjects1[i].setAnimation(1);
-}
-}{for(var i = 0, len = gdjs.Carmo_32EnigmaCode.GDanswerObjects1.length ;i < len;++i) {
-    gdjs.Carmo_32EnigmaCode.GDanswerObjects1[i].setString("");
-}
-}{for(var i = 0, len = gdjs.Carmo_32EnigmaCode.GDanswerObjects1.length ;i < len;++i) {
-    gdjs.Carmo_32EnigmaCode.GDanswerObjects1[i].hide();
+gdjs.copyArray(runtimeScene.getObjects("score"), gdjs.S_46_32Roque_32fimCode.GDscoreObjects1);
+{for(var i = 0, len = gdjs.S_46_32Roque_32fimCode.GDscoreObjects1.length ;i < len;++i) {
+    gdjs.S_46_32Roque_32fimCode.GDscoreObjects1[i].setString("00" + gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(1)));
 }
 }}
 
@@ -253,25 +221,15 @@ gdjs.copyArray(runtimeScene.getObjects("clue"), gdjs.Carmo_32EnigmaCode.GDclueOb
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("clue")) >= 3;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(1)) >= 10;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "clue") > 0.3;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(1)) < 100;
 }
 if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("answer"), gdjs.Carmo_32EnigmaCode.GDanswerObjects1);
-gdjs.copyArray(runtimeScene.getObjects("clue"), gdjs.Carmo_32EnigmaCode.GDclueObjects1);
-{for(var i = 0, len = gdjs.Carmo_32EnigmaCode.GDclueObjects1.length ;i < len;++i) {
-    gdjs.Carmo_32EnigmaCode.GDclueObjects1[i].hide(false);
-}
-}{for(var i = 0, len = gdjs.Carmo_32EnigmaCode.GDclueObjects1.length ;i < len;++i) {
-    gdjs.Carmo_32EnigmaCode.GDclueObjects1[i].setAnimation(2);
-}
-}{for(var i = 0, len = gdjs.Carmo_32EnigmaCode.GDanswerObjects1.length ;i < len;++i) {
-    gdjs.Carmo_32EnigmaCode.GDanswerObjects1[i].setString("");
-}
-}{for(var i = 0, len = gdjs.Carmo_32EnigmaCode.GDanswerObjects1.length ;i < len;++i) {
-    gdjs.Carmo_32EnigmaCode.GDanswerObjects1[i].hide();
+gdjs.copyArray(runtimeScene.getObjects("score"), gdjs.S_46_32Roque_32fimCode.GDscoreObjects1);
+{for(var i = 0, len = gdjs.S_46_32Roque_32fimCode.GDscoreObjects1.length ;i < len;++i) {
+    gdjs.S_46_32Roque_32fimCode.GDscoreObjects1[i].setString("0" + gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(1)));
 }
 }}
 
@@ -280,40 +238,14 @@ gdjs.copyArray(runtimeScene.getObjects("clue"), gdjs.Carmo_32EnigmaCode.GDclueOb
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("clue"), gdjs.Carmo_32EnigmaCode.GDclueObjects1);
-gdjs.copyArray(runtimeScene.getObjects("ok"), gdjs.Carmo_32EnigmaCode.GDokObjects1);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.Carmo_32EnigmaCode.GDclueObjects1.length;i<l;++i) {
-    if ( gdjs.Carmo_32EnigmaCode.GDclueObjects1[i].isVisible() ) {
-        isConditionTrue_0 = true;
-        gdjs.Carmo_32EnigmaCode.GDclueObjects1[k] = gdjs.Carmo_32EnigmaCode.GDclueObjects1[i];
-        ++k;
-    }
-}
-gdjs.Carmo_32EnigmaCode.GDclueObjects1.length = k;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(1)) >= 100;
 if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.Carmo_32EnigmaCode.GDokObjects1.length;i<l;++i) {
-    if ( gdjs.Carmo_32EnigmaCode.GDokObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
-        isConditionTrue_0 = true;
-        gdjs.Carmo_32EnigmaCode.GDokObjects1[k] = gdjs.Carmo_32EnigmaCode.GDokObjects1[i];
-        ++k;
-    }
-}
-gdjs.Carmo_32EnigmaCode.GDokObjects1.length = k;
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("answer"), gdjs.Carmo_32EnigmaCode.GDanswerObjects1);
-/* Reuse gdjs.Carmo_32EnigmaCode.GDclueObjects1 */
-{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "clue");
-}{gdjs.evtTools.runtimeScene.pauseTimer(runtimeScene, "clue");
-}{for(var i = 0, len = gdjs.Carmo_32EnigmaCode.GDclueObjects1.length ;i < len;++i) {
-    gdjs.Carmo_32EnigmaCode.GDclueObjects1[i].hide();
-}
-}{for(var i = 0, len = gdjs.Carmo_32EnigmaCode.GDanswerObjects1.length ;i < len;++i) {
-    gdjs.Carmo_32EnigmaCode.GDanswerObjects1[i].hide(false);
+gdjs.copyArray(runtimeScene.getObjects("score"), gdjs.S_46_32Roque_32fimCode.GDscoreObjects1);
+{for(var i = 0, len = gdjs.S_46_32Roque_32fimCode.GDscoreObjects1.length ;i < len;++i) {
+    gdjs.S_46_32Roque_32fimCode.GDscoreObjects1[i].setString(gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(1)));
 }
 }}
 
@@ -322,278 +254,190 @@ gdjs.copyArray(runtimeScene.getObjects("answer"), gdjs.Carmo_32EnigmaCode.GDansw
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("clue"), gdjs.Carmo_32EnigmaCode.GDclueObjects1);
+gdjs.copyArray(runtimeScene.getObjects("prox_local"), gdjs.S_46_32Roque_32fimCode.GDprox_95localObjects1);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.Carmo_32EnigmaCode.GDclueObjects1.length;i<l;++i) {
-    if ( gdjs.Carmo_32EnigmaCode.GDclueObjects1[i].isVisible() ) {
+for (var i = 0, k = 0, l = gdjs.S_46_32Roque_32fimCode.GDprox_95localObjects1.length;i<l;++i) {
+    if ( gdjs.S_46_32Roque_32fimCode.GDprox_95localObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
         isConditionTrue_0 = true;
-        gdjs.Carmo_32EnigmaCode.GDclueObjects1[k] = gdjs.Carmo_32EnigmaCode.GDclueObjects1[i];
+        gdjs.S_46_32Roque_32fimCode.GDprox_95localObjects1[k] = gdjs.S_46_32Roque_32fimCode.GDprox_95localObjects1[i];
         ++k;
     }
 }
-gdjs.Carmo_32EnigmaCode.GDclueObjects1.length = k;
+gdjs.S_46_32Roque_32fimCode.GDprox_95localObjects1.length = k;
 if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("answer"), gdjs.Carmo_32EnigmaCode.GDanswerObjects1);
-{for(var i = 0, len = gdjs.Carmo_32EnigmaCode.GDanswerObjects1.length ;i < len;++i) {
-    gdjs.Carmo_32EnigmaCode.GDanswerObjects1[i].setDisabled(true);
+gdjs.copyArray(runtimeScene.getObjects("no"), gdjs.S_46_32Roque_32fimCode.GDnoObjects1);
+gdjs.copyArray(runtimeScene.getObjects("task_confirmation"), gdjs.S_46_32Roque_32fimCode.GDtask_95confirmationObjects1);
+gdjs.copyArray(runtimeScene.getObjects("yes"), gdjs.S_46_32Roque_32fimCode.GDyesObjects1);
+{for(var i = 0, len = gdjs.S_46_32Roque_32fimCode.GDnoObjects1.length ;i < len;++i) {
+    gdjs.S_46_32Roque_32fimCode.GDnoObjects1[i].hide(false);
 }
-}}
+}{for(var i = 0, len = gdjs.S_46_32Roque_32fimCode.GDyesObjects1.length ;i < len;++i) {
+    gdjs.S_46_32Roque_32fimCode.GDyesObjects1[i].hide(false);
+}
+}{for(var i = 0, len = gdjs.S_46_32Roque_32fimCode.GDtask_95confirmationObjects1.length ;i < len;++i) {
+    gdjs.S_46_32Roque_32fimCode.GDtask_95confirmationObjects1[i].hide(false);
+}
+}
+{ //Subevents
+gdjs.S_46_32Roque_32fimCode.eventsList1(runtimeScene);} //End of subevents
+}
 
 }
 
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("clue"), gdjs.Carmo_32EnigmaCode.GDclueObjects1);
+gdjs.copyArray(runtimeScene.getObjects("no"), gdjs.S_46_32Roque_32fimCode.GDnoObjects1);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.Carmo_32EnigmaCode.GDclueObjects1.length;i<l;++i) {
-    if ( !(gdjs.Carmo_32EnigmaCode.GDclueObjects1[i].isVisible()) ) {
+for (var i = 0, k = 0, l = gdjs.S_46_32Roque_32fimCode.GDnoObjects1.length;i<l;++i) {
+    if ( gdjs.S_46_32Roque_32fimCode.GDnoObjects1[i].isVisible() ) {
         isConditionTrue_0 = true;
-        gdjs.Carmo_32EnigmaCode.GDclueObjects1[k] = gdjs.Carmo_32EnigmaCode.GDclueObjects1[i];
+        gdjs.S_46_32Roque_32fimCode.GDnoObjects1[k] = gdjs.S_46_32Roque_32fimCode.GDnoObjects1[i];
         ++k;
     }
 }
-gdjs.Carmo_32EnigmaCode.GDclueObjects1.length = k;
+gdjs.S_46_32Roque_32fimCode.GDnoObjects1.length = k;
 if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("answer"), gdjs.Carmo_32EnigmaCode.GDanswerObjects1);
-{for(var i = 0, len = gdjs.Carmo_32EnigmaCode.GDanswerObjects1.length ;i < len;++i) {
-    gdjs.Carmo_32EnigmaCode.GDanswerObjects1[i].setDisabled(false);
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.S_46_32Roque_32fimCode.GDnoObjects1.length;i<l;++i) {
+    if ( gdjs.S_46_32Roque_32fimCode.GDnoObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+        isConditionTrue_0 = true;
+        gdjs.S_46_32Roque_32fimCode.GDnoObjects1[k] = gdjs.S_46_32Roque_32fimCode.GDnoObjects1[i];
+        ++k;
+    }
 }
-}}
+gdjs.S_46_32Roque_32fimCode.GDnoObjects1.length = k;
+}
+if (isConditionTrue_0) {
+/* Reuse gdjs.S_46_32Roque_32fimCode.GDnoObjects1 */
+gdjs.copyArray(runtimeScene.getObjects("task_confirmation"), gdjs.S_46_32Roque_32fimCode.GDtask_95confirmationObjects1);
+gdjs.copyArray(runtimeScene.getObjects("yes"), gdjs.S_46_32Roque_32fimCode.GDyesObjects1);
+{for(var i = 0, len = gdjs.S_46_32Roque_32fimCode.GDnoObjects1.length ;i < len;++i) {
+    gdjs.S_46_32Roque_32fimCode.GDnoObjects1[i].hide();
+}
+}{for(var i = 0, len = gdjs.S_46_32Roque_32fimCode.GDyesObjects1.length ;i < len;++i) {
+    gdjs.S_46_32Roque_32fimCode.GDyesObjects1[i].hide();
+}
+}{for(var i = 0, len = gdjs.S_46_32Roque_32fimCode.GDtask_95confirmationObjects1.length ;i < len;++i) {
+    gdjs.S_46_32Roque_32fimCode.GDtask_95confirmationObjects1[i].hide();
+}
+}
+{ //Subevents
+gdjs.S_46_32Roque_32fimCode.eventsList2(runtimeScene);} //End of subevents
+}
 
 }
 
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("answer"), gdjs.Carmo_32EnigmaCode.GDanswerObjects1);
-gdjs.copyArray(runtimeScene.getObjects("clue"), gdjs.Carmo_32EnigmaCode.GDclueObjects1);
-gdjs.copyArray(runtimeScene.getObjects("ok"), gdjs.Carmo_32EnigmaCode.GDokObjects1);
+gdjs.copyArray(runtimeScene.getObjects("yes"), gdjs.S_46_32Roque_32fimCode.GDyesObjects1);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.Carmo_32EnigmaCode.GDclueObjects1.length;i<l;++i) {
-    if ( !(gdjs.Carmo_32EnigmaCode.GDclueObjects1[i].isVisible()) ) {
+for (var i = 0, k = 0, l = gdjs.S_46_32Roque_32fimCode.GDyesObjects1.length;i<l;++i) {
+    if ( gdjs.S_46_32Roque_32fimCode.GDyesObjects1[i].isVisible() ) {
         isConditionTrue_0 = true;
-        gdjs.Carmo_32EnigmaCode.GDclueObjects1[k] = gdjs.Carmo_32EnigmaCode.GDclueObjects1[i];
+        gdjs.S_46_32Roque_32fimCode.GDyesObjects1[k] = gdjs.S_46_32Roque_32fimCode.GDyesObjects1[i];
         ++k;
     }
 }
-gdjs.Carmo_32EnigmaCode.GDclueObjects1.length = k;
+gdjs.S_46_32Roque_32fimCode.GDyesObjects1.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.Carmo_32EnigmaCode.GDokObjects1.length;i<l;++i) {
-    if ( gdjs.Carmo_32EnigmaCode.GDokObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+for (var i = 0, k = 0, l = gdjs.S_46_32Roque_32fimCode.GDyesObjects1.length;i<l;++i) {
+    if ( gdjs.S_46_32Roque_32fimCode.GDyesObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
         isConditionTrue_0 = true;
-        gdjs.Carmo_32EnigmaCode.GDokObjects1[k] = gdjs.Carmo_32EnigmaCode.GDokObjects1[i];
+        gdjs.S_46_32Roque_32fimCode.GDyesObjects1[k] = gdjs.S_46_32Roque_32fimCode.GDyesObjects1[i];
         ++k;
     }
 }
-gdjs.Carmo_32EnigmaCode.GDokObjects1.length = k;
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.Carmo_32EnigmaCode.GDanswerObjects1.length;i<l;++i) {
-    if ( gdjs.Carmo_32EnigmaCode.GDanswerObjects1[i].getString() == "7961" ) {
-        isConditionTrue_0 = true;
-        gdjs.Carmo_32EnigmaCode.GDanswerObjects1[k] = gdjs.Carmo_32EnigmaCode.GDanswerObjects1[i];
-        ++k;
-    }
-}
-gdjs.Carmo_32EnigmaCode.GDanswerObjects1.length = k;
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("clue")) == 0;
-}
-}
+gdjs.S_46_32Roque_32fimCode.GDyesObjects1.length = k;
 }
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().get("score").add(10);
-}{gdjs.evtTools.leaderboards.savePlayerScore(runtimeScene, "fe060f70-b291-47b3-9d21-b3f56ce10567", gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().get("score")), gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(0)));
-}{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Bolo de Bacalhau", false);
-}}
+{gdjs.evtTools.runtimeScene.unpauseTimer(runtimeScene, "next scene");
+}
+{ //Subevents
+gdjs.S_46_32Roque_32fimCode.eventsList3(runtimeScene);} //End of subevents
+}
 
 }
 
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("answer"), gdjs.Carmo_32EnigmaCode.GDanswerObjects1);
-gdjs.copyArray(runtimeScene.getObjects("clue"), gdjs.Carmo_32EnigmaCode.GDclueObjects1);
-gdjs.copyArray(runtimeScene.getObjects("ok"), gdjs.Carmo_32EnigmaCode.GDokObjects1);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.Carmo_32EnigmaCode.GDclueObjects1.length;i<l;++i) {
-    if ( !(gdjs.Carmo_32EnigmaCode.GDclueObjects1[i].isVisible()) ) {
-        isConditionTrue_0 = true;
-        gdjs.Carmo_32EnigmaCode.GDclueObjects1[k] = gdjs.Carmo_32EnigmaCode.GDclueObjects1[i];
-        ++k;
-    }
-}
-gdjs.Carmo_32EnigmaCode.GDclueObjects1.length = k;
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "next scene") >= 0.5;
 if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.Carmo_32EnigmaCode.GDokObjects1.length;i<l;++i) {
-    if ( gdjs.Carmo_32EnigmaCode.GDokObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
-        isConditionTrue_0 = true;
-        gdjs.Carmo_32EnigmaCode.GDokObjects1[k] = gdjs.Carmo_32EnigmaCode.GDokObjects1[i];
-        ++k;
-    }
+{runtimeScene.getGame().getVariables().getFromIndex(1).add(10);
+}{gdjs.evtTools.leaderboards.savePlayerScore(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(3)), gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(1)), gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(0)));
 }
-gdjs.Carmo_32EnigmaCode.GDokObjects1.length = k;
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.Carmo_32EnigmaCode.GDanswerObjects1.length;i<l;++i) {
-    if ( gdjs.Carmo_32EnigmaCode.GDanswerObjects1[i].getString() == "7961" ) {
-        isConditionTrue_0 = true;
-        gdjs.Carmo_32EnigmaCode.GDanswerObjects1[k] = gdjs.Carmo_32EnigmaCode.GDanswerObjects1[i];
-        ++k;
-    }
+{ //Subevents
+gdjs.S_46_32Roque_32fimCode.eventsList4(runtimeScene);} //End of subevents
 }
-gdjs.Carmo_32EnigmaCode.GDanswerObjects1.length = k;
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("clue")) == 1;
-}
-}
-}
-if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().get("score").add(7);
-}{gdjs.evtTools.leaderboards.savePlayerScore(runtimeScene, "fe060f70-b291-47b3-9d21-b3f56ce10567", gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().get("score")), gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(0)));
-}{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Bolo de Bacalhau", false);
-}}
 
 }
 
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("answer"), gdjs.Carmo_32EnigmaCode.GDanswerObjects1);
-gdjs.copyArray(runtimeScene.getObjects("clue"), gdjs.Carmo_32EnigmaCode.GDclueObjects1);
-gdjs.copyArray(runtimeScene.getObjects("ok"), gdjs.Carmo_32EnigmaCode.GDokObjects1);
 
 let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.Carmo_32EnigmaCode.GDclueObjects1.length;i<l;++i) {
-    if ( !(gdjs.Carmo_32EnigmaCode.GDclueObjects1[i].isVisible()) ) {
-        isConditionTrue_0 = true;
-        gdjs.Carmo_32EnigmaCode.GDclueObjects1[k] = gdjs.Carmo_32EnigmaCode.GDclueObjects1[i];
-        ++k;
-    }
-}
-gdjs.Carmo_32EnigmaCode.GDclueObjects1.length = k;
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.Carmo_32EnigmaCode.GDokObjects1.length;i<l;++i) {
-    if ( gdjs.Carmo_32EnigmaCode.GDokObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
-        isConditionTrue_0 = true;
-        gdjs.Carmo_32EnigmaCode.GDokObjects1[k] = gdjs.Carmo_32EnigmaCode.GDokObjects1[i];
-        ++k;
-    }
-}
-gdjs.Carmo_32EnigmaCode.GDokObjects1.length = k;
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.Carmo_32EnigmaCode.GDanswerObjects1.length;i<l;++i) {
-    if ( gdjs.Carmo_32EnigmaCode.GDanswerObjects1[i].getString() == "7961" ) {
-        isConditionTrue_0 = true;
-        gdjs.Carmo_32EnigmaCode.GDanswerObjects1[k] = gdjs.Carmo_32EnigmaCode.GDanswerObjects1[i];
-        ++k;
-    }
-}
-gdjs.Carmo_32EnigmaCode.GDanswerObjects1.length = k;
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("clue")) == 2;
-}
-}
-}
-if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().get("score").add(5);
-}{gdjs.evtTools.leaderboards.savePlayerScore(runtimeScene, "fe060f70-b291-47b3-9d21-b3f56ce10567", gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().get("score")), gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(0)));
-}{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Bolo de Bacalhau", false);
-}}
-
-}
-
-
 {
-
-gdjs.copyArray(runtimeScene.getObjects("answer"), gdjs.Carmo_32EnigmaCode.GDanswerObjects1);
-gdjs.copyArray(runtimeScene.getObjects("clue"), gdjs.Carmo_32EnigmaCode.GDclueObjects1);
-gdjs.copyArray(runtimeScene.getObjects("ok"), gdjs.Carmo_32EnigmaCode.GDokObjects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.Carmo_32EnigmaCode.GDclueObjects1.length;i<l;++i) {
-    if ( !(gdjs.Carmo_32EnigmaCode.GDclueObjects1[i].isVisible()) ) {
-        isConditionTrue_0 = true;
-        gdjs.Carmo_32EnigmaCode.GDclueObjects1[k] = gdjs.Carmo_32EnigmaCode.GDclueObjects1[i];
-        ++k;
-    }
 }
-gdjs.Carmo_32EnigmaCode.GDclueObjects1.length = k;
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.Carmo_32EnigmaCode.GDokObjects1.length;i<l;++i) {
-    if ( gdjs.Carmo_32EnigmaCode.GDokObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
-        isConditionTrue_0 = true;
-        gdjs.Carmo_32EnigmaCode.GDokObjects1[k] = gdjs.Carmo_32EnigmaCode.GDokObjects1[i];
-        ++k;
-    }
-}
-gdjs.Carmo_32EnigmaCode.GDokObjects1.length = k;
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.Carmo_32EnigmaCode.GDanswerObjects1.length;i<l;++i) {
-    if ( gdjs.Carmo_32EnigmaCode.GDanswerObjects1[i].getString() == "7961" ) {
-        isConditionTrue_0 = true;
-        gdjs.Carmo_32EnigmaCode.GDanswerObjects1[k] = gdjs.Carmo_32EnigmaCode.GDanswerObjects1[i];
-        ++k;
-    }
-}
-gdjs.Carmo_32EnigmaCode.GDanswerObjects1.length = k;
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("clue")) >= 3;
-}
-}
-}
-if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().get("score").add(3);
-}{gdjs.evtTools.leaderboards.savePlayerScore(runtimeScene, "fe060f70-b291-47b3-9d21-b3f56ce10567", gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().get("score")), gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(0)));
-}{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Bolo de Bacalhau", false);
-}}
 
 }
 
 
 };
 
-gdjs.Carmo_32EnigmaCode.func = function(runtimeScene) {
+gdjs.S_46_32Roque_32fimCode.func = function(runtimeScene) {
 runtimeScene.getOnceTriggers().startNewFrame();
 
-gdjs.Carmo_32EnigmaCode.GDscoreObjects1.length = 0;
-gdjs.Carmo_32EnigmaCode.GDscoreObjects2.length = 0;
-gdjs.Carmo_32EnigmaCode.GDokObjects1.length = 0;
-gdjs.Carmo_32EnigmaCode.GDokObjects2.length = 0;
-gdjs.Carmo_32EnigmaCode.GDseguinteObjects1.length = 0;
-gdjs.Carmo_32EnigmaCode.GDseguinteObjects2.length = 0;
-gdjs.Carmo_32EnigmaCode.GDfundoObjects1.length = 0;
-gdjs.Carmo_32EnigmaCode.GDfundoObjects2.length = 0;
-gdjs.Carmo_32EnigmaCode.GDclueObjects1.length = 0;
-gdjs.Carmo_32EnigmaCode.GDclueObjects2.length = 0;
-gdjs.Carmo_32EnigmaCode.GDanswerObjects1.length = 0;
-gdjs.Carmo_32EnigmaCode.GDanswerObjects2.length = 0;
+gdjs.S_46_32Roque_32fimCode.GDscoreObjects1.length = 0;
+gdjs.S_46_32Roque_32fimCode.GDscoreObjects2.length = 0;
+gdjs.S_46_32Roque_32fimCode.GDscoreObjects3.length = 0;
+gdjs.S_46_32Roque_32fimCode.GDnext_95sceneObjects1.length = 0;
+gdjs.S_46_32Roque_32fimCode.GDnext_95sceneObjects2.length = 0;
+gdjs.S_46_32Roque_32fimCode.GDnext_95sceneObjects3.length = 0;
+gdjs.S_46_32Roque_32fimCode.GDURLObjects1.length = 0;
+gdjs.S_46_32Roque_32fimCode.GDURLObjects2.length = 0;
+gdjs.S_46_32Roque_32fimCode.GDURLObjects3.length = 0;
+gdjs.S_46_32Roque_32fimCode.GDURLdesvioObjects1.length = 0;
+gdjs.S_46_32Roque_32fimCode.GDURLdesvioObjects2.length = 0;
+gdjs.S_46_32Roque_32fimCode.GDURLdesvioObjects3.length = 0;
+gdjs.S_46_32Roque_32fimCode.GDDesvioObjects1.length = 0;
+gdjs.S_46_32Roque_32fimCode.GDDesvioObjects2.length = 0;
+gdjs.S_46_32Roque_32fimCode.GDDesvioObjects3.length = 0;
+gdjs.S_46_32Roque_32fimCode.GDokdesvioObjects1.length = 0;
+gdjs.S_46_32Roque_32fimCode.GDokdesvioObjects2.length = 0;
+gdjs.S_46_32Roque_32fimCode.GDokdesvioObjects3.length = 0;
+gdjs.S_46_32Roque_32fimCode.GDprox_95localObjects1.length = 0;
+gdjs.S_46_32Roque_32fimCode.GDprox_95localObjects2.length = 0;
+gdjs.S_46_32Roque_32fimCode.GDprox_95localObjects3.length = 0;
+gdjs.S_46_32Roque_32fimCode.GDnoObjects1.length = 0;
+gdjs.S_46_32Roque_32fimCode.GDnoObjects2.length = 0;
+gdjs.S_46_32Roque_32fimCode.GDnoObjects3.length = 0;
+gdjs.S_46_32Roque_32fimCode.GDyesObjects1.length = 0;
+gdjs.S_46_32Roque_32fimCode.GDyesObjects2.length = 0;
+gdjs.S_46_32Roque_32fimCode.GDyesObjects3.length = 0;
+gdjs.S_46_32Roque_32fimCode.GDfundoObjects1.length = 0;
+gdjs.S_46_32Roque_32fimCode.GDfundoObjects2.length = 0;
+gdjs.S_46_32Roque_32fimCode.GDfundoObjects3.length = 0;
+gdjs.S_46_32Roque_32fimCode.GDtask_95confirmationObjects1.length = 0;
+gdjs.S_46_32Roque_32fimCode.GDtask_95confirmationObjects2.length = 0;
+gdjs.S_46_32Roque_32fimCode.GDtask_95confirmationObjects3.length = 0;
 
-gdjs.Carmo_32EnigmaCode.eventsList0(runtimeScene);
+gdjs.S_46_32Roque_32fimCode.eventsList5(runtimeScene);
 
 return;
 
 }
 
-gdjs['Carmo_32EnigmaCode'] = gdjs.Carmo_32EnigmaCode;
+gdjs['S_46_32Roque_32fimCode'] = gdjs.S_46_32Roque_32fimCode;
