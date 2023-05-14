@@ -47,7 +47,7 @@ gdjs.Percurso_32ManteigariaCode.eventsList0 = function(runtimeScene) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(10745228);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12790860);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.firebaseTools.firestore.writeField("Users", gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Progress", gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2))), runtimeScene.getScene().getVariables().get("error"), true);
@@ -61,7 +61,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(10746028);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12791660);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.sound.playSound(runtimeScene, "click-21156.mp3", false, 0, 1);
@@ -72,7 +72,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.Percurso_32ManteigariaCode.userFunc0xbaac58 = function(runtimeScene) {
+};gdjs.Percurso_32ManteigariaCode.userFunc0x9acf30 = function(runtimeScene) {
 "use strict";
 var myVar = runtimeScene.getVariables().get("Longitude");
 function geoFindMe() {
@@ -96,7 +96,7 @@ function geoFindMe() {
 }
 geoFindMe();
 };
-gdjs.Percurso_32ManteigariaCode.userFunc0xa9a290 = function(runtimeScene) {
+gdjs.Percurso_32ManteigariaCode.userFunc0x8ec680 = function(runtimeScene) {
 "use strict";
 var myVar = runtimeScene.getVariables().get("Latitude");
 function geoFindMe() {
@@ -128,7 +128,7 @@ gdjs.Percurso_32ManteigariaCode.eventsList1 = function(runtimeScene) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(10755620);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12802892);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.sound.playSound(runtimeScene, "notification-140376.mp3", false, 100, 1);
@@ -167,7 +167,7 @@ gdjs.copyArray(runtimeScene.getObjects("yes"), gdjs.Percurso_32ManteigariaCode.G
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(10758380);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12805652);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.sound.playSound(runtimeScene, "click-21156.mp3", false, 100, 1);
@@ -183,7 +183,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(10760268);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12807540);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.sound.playSound(runtimeScene, "click-21156.mp3", false, 100, 1);
@@ -223,7 +223,7 @@ gdjs.copyArray(runtimeScene.getObjects("no"), gdjs.Percurso_32ManteigariaCode.GD
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(10767668);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12814940);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.firebaseTools.firestore.writeField("Users", gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Score", gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(1))), runtimeScene.getScene().getVariables().get("error"), true);
@@ -251,7 +251,7 @@ gdjs.copyArray(runtimeScene.getObjects("next_scene"), gdjs.Percurso_32Manteigari
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(10770924);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12818196);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.sound.playSound(runtimeScene, "message-incoming-132126.mp3", false, 100, 1);
@@ -502,7 +502,7 @@ gdjs.copyArray(runtimeScene.getObjects("score"), gdjs.Percurso_32ManteigariaCode
 {
 
 
-gdjs.Percurso_32ManteigariaCode.userFunc0xbaac58(runtimeScene);
+gdjs.Percurso_32ManteigariaCode.userFunc0x9acf30(runtimeScene);
 
 }
 
@@ -510,7 +510,7 @@ gdjs.Percurso_32ManteigariaCode.userFunc0xbaac58(runtimeScene);
 {
 
 
-gdjs.Percurso_32ManteigariaCode.userFunc0xa9a290(runtimeScene);
+gdjs.Percurso_32ManteigariaCode.userFunc0x8ec680(runtimeScene);
 
 }
 
