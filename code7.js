@@ -72,7 +72,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.Percurso_32CarmoCode.userFunc0x8f0110 = function(runtimeScene) {
+};gdjs.Percurso_32CarmoCode.userFunc0xb54660 = function(runtimeScene) {
 "use strict";
 var myVar = runtimeScene.getVariables().get("Longitude");
 function geoFindMe() {
@@ -96,7 +96,7 @@ function geoFindMe() {
 }
 geoFindMe();
 };
-gdjs.Percurso_32CarmoCode.userFunc0x8f4d50 = function(runtimeScene) {
+gdjs.Percurso_32CarmoCode.userFunc0xb54708 = function(runtimeScene) {
 "use strict";
 var myVar = runtimeScene.getVariables().get("Latitude");
 function geoFindMe() {
@@ -274,7 +274,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "desvio") >= 1;
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "desvio") >= 0.3;
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("Desvio"), gdjs.Percurso_32CarmoCode.GDDesvioObjects2);
 gdjs.copyArray(runtimeScene.getObjects("okdesvio"), gdjs.Percurso_32CarmoCode.GDokdesvioObjects2);
@@ -362,10 +362,10 @@ gdjs.copyArray(runtimeScene.getObjects("URLdesvio"), gdjs.Percurso_32CarmoCode.G
 gdjs.copyArray(runtimeScene.getObjects("next_scene"), gdjs.Percurso_32CarmoCode.GDnext_95sceneObjects1);
 {runtimeScene.getGame().getVariables().getFromIndex(2).setNumber(6);
 }{for(var i = 0, len = gdjs.Percurso_32CarmoCode.GDnext_95sceneObjects1.length ;i < len;++i) {
-    gdjs.Percurso_32CarmoCode.GDnext_95sceneObjects1[i].setString("Carmo Enigma");
+    gdjs.Percurso_32CarmoCode.GDnext_95sceneObjects1[i].setString("Carmo Escadas");
 }
 }{for(var i = 0, len = gdjs.Percurso_32CarmoCode.GDURLObjects1.length ;i < len;++i) {
-    gdjs.Percurso_32CarmoCode.GDURLObjects1[i].setString("https://www.google.com/maps/dir/38.713334,-9.1434176/38.7121016,-9.1394391/@38.7120503,-9.1402725,19.32z/data=!4m9!4m8!1m5!3m4!1m2!1d-9.142538!2d38.7123942!3s0xd19347f775adce9:0x3555aca2ba0a55ae!1m0!3e2");
+    gdjs.Percurso_32CarmoCode.GDURLObjects1[i].setString("https://www.google.com/maps/dir/Igreja+de+S%C3%A3o+Roque,+Igreja+de+S%C3%A3o+Roque,+Largo+Trindade+Coelho,+Lisbon/Lisbon,+1200-091/@38.7126118,-9.1429653,18z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0xd1933807947f01b:0x50882d63dd407eef!2m2!1d-9.1434694!2d38.713516!1m5!1m1!1s0xd193478b565d007:0x48ef2ad538d09d0e!2m2!1d-9.1398862!2d38.7120359!3e2");
 }
 }{runtimeScene.getScene().getVariables().get("latif").setNumber(38.7116);
 }{runtimeScene.getScene().getVariables().get("latsup").setNumber(38.7124);
@@ -502,7 +502,7 @@ gdjs.copyArray(runtimeScene.getObjects("score"), gdjs.Percurso_32CarmoCode.GDsco
 {
 
 
-gdjs.Percurso_32CarmoCode.userFunc0x8f0110(runtimeScene);
+gdjs.Percurso_32CarmoCode.userFunc0xb54660(runtimeScene);
 
 }
 
@@ -510,19 +510,30 @@ gdjs.Percurso_32CarmoCode.userFunc0x8f0110(runtimeScene);
 {
 
 
-gdjs.Percurso_32CarmoCode.userFunc0x8f4d50(runtimeScene);
+gdjs.Percurso_32CarmoCode.userFunc0xb54708(runtimeScene);
 
 }
 
 
 {
 
+gdjs.copyArray(runtimeScene.getObjects("Desvio"), gdjs.Percurso_32CarmoCode.GDDesvioObjects1);
 gdjs.Percurso_32CarmoCode.GDgmapsObjects1.length = 0;
 
 gdjs.Percurso_32CarmoCode.GDpercursoObjects1.length = 0;
 
 
 let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.Percurso_32CarmoCode.GDDesvioObjects1.length;i<l;++i) {
+    if ( !(gdjs.Percurso_32CarmoCode.GDDesvioObjects1[i].isVisible()) ) {
+        isConditionTrue_0 = true;
+        gdjs.Percurso_32CarmoCode.GDDesvioObjects1[k] = gdjs.Percurso_32CarmoCode.GDDesvioObjects1[i];
+        ++k;
+    }
+}
+gdjs.Percurso_32CarmoCode.GDDesvioObjects1.length = k;
+if (isConditionTrue_0) {
 isConditionTrue_0 = false;
 {gdjs.Percurso_32CarmoCode.GDgmapsObjects1_1final.length = 0;
 gdjs.Percurso_32CarmoCode.GDpercursoObjects1_1final.length = 0;
@@ -572,6 +583,7 @@ if(isConditionTrue_1) {
 {
 gdjs.copyArray(gdjs.Percurso_32CarmoCode.GDgmapsObjects1_1final, gdjs.Percurso_32CarmoCode.GDgmapsObjects1);
 gdjs.copyArray(gdjs.Percurso_32CarmoCode.GDpercursoObjects1_1final, gdjs.Percurso_32CarmoCode.GDpercursoObjects1);
+}
 }
 }
 if (isConditionTrue_0) {

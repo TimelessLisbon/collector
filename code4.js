@@ -72,7 +72,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.Percurso_32S_46_32RoqueCode.userFunc0x9f64d0 = function(runtimeScene) {
+};gdjs.Percurso_32S_46_32RoqueCode.userFunc0x901468 = function(runtimeScene) {
 "use strict";
 var myVar = runtimeScene.getVariables().get("Longitude");
 function geoFindMe() {
@@ -96,7 +96,7 @@ function geoFindMe() {
 }
 geoFindMe();
 };
-gdjs.Percurso_32S_46_32RoqueCode.userFunc0x9f67e0 = function(runtimeScene) {
+gdjs.Percurso_32S_46_32RoqueCode.userFunc0x901510 = function(runtimeScene) {
 "use strict";
 var myVar = runtimeScene.getVariables().get("Latitude");
 function geoFindMe() {
@@ -274,7 +274,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "desvio") >= 1;
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "desvio") >= 0.3;
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("Desvio"), gdjs.Percurso_32S_46_32RoqueCode.GDDesvioObjects2);
 gdjs.copyArray(runtimeScene.getObjects("okdesvio"), gdjs.Percurso_32S_46_32RoqueCode.GDokdesvioObjects2);
@@ -540,7 +540,7 @@ gdjs.copyArray(runtimeScene.getObjects("score"), gdjs.Percurso_32S_46_32RoqueCod
 {
 
 
-gdjs.Percurso_32S_46_32RoqueCode.userFunc0x9f64d0(runtimeScene);
+gdjs.Percurso_32S_46_32RoqueCode.userFunc0x901468(runtimeScene);
 
 }
 
@@ -548,19 +548,30 @@ gdjs.Percurso_32S_46_32RoqueCode.userFunc0x9f64d0(runtimeScene);
 {
 
 
-gdjs.Percurso_32S_46_32RoqueCode.userFunc0x9f67e0(runtimeScene);
+gdjs.Percurso_32S_46_32RoqueCode.userFunc0x901510(runtimeScene);
 
 }
 
 
 {
 
+gdjs.copyArray(runtimeScene.getObjects("Desvio"), gdjs.Percurso_32S_46_32RoqueCode.GDDesvioObjects1);
 gdjs.Percurso_32S_46_32RoqueCode.GDgmapsObjects1.length = 0;
 
 gdjs.Percurso_32S_46_32RoqueCode.GDpercursoObjects1.length = 0;
 
 
 let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.Percurso_32S_46_32RoqueCode.GDDesvioObjects1.length;i<l;++i) {
+    if ( !(gdjs.Percurso_32S_46_32RoqueCode.GDDesvioObjects1[i].isVisible()) ) {
+        isConditionTrue_0 = true;
+        gdjs.Percurso_32S_46_32RoqueCode.GDDesvioObjects1[k] = gdjs.Percurso_32S_46_32RoqueCode.GDDesvioObjects1[i];
+        ++k;
+    }
+}
+gdjs.Percurso_32S_46_32RoqueCode.GDDesvioObjects1.length = k;
+if (isConditionTrue_0) {
 isConditionTrue_0 = false;
 {gdjs.Percurso_32S_46_32RoqueCode.GDgmapsObjects1_1final.length = 0;
 gdjs.Percurso_32S_46_32RoqueCode.GDpercursoObjects1_1final.length = 0;
@@ -610,6 +621,7 @@ if(isConditionTrue_1) {
 {
 gdjs.copyArray(gdjs.Percurso_32S_46_32RoqueCode.GDgmapsObjects1_1final, gdjs.Percurso_32S_46_32RoqueCode.GDgmapsObjects1);
 gdjs.copyArray(gdjs.Percurso_32S_46_32RoqueCode.GDpercursoObjects1_1final, gdjs.Percurso_32S_46_32RoqueCode.GDpercursoObjects1);
+}
 }
 }
 if (isConditionTrue_0) {

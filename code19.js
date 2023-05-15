@@ -1,47 +1,53 @@
-gdjs.BicaCode = {};
-gdjs.BicaCode.GDscoreObjects1= [];
-gdjs.BicaCode.GDscoreObjects2= [];
-gdjs.BicaCode.GDscoreObjects3= [];
-gdjs.BicaCode.GDnext_95sceneObjects1= [];
-gdjs.BicaCode.GDnext_95sceneObjects2= [];
-gdjs.BicaCode.GDnext_95sceneObjects3= [];
-gdjs.BicaCode.GDURLObjects1= [];
-gdjs.BicaCode.GDURLObjects2= [];
-gdjs.BicaCode.GDURLObjects3= [];
-gdjs.BicaCode.GDURLdesvioObjects1= [];
-gdjs.BicaCode.GDURLdesvioObjects2= [];
-gdjs.BicaCode.GDURLdesvioObjects3= [];
-gdjs.BicaCode.GDDesvioObjects1= [];
-gdjs.BicaCode.GDDesvioObjects2= [];
-gdjs.BicaCode.GDDesvioObjects3= [];
-gdjs.BicaCode.GDokdesvioObjects1= [];
-gdjs.BicaCode.GDokdesvioObjects2= [];
-gdjs.BicaCode.GDokdesvioObjects3= [];
-gdjs.BicaCode.GDprox_95localObjects1= [];
-gdjs.BicaCode.GDprox_95localObjects2= [];
-gdjs.BicaCode.GDprox_95localObjects3= [];
-gdjs.BicaCode.GDnoObjects1= [];
-gdjs.BicaCode.GDnoObjects2= [];
-gdjs.BicaCode.GDnoObjects3= [];
-gdjs.BicaCode.GDyesObjects1= [];
-gdjs.BicaCode.GDyesObjects2= [];
-gdjs.BicaCode.GDyesObjects3= [];
-gdjs.BicaCode.GDfundoObjects1= [];
-gdjs.BicaCode.GDfundoObjects2= [];
-gdjs.BicaCode.GDfundoObjects3= [];
-gdjs.BicaCode.GDtask_95confirmationObjects1= [];
-gdjs.BicaCode.GDtask_95confirmationObjects2= [];
-gdjs.BicaCode.GDtask_95confirmationObjects3= [];
+gdjs.Percurso_32BicaCode = {};
+gdjs.Percurso_32BicaCode.GDGMObjects1_1final = [];
+
+gdjs.Percurso_32BicaCode.GDgmapsObjects1_1final = [];
+
+gdjs.Percurso_32BicaCode.GDpercursoObjects1_1final = [];
+
+gdjs.Percurso_32BicaCode.GDscoreObjects1= [];
+gdjs.Percurso_32BicaCode.GDscoreObjects2= [];
+gdjs.Percurso_32BicaCode.GDscoreObjects3= [];
+gdjs.Percurso_32BicaCode.GDnext_95sceneObjects1= [];
+gdjs.Percurso_32BicaCode.GDnext_95sceneObjects2= [];
+gdjs.Percurso_32BicaCode.GDnext_95sceneObjects3= [];
+gdjs.Percurso_32BicaCode.GDURLObjects1= [];
+gdjs.Percurso_32BicaCode.GDURLObjects2= [];
+gdjs.Percurso_32BicaCode.GDURLObjects3= [];
+gdjs.Percurso_32BicaCode.GDURLdesvioObjects1= [];
+gdjs.Percurso_32BicaCode.GDURLdesvioObjects2= [];
+gdjs.Percurso_32BicaCode.GDURLdesvioObjects3= [];
+gdjs.Percurso_32BicaCode.GDDesvioObjects1= [];
+gdjs.Percurso_32BicaCode.GDDesvioObjects2= [];
+gdjs.Percurso_32BicaCode.GDDesvioObjects3= [];
+gdjs.Percurso_32BicaCode.GDokdesvioObjects1= [];
+gdjs.Percurso_32BicaCode.GDokdesvioObjects2= [];
+gdjs.Percurso_32BicaCode.GDokdesvioObjects3= [];
+gdjs.Percurso_32BicaCode.GDnoObjects1= [];
+gdjs.Percurso_32BicaCode.GDnoObjects2= [];
+gdjs.Percurso_32BicaCode.GDnoObjects3= [];
+gdjs.Percurso_32BicaCode.GDyesObjects1= [];
+gdjs.Percurso_32BicaCode.GDyesObjects2= [];
+gdjs.Percurso_32BicaCode.GDyesObjects3= [];
+gdjs.Percurso_32BicaCode.GDpercursoObjects1= [];
+gdjs.Percurso_32BicaCode.GDpercursoObjects2= [];
+gdjs.Percurso_32BicaCode.GDpercursoObjects3= [];
+gdjs.Percurso_32BicaCode.GDgmapsObjects1= [];
+gdjs.Percurso_32BicaCode.GDgmapsObjects2= [];
+gdjs.Percurso_32BicaCode.GDgmapsObjects3= [];
+gdjs.Percurso_32BicaCode.GDGMObjects1= [];
+gdjs.Percurso_32BicaCode.GDGMObjects2= [];
+gdjs.Percurso_32BicaCode.GDGMObjects3= [];
 
 
-gdjs.BicaCode.eventsList0 = function(runtimeScene) {
+gdjs.Percurso_32BicaCode.eventsList0 = function(runtimeScene) {
 
 {
 
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12770332);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12790860);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.firebaseTools.firestore.writeField("Users", gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Progress", gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2))), runtimeScene.getScene().getVariables().get("error"), true);
@@ -55,24 +61,113 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12772276);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12791660);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.sound.playSound(runtimeScene, "click-21156.mp3", false, 0, 1);
-}{gdjs.evtTools.sound.playSound(runtimeScene, "correct-2-46134.mp3", false, 0, 1);
+}{gdjs.evtTools.sound.playSound(runtimeScene, "message-incoming-132126.mp3", false, 0, 1);
+}{gdjs.evtTools.sound.playSound(runtimeScene, "notification-140376.mp3", false, 0, 1);
 }}
 
 }
 
 
-};gdjs.BicaCode.eventsList1 = function(runtimeScene) {
+};gdjs.Percurso_32BicaCode.userFunc0xb5d558 = function(runtimeScene) {
+"use strict";
+var myVar = runtimeScene.getVariables().get("Longitude");
+function geoFindMe() {
+    function success(position) {
+        const latitude = position.coords.latitude;
+        const longitude = position.coords.longitude;
+
+        myVar.setNumber(`${longitude}`);
+    }
+
+    function error(error) {
+        myVar.setString("unable to retrieve your location" + error.code + error.message);
+    }
+
+    if (!navigator.geolocation) {
+        myVar.setString('Geolocation is not supported by your browser');
+    } else {
+        navigator.geolocation.getCurrentPosition(success, error);
+    }
+
+}
+geoFindMe();
+};
+gdjs.Percurso_32BicaCode.userFunc0xb5d600 = function(runtimeScene) {
+"use strict";
+var myVar = runtimeScene.getVariables().get("Latitude");
+function geoFindMe() {
+    function success(position) {
+        const latitude = position.coords.latitude;
+        const longitude = position.coords.longitude;
+
+        myVar.setNumber(`${latitude}`);
+    }
+
+    function error(error) {
+        myVar.setString("unable to retrieve your location" + error.code + error.message);
+    }
+
+    if (!navigator.geolocation) {
+        myVar.setString('Geolocation is not supported by your browser');
+    } else {
+        navigator.geolocation.getCurrentPosition(success, error);
+    }
+
+}
+geoFindMe();
+};
+gdjs.Percurso_32BicaCode.mapOfGDgdjs_46Percurso_9532BicaCode_46GDpercursoObjects2Objects = Hashtable.newFrom({"percurso": gdjs.Percurso_32BicaCode.GDpercursoObjects2});
+gdjs.Percurso_32BicaCode.eventsList1 = function(runtimeScene) {
 
 {
 
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12778764);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12802892);
+}
+if (isConditionTrue_0) {
+{gdjs.evtTools.sound.playSound(runtimeScene, "notification-140376.mp3", false, 100, 1);
+}}
+
+}
+
+
+};gdjs.Percurso_32BicaCode.eventsList2 = function(runtimeScene) {
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+gdjs.copyArray(runtimeScene.getObjects("gmaps"), gdjs.Percurso_32BicaCode.GDgmapsObjects2);
+gdjs.copyArray(gdjs.Percurso_32BicaCode.GDnoObjects1, gdjs.Percurso_32BicaCode.GDnoObjects2);
+
+gdjs.copyArray(runtimeScene.getObjects("yes"), gdjs.Percurso_32BicaCode.GDyesObjects2);
+{for(var i = 0, len = gdjs.Percurso_32BicaCode.GDnoObjects2.length ;i < len;++i) {
+    gdjs.Percurso_32BicaCode.GDnoObjects2[i].hide();
+}
+}{for(var i = 0, len = gdjs.Percurso_32BicaCode.GDyesObjects2.length ;i < len;++i) {
+    gdjs.Percurso_32BicaCode.GDyesObjects2[i].hide();
+}
+}{for(var i = 0, len = gdjs.Percurso_32BicaCode.GDgmapsObjects2.length ;i < len;++i) {
+    gdjs.Percurso_32BicaCode.GDgmapsObjects2[i].hide();
+}
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12805652);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.sound.playSound(runtimeScene, "click-21156.mp3", false, 100, 1);
@@ -81,14 +176,14 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.BicaCode.eventsList2 = function(runtimeScene) {
+};gdjs.Percurso_32BicaCode.eventsList3 = function(runtimeScene) {
 
 {
 
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12781036);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12807540);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.sound.playSound(runtimeScene, "click-21156.mp3", false, 100, 1);
@@ -97,34 +192,41 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.BicaCode.eventsList3 = function(runtimeScene) {
-
 {
 
 
 let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12782532);
+{
+gdjs.copyArray(runtimeScene.getObjects("URL"), gdjs.Percurso_32BicaCode.GDURLObjects1);
+gdjs.copyArray(runtimeScene.getObjects("gmaps"), gdjs.Percurso_32BicaCode.GDgmapsObjects1);
+gdjs.copyArray(runtimeScene.getObjects("no"), gdjs.Percurso_32BicaCode.GDnoObjects1);
+/* Reuse gdjs.Percurso_32BicaCode.GDyesObjects1 */
+{for(var i = 0, len = gdjs.Percurso_32BicaCode.GDnoObjects1.length ;i < len;++i) {
+    gdjs.Percurso_32BicaCode.GDnoObjects1[i].hide();
 }
-if (isConditionTrue_0) {
-{gdjs.evtTools.sound.playSound(runtimeScene, "click-21156.mp3", false, 100, 1);
+}{for(var i = 0, len = gdjs.Percurso_32BicaCode.GDyesObjects1.length ;i < len;++i) {
+    gdjs.Percurso_32BicaCode.GDyesObjects1[i].hide();
+}
+}{for(var i = 0, len = gdjs.Percurso_32BicaCode.GDgmapsObjects1.length ;i < len;++i) {
+    gdjs.Percurso_32BicaCode.GDgmapsObjects1[i].hide();
+}
+}{gdjs.evtTools.window.openURL((( gdjs.Percurso_32BicaCode.GDURLObjects1.length === 0 ) ? "" :gdjs.Percurso_32BicaCode.GDURLObjects1[0].getString()), runtimeScene);
 }}
 
 }
 
 
-};gdjs.BicaCode.eventsList4 = function(runtimeScene) {
+};gdjs.Percurso_32BicaCode.eventsList4 = function(runtimeScene) {
 
 {
 
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12785700);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12814940);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.firebaseTools.firestore.writeField("Users", gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Score", gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(1))), runtimeScene.getScene().getVariables().get("error"), true);
-}{gdjs.evtTools.sound.playSound(runtimeScene, "correct-2-46134.mp3", false, 100, 1);
 }}
 
 }
@@ -135,26 +237,142 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 {
-gdjs.copyArray(runtimeScene.getObjects("next_scene"), gdjs.BicaCode.GDnext_95sceneObjects1);
-{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "next scene");
-}{gdjs.evtTools.runtimeScene.pauseTimer(runtimeScene, "next scene");
-}{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, (( gdjs.BicaCode.GDnext_95sceneObjects1.length === 0 ) ? "" :gdjs.BicaCode.GDnext_95sceneObjects1[0].getString()), false);
+gdjs.copyArray(runtimeScene.getObjects("next_scene"), gdjs.Percurso_32BicaCode.GDnext_95sceneObjects1);
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, (( gdjs.Percurso_32BicaCode.GDnext_95sceneObjects1.length === 0 ) ? "" :gdjs.Percurso_32BicaCode.GDnext_95sceneObjects1[0].getString()), false);
 }}
 
 }
 
 
-};gdjs.BicaCode.eventsList5 = function(runtimeScene) {
+};gdjs.Percurso_32BicaCode.eventsList5 = function(runtimeScene) {
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12818196);
+}
+if (isConditionTrue_0) {
+{gdjs.evtTools.sound.playSound(runtimeScene, "message-incoming-132126.mp3", false, 100, 1);
+}}
+
+}
+
+
+};gdjs.Percurso_32BicaCode.eventsList6 = function(runtimeScene) {
+
+{
+
+
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "desvio") >= 0.3;
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("Desvio"), gdjs.Percurso_32BicaCode.GDDesvioObjects2);
+gdjs.copyArray(runtimeScene.getObjects("okdesvio"), gdjs.Percurso_32BicaCode.GDokdesvioObjects2);
+{for(var i = 0, len = gdjs.Percurso_32BicaCode.GDDesvioObjects2.length ;i < len;++i) {
+    gdjs.Percurso_32BicaCode.GDDesvioObjects2[i].hide(false);
+}
+}{gdjs.evtTools.runtimeScene.pauseTimer(runtimeScene, "maps");
+}{for(var i = 0, len = gdjs.Percurso_32BicaCode.GDokdesvioObjects2.length ;i < len;++i) {
+    gdjs.Percurso_32BicaCode.GDokdesvioObjects2[i].hide(false);
+}
+}{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "desvio");
+}{gdjs.evtTools.runtimeScene.pauseTimer(runtimeScene, "desvio");
+}
+{ //Subevents
+gdjs.Percurso_32BicaCode.eventsList5(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Desvio"), gdjs.Percurso_32BicaCode.GDDesvioObjects2);
+gdjs.copyArray(runtimeScene.getObjects("okdesvio"), gdjs.Percurso_32BicaCode.GDokdesvioObjects2);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.Percurso_32BicaCode.GDDesvioObjects2.length;i<l;++i) {
+    if ( gdjs.Percurso_32BicaCode.GDDesvioObjects2[i].isVisible() ) {
+        isConditionTrue_0 = true;
+        gdjs.Percurso_32BicaCode.GDDesvioObjects2[k] = gdjs.Percurso_32BicaCode.GDDesvioObjects2[i];
+        ++k;
+    }
+}
+gdjs.Percurso_32BicaCode.GDDesvioObjects2.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.Percurso_32BicaCode.GDokdesvioObjects2.length;i<l;++i) {
+    if ( gdjs.Percurso_32BicaCode.GDokdesvioObjects2[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+        isConditionTrue_0 = true;
+        gdjs.Percurso_32BicaCode.GDokdesvioObjects2[k] = gdjs.Percurso_32BicaCode.GDokdesvioObjects2[i];
+        ++k;
+    }
+}
+gdjs.Percurso_32BicaCode.GDokdesvioObjects2.length = k;
+}
+if (isConditionTrue_0) {
+/* Reuse gdjs.Percurso_32BicaCode.GDDesvioObjects2 */
+gdjs.copyArray(runtimeScene.getObjects("URLdesvio"), gdjs.Percurso_32BicaCode.GDURLdesvioObjects2);
+/* Reuse gdjs.Percurso_32BicaCode.GDokdesvioObjects2 */
+{for(var i = 0, len = gdjs.Percurso_32BicaCode.GDDesvioObjects2.length ;i < len;++i) {
+    gdjs.Percurso_32BicaCode.GDDesvioObjects2[i].hide();
+}
+}{for(var i = 0, len = gdjs.Percurso_32BicaCode.GDokdesvioObjects2.length ;i < len;++i) {
+    gdjs.Percurso_32BicaCode.GDokdesvioObjects2[i].hide();
+}
+}{gdjs.evtTools.window.openURL((( gdjs.Percurso_32BicaCode.GDURLdesvioObjects2.length === 0 ) ? "" :gdjs.Percurso_32BicaCode.GDURLdesvioObjects2[0].getString()), runtimeScene);
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustResumed(runtimeScene);
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "maps");
+}}
+
+}
+
+
+};gdjs.Percurso_32BicaCode.eventsList7 = function(runtimeScene) {
 
 {
 
 
 let isConditionTrue_0 = false;
 {
-gdjs.copyArray(runtimeScene.getObjects("next_scene"), gdjs.BicaCode.GDnext_95sceneObjects1);
+gdjs.copyArray(runtimeScene.getObjects("URL"), gdjs.Percurso_32BicaCode.GDURLObjects1);
+gdjs.copyArray(runtimeScene.getObjects("URLdesvio"), gdjs.Percurso_32BicaCode.GDURLdesvioObjects1);
+gdjs.copyArray(runtimeScene.getObjects("next_scene"), gdjs.Percurso_32BicaCode.GDnext_95sceneObjects1);
 {runtimeScene.getGame().getVariables().getFromIndex(2).setNumber(18);
-}{for(var i = 0, len = gdjs.BicaCode.GDnext_95sceneObjects1.length ;i < len;++i) {
-    gdjs.BicaCode.GDnext_95sceneObjects1[i].setString("Percurso Camoes");
+}{for(var i = 0, len = gdjs.Percurso_32BicaCode.GDnext_95sceneObjects1.length ;i < len;++i) {
+    gdjs.Percurso_32BicaCode.GDnext_95sceneObjects1[i].setString("Bica");
+}
+}{for(var i = 0, len = gdjs.Percurso_32BicaCode.GDURLObjects1.length ;i < len;++i) {
+    gdjs.Percurso_32BicaCode.GDURLObjects1[i].setString("https://www.google.com/maps/dir/Miradouro+de+Santa+Catarina,+Lisbon/Bica+-+Lg.+Calhariz,+Funicular+da+Bica,+Largo+Calhariz,+Lisbon/@38.7102615,-9.1479813,18z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0xd193480f06596a3:0x96e9334cb717ce28!2m2!1d-9.1476043!2d38.7095364!1m5!1m1!1s0xd1935b86ddd4e6b:0x5d5220f53874bf4!2m2!1d-9.1458107!2d38.7107724!3e2");
+}
+}{runtimeScene.getScene().getVariables().get("latif").setNumber(38.7103);
+}{runtimeScene.getScene().getVariables().get("latsup").setNumber(38.7111);
+}{runtimeScene.getScene().getVariables().get("longsup").setNumber(-(9.1453));
+}{runtimeScene.getScene().getVariables().get("longinf").setNumber(-(9.1461));
+}{for(var i = 0, len = gdjs.Percurso_32BicaCode.GDURLdesvioObjects1.length ;i < len;++i) {
+    gdjs.Percurso_32BicaCode.GDURLdesvioObjects1[i].setString("https://www.google.com/maps/dir/Miradouro+de+Santa+Catarina,+Lisbon/Travessa+do+Sequeiro,+Lisbon/@38.7099749,-9.1493931,17z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0xd193480f06596a3:0x96e9334cb717ce28!2m2!1d-9.1476043!2d38.7095364!1m5!1m1!1s0xd19348080aa6631:0x7989d893a8280bbf!2m2!1d-9.1460321!2d38.7102558");
 }
 }}
 
@@ -175,26 +393,48 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("next_scene"), gdjs.BicaCode.GDnext_95sceneObjects1);
-gdjs.copyArray(runtimeScene.getObjects("no"), gdjs.BicaCode.GDnoObjects1);
-gdjs.copyArray(runtimeScene.getObjects("task_confirmation"), gdjs.BicaCode.GDtask_95confirmationObjects1);
-gdjs.copyArray(runtimeScene.getObjects("yes"), gdjs.BicaCode.GDyesObjects1);
-{for(var i = 0, len = gdjs.BicaCode.GDnoObjects1.length ;i < len;++i) {
-    gdjs.BicaCode.GDnoObjects1[i].hide();
+gdjs.copyArray(runtimeScene.getObjects("Desvio"), gdjs.Percurso_32BicaCode.GDDesvioObjects1);
+gdjs.copyArray(runtimeScene.getObjects("URL"), gdjs.Percurso_32BicaCode.GDURLObjects1);
+gdjs.copyArray(runtimeScene.getObjects("URLdesvio"), gdjs.Percurso_32BicaCode.GDURLdesvioObjects1);
+gdjs.copyArray(runtimeScene.getObjects("gmaps"), gdjs.Percurso_32BicaCode.GDgmapsObjects1);
+gdjs.copyArray(runtimeScene.getObjects("next_scene"), gdjs.Percurso_32BicaCode.GDnext_95sceneObjects1);
+gdjs.copyArray(runtimeScene.getObjects("no"), gdjs.Percurso_32BicaCode.GDnoObjects1);
+gdjs.copyArray(runtimeScene.getObjects("okdesvio"), gdjs.Percurso_32BicaCode.GDokdesvioObjects1);
+gdjs.copyArray(runtimeScene.getObjects("yes"), gdjs.Percurso_32BicaCode.GDyesObjects1);
+{for(var i = 0, len = gdjs.Percurso_32BicaCode.GDnoObjects1.length ;i < len;++i) {
+    gdjs.Percurso_32BicaCode.GDnoObjects1[i].hide();
 }
-}{for(var i = 0, len = gdjs.BicaCode.GDyesObjects1.length ;i < len;++i) {
-    gdjs.BicaCode.GDyesObjects1[i].hide();
+}{for(var i = 0, len = gdjs.Percurso_32BicaCode.GDyesObjects1.length ;i < len;++i) {
+    gdjs.Percurso_32BicaCode.GDyesObjects1[i].hide();
 }
-}{for(var i = 0, len = gdjs.BicaCode.GDtask_95confirmationObjects1.length ;i < len;++i) {
-    gdjs.BicaCode.GDtask_95confirmationObjects1[i].hide();
+}{for(var i = 0, len = gdjs.Percurso_32BicaCode.GDokdesvioObjects1.length ;i < len;++i) {
+    gdjs.Percurso_32BicaCode.GDokdesvioObjects1[i].hide();
 }
-}{for(var i = 0, len = gdjs.BicaCode.GDnext_95sceneObjects1.length ;i < len;++i) {
-    gdjs.BicaCode.GDnext_95sceneObjects1[i].hide();
+}{for(var i = 0, len = gdjs.Percurso_32BicaCode.GDgmapsObjects1.length ;i < len;++i) {
+    gdjs.Percurso_32BicaCode.GDgmapsObjects1[i].hide();
 }
+}{for(var i = 0, len = gdjs.Percurso_32BicaCode.GDDesvioObjects1.length ;i < len;++i) {
+    gdjs.Percurso_32BicaCode.GDDesvioObjects1[i].hide();
+}
+}{for(var i = 0, len = gdjs.Percurso_32BicaCode.GDnext_95sceneObjects1.length ;i < len;++i) {
+    gdjs.Percurso_32BicaCode.GDnext_95sceneObjects1[i].hide();
+}
+}{for(var i = 0, len = gdjs.Percurso_32BicaCode.GDURLObjects1.length ;i < len;++i) {
+    gdjs.Percurso_32BicaCode.GDURLObjects1[i].hide();
+}
+}{for(var i = 0, len = gdjs.Percurso_32BicaCode.GDURLdesvioObjects1.length ;i < len;++i) {
+    gdjs.Percurso_32BicaCode.GDURLdesvioObjects1[i].hide();
+}
+}{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "desvio");
 }{gdjs.evtTools.runtimeScene.pauseTimer(runtimeScene, "next scene");
+}{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "maps");
+}{gdjs.evtTools.runtimeScene.pauseTimer(runtimeScene, "maps2");
+}{for(var i = 0, len = gdjs.Percurso_32BicaCode.GDokdesvioObjects1.length ;i < len;++i) {
+    gdjs.Percurso_32BicaCode.GDokdesvioObjects1[i].setX((gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) - (gdjs.Percurso_32BicaCode.GDokdesvioObjects1[i].getWidth())) / 2);
+}
 }
 { //Subevents
-gdjs.BicaCode.eventsList0(runtimeScene);} //End of subevents
+gdjs.Percurso_32BicaCode.eventsList0(runtimeScene);} //End of subevents
 }
 
 }
@@ -207,9 +447,9 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(1)) < 10;
 if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("score"), gdjs.BicaCode.GDscoreObjects1);
-{for(var i = 0, len = gdjs.BicaCode.GDscoreObjects1.length ;i < len;++i) {
-    gdjs.BicaCode.GDscoreObjects1[i].setString("00" + gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(1)));
+gdjs.copyArray(runtimeScene.getObjects("score"), gdjs.Percurso_32BicaCode.GDscoreObjects1);
+{for(var i = 0, len = gdjs.Percurso_32BicaCode.GDscoreObjects1.length ;i < len;++i) {
+    gdjs.Percurso_32BicaCode.GDscoreObjects1[i].setString("00" + gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(1)));
 }
 }}
 
@@ -227,9 +467,9 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(1)) < 100;
 }
 if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("score"), gdjs.BicaCode.GDscoreObjects1);
-{for(var i = 0, len = gdjs.BicaCode.GDscoreObjects1.length ;i < len;++i) {
-    gdjs.BicaCode.GDscoreObjects1[i].setString("0" + gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(1)));
+gdjs.copyArray(runtimeScene.getObjects("score"), gdjs.Percurso_32BicaCode.GDscoreObjects1);
+{for(var i = 0, len = gdjs.Percurso_32BicaCode.GDscoreObjects1.length ;i < len;++i) {
+    gdjs.Percurso_32BicaCode.GDscoreObjects1[i].setString("0" + gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(1)));
 }
 }}
 
@@ -243,9 +483,9 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(1)) >= 100;
 if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("score"), gdjs.BicaCode.GDscoreObjects1);
-{for(var i = 0, len = gdjs.BicaCode.GDscoreObjects1.length ;i < len;++i) {
-    gdjs.BicaCode.GDscoreObjects1[i].setString(gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(1)));
+gdjs.copyArray(runtimeScene.getObjects("score"), gdjs.Percurso_32BicaCode.GDscoreObjects1);
+{for(var i = 0, len = gdjs.Percurso_32BicaCode.GDscoreObjects1.length ;i < len;++i) {
+    gdjs.Percurso_32BicaCode.GDscoreObjects1[i].setString(gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(1)));
 }
 }}
 
@@ -254,116 +494,101 @@ gdjs.copyArray(runtimeScene.getObjects("score"), gdjs.BicaCode.GDscoreObjects1);
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("prox_local"), gdjs.BicaCode.GDprox_95localObjects1);
 
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.BicaCode.GDprox_95localObjects1.length;i<l;++i) {
-    if ( gdjs.BicaCode.GDprox_95localObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
-        isConditionTrue_0 = true;
-        gdjs.BicaCode.GDprox_95localObjects1[k] = gdjs.BicaCode.GDprox_95localObjects1[i];
-        ++k;
-    }
-}
-gdjs.BicaCode.GDprox_95localObjects1.length = k;
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("no"), gdjs.BicaCode.GDnoObjects1);
-gdjs.copyArray(runtimeScene.getObjects("task_confirmation"), gdjs.BicaCode.GDtask_95confirmationObjects1);
-gdjs.copyArray(runtimeScene.getObjects("yes"), gdjs.BicaCode.GDyesObjects1);
-{for(var i = 0, len = gdjs.BicaCode.GDnoObjects1.length ;i < len;++i) {
-    gdjs.BicaCode.GDnoObjects1[i].hide(false);
-}
-}{for(var i = 0, len = gdjs.BicaCode.GDyesObjects1.length ;i < len;++i) {
-    gdjs.BicaCode.GDyesObjects1[i].hide(false);
-}
-}{for(var i = 0, len = gdjs.BicaCode.GDtask_95confirmationObjects1.length ;i < len;++i) {
-    gdjs.BicaCode.GDtask_95confirmationObjects1[i].hide(false);
-}
-}
-{ //Subevents
-gdjs.BicaCode.eventsList1(runtimeScene);} //End of subevents
-}
 
 }
 
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("no"), gdjs.BicaCode.GDnoObjects1);
 
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.BicaCode.GDnoObjects1.length;i<l;++i) {
-    if ( gdjs.BicaCode.GDnoObjects1[i].isVisible() ) {
-        isConditionTrue_0 = true;
-        gdjs.BicaCode.GDnoObjects1[k] = gdjs.BicaCode.GDnoObjects1[i];
-        ++k;
-    }
-}
-gdjs.BicaCode.GDnoObjects1.length = k;
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.BicaCode.GDnoObjects1.length;i<l;++i) {
-    if ( gdjs.BicaCode.GDnoObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
-        isConditionTrue_0 = true;
-        gdjs.BicaCode.GDnoObjects1[k] = gdjs.BicaCode.GDnoObjects1[i];
-        ++k;
-    }
-}
-gdjs.BicaCode.GDnoObjects1.length = k;
-}
-if (isConditionTrue_0) {
-/* Reuse gdjs.BicaCode.GDnoObjects1 */
-gdjs.copyArray(runtimeScene.getObjects("task_confirmation"), gdjs.BicaCode.GDtask_95confirmationObjects1);
-gdjs.copyArray(runtimeScene.getObjects("yes"), gdjs.BicaCode.GDyesObjects1);
-{for(var i = 0, len = gdjs.BicaCode.GDnoObjects1.length ;i < len;++i) {
-    gdjs.BicaCode.GDnoObjects1[i].hide();
-}
-}{for(var i = 0, len = gdjs.BicaCode.GDyesObjects1.length ;i < len;++i) {
-    gdjs.BicaCode.GDyesObjects1[i].hide();
-}
-}{for(var i = 0, len = gdjs.BicaCode.GDtask_95confirmationObjects1.length ;i < len;++i) {
-    gdjs.BicaCode.GDtask_95confirmationObjects1[i].hide();
-}
-}
-{ //Subevents
-gdjs.BicaCode.eventsList2(runtimeScene);} //End of subevents
-}
+gdjs.Percurso_32BicaCode.userFunc0xb5d558(runtimeScene);
 
 }
 
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("yes"), gdjs.BicaCode.GDyesObjects1);
+
+gdjs.Percurso_32BicaCode.userFunc0xb5d600(runtimeScene);
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Desvio"), gdjs.Percurso_32BicaCode.GDDesvioObjects1);
+gdjs.Percurso_32BicaCode.GDgmapsObjects1.length = 0;
+
+gdjs.Percurso_32BicaCode.GDpercursoObjects1.length = 0;
+
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.BicaCode.GDyesObjects1.length;i<l;++i) {
-    if ( gdjs.BicaCode.GDyesObjects1[i].isVisible() ) {
+for (var i = 0, k = 0, l = gdjs.Percurso_32BicaCode.GDDesvioObjects1.length;i<l;++i) {
+    if ( !(gdjs.Percurso_32BicaCode.GDDesvioObjects1[i].isVisible()) ) {
         isConditionTrue_0 = true;
-        gdjs.BicaCode.GDyesObjects1[k] = gdjs.BicaCode.GDyesObjects1[i];
+        gdjs.Percurso_32BicaCode.GDDesvioObjects1[k] = gdjs.Percurso_32BicaCode.GDDesvioObjects1[i];
         ++k;
     }
 }
-gdjs.BicaCode.GDyesObjects1.length = k;
+gdjs.Percurso_32BicaCode.GDDesvioObjects1.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.BicaCode.GDyesObjects1.length;i<l;++i) {
-    if ( gdjs.BicaCode.GDyesObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
-        isConditionTrue_0 = true;
-        gdjs.BicaCode.GDyesObjects1[k] = gdjs.BicaCode.GDyesObjects1[i];
+{gdjs.Percurso_32BicaCode.GDgmapsObjects1_1final.length = 0;
+gdjs.Percurso_32BicaCode.GDpercursoObjects1_1final.length = 0;
+let isConditionTrue_1 = false;
+isConditionTrue_0 = false;
+{
+gdjs.copyArray(runtimeScene.getObjects("gmaps"), gdjs.Percurso_32BicaCode.GDgmapsObjects2);
+gdjs.copyArray(runtimeScene.getObjects("percurso"), gdjs.Percurso_32BicaCode.GDpercursoObjects2);
+{let isConditionTrue_2 = false;
+isConditionTrue_2 = false;
+for (var i = 0, k = 0, l = gdjs.Percurso_32BicaCode.GDgmapsObjects2.length;i<l;++i) {
+    if ( !(gdjs.Percurso_32BicaCode.GDgmapsObjects2[i].isVisible()) ) {
+        isConditionTrue_2 = true;
+        gdjs.Percurso_32BicaCode.GDgmapsObjects2[k] = gdjs.Percurso_32BicaCode.GDgmapsObjects2[i];
         ++k;
     }
 }
-gdjs.BicaCode.GDyesObjects1.length = k;
+gdjs.Percurso_32BicaCode.GDgmapsObjects2.length = k;
+if (isConditionTrue_2) {
+isConditionTrue_2 = false;
+isConditionTrue_2 = gdjs.evtTools.input.cursorOnObject(gdjs.Percurso_32BicaCode.mapOfGDgdjs_46Percurso_9532BicaCode_46GDpercursoObjects2Objects, runtimeScene, true, false);
+if (isConditionTrue_2) {
+isConditionTrue_2 = false;
+isConditionTrue_2 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
+}
+}
+isConditionTrue_1 = isConditionTrue_2;
+}
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+    for (let j = 0, jLen = gdjs.Percurso_32BicaCode.GDgmapsObjects2.length; j < jLen ; ++j) {
+        if ( gdjs.Percurso_32BicaCode.GDgmapsObjects1_1final.indexOf(gdjs.Percurso_32BicaCode.GDgmapsObjects2[j]) === -1 )
+            gdjs.Percurso_32BicaCode.GDgmapsObjects1_1final.push(gdjs.Percurso_32BicaCode.GDgmapsObjects2[j]);
+    }
+    for (let j = 0, jLen = gdjs.Percurso_32BicaCode.GDpercursoObjects2.length; j < jLen ; ++j) {
+        if ( gdjs.Percurso_32BicaCode.GDpercursoObjects1_1final.indexOf(gdjs.Percurso_32BicaCode.GDpercursoObjects2[j]) === -1 )
+            gdjs.Percurso_32BicaCode.GDpercursoObjects1_1final.push(gdjs.Percurso_32BicaCode.GDpercursoObjects2[j]);
+    }
+}
+}
+{
+isConditionTrue_1 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "maps") >= 3;
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+}
+}
+{
+gdjs.copyArray(gdjs.Percurso_32BicaCode.GDgmapsObjects1_1final, gdjs.Percurso_32BicaCode.GDgmapsObjects1);
+gdjs.copyArray(gdjs.Percurso_32BicaCode.GDpercursoObjects1_1final, gdjs.Percurso_32BicaCode.GDpercursoObjects1);
+}
+}
 }
 if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.unpauseTimer(runtimeScene, "next scene");
-}
-{ //Subevents
-gdjs.BicaCode.eventsList3(runtimeScene);} //End of subevents
-}
+{gdjs.evtTools.runtimeScene.unpauseTimer(runtimeScene, "maps2");
+}}
 
 }
 
@@ -373,13 +598,164 @@ gdjs.BicaCode.eventsList3(runtimeScene);} //End of subevents
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "next scene") >= 0.5;
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "maps2") >= 0.1;
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("gmaps"), gdjs.Percurso_32BicaCode.GDgmapsObjects1);
+gdjs.copyArray(runtimeScene.getObjects("no"), gdjs.Percurso_32BicaCode.GDnoObjects1);
+gdjs.copyArray(runtimeScene.getObjects("yes"), gdjs.Percurso_32BicaCode.GDyesObjects1);
+{for(var i = 0, len = gdjs.Percurso_32BicaCode.GDnoObjects1.length ;i < len;++i) {
+    gdjs.Percurso_32BicaCode.GDnoObjects1[i].hide(false);
+}
+}{for(var i = 0, len = gdjs.Percurso_32BicaCode.GDyesObjects1.length ;i < len;++i) {
+    gdjs.Percurso_32BicaCode.GDyesObjects1[i].hide(false);
+}
+}{for(var i = 0, len = gdjs.Percurso_32BicaCode.GDgmapsObjects1.length ;i < len;++i) {
+    gdjs.Percurso_32BicaCode.GDgmapsObjects1[i].hide(false);
+}
+}
+{ //Subevents
+gdjs.Percurso_32BicaCode.eventsList1(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("no"), gdjs.Percurso_32BicaCode.GDnoObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.Percurso_32BicaCode.GDnoObjects1.length;i<l;++i) {
+    if ( gdjs.Percurso_32BicaCode.GDnoObjects1[i].isVisible() ) {
+        isConditionTrue_0 = true;
+        gdjs.Percurso_32BicaCode.GDnoObjects1[k] = gdjs.Percurso_32BicaCode.GDnoObjects1[i];
+        ++k;
+    }
+}
+gdjs.Percurso_32BicaCode.GDnoObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.Percurso_32BicaCode.GDnoObjects1.length;i<l;++i) {
+    if ( gdjs.Percurso_32BicaCode.GDnoObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+        isConditionTrue_0 = true;
+        gdjs.Percurso_32BicaCode.GDnoObjects1[k] = gdjs.Percurso_32BicaCode.GDnoObjects1[i];
+        ++k;
+    }
+}
+gdjs.Percurso_32BicaCode.GDnoObjects1.length = k;
+}
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "maps");
+}{gdjs.evtTools.runtimeScene.pauseTimer(runtimeScene, "maps");
+}{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "maps2");
+}{gdjs.evtTools.runtimeScene.pauseTimer(runtimeScene, "maps2");
+}
+{ //Subevents
+gdjs.Percurso_32BicaCode.eventsList2(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("yes"), gdjs.Percurso_32BicaCode.GDyesObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.Percurso_32BicaCode.GDyesObjects1.length;i<l;++i) {
+    if ( gdjs.Percurso_32BicaCode.GDyesObjects1[i].isVisible() ) {
+        isConditionTrue_0 = true;
+        gdjs.Percurso_32BicaCode.GDyesObjects1[k] = gdjs.Percurso_32BicaCode.GDyesObjects1[i];
+        ++k;
+    }
+}
+gdjs.Percurso_32BicaCode.GDyesObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.Percurso_32BicaCode.GDyesObjects1.length;i<l;++i) {
+    if ( gdjs.Percurso_32BicaCode.GDyesObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+        isConditionTrue_0 = true;
+        gdjs.Percurso_32BicaCode.GDyesObjects1[k] = gdjs.Percurso_32BicaCode.GDyesObjects1[i];
+        ++k;
+    }
+}
+gdjs.Percurso_32BicaCode.GDyesObjects1.length = k;
+}
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "maps");
+}{gdjs.evtTools.runtimeScene.pauseTimer(runtimeScene, "maps");
+}{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "maps2");
+}{gdjs.evtTools.runtimeScene.pauseTimer(runtimeScene, "maps2");
+}
+{ //Subevents
+gdjs.Percurso_32BicaCode.eventsList3(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+gdjs.Percurso_32BicaCode.GDGMObjects1.length = 0;
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{gdjs.Percurso_32BicaCode.GDGMObjects1_1final.length = 0;
+let isConditionTrue_1 = false;
+isConditionTrue_0 = false;
+{
+{let isConditionTrue_2 = false;
+isConditionTrue_2 = false;
+isConditionTrue_2 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("Latitude")) > gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("latinf"));
+if (isConditionTrue_2) {
+isConditionTrue_2 = false;
+isConditionTrue_2 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("Latitude")) < gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("latsup"));
+if (isConditionTrue_2) {
+isConditionTrue_2 = false;
+isConditionTrue_2 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("Longitude")) < gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("longsup"));
+if (isConditionTrue_2) {
+isConditionTrue_2 = false;
+isConditionTrue_2 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("Longitude")) > gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("longinf"));
+}
+}
+}
+isConditionTrue_1 = isConditionTrue_2;
+}
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+}
+}
+{
+gdjs.copyArray(runtimeScene.getObjects("GM"), gdjs.Percurso_32BicaCode.GDGMObjects2);
+for (var i = 0, k = 0, l = gdjs.Percurso_32BicaCode.GDGMObjects2.length;i<l;++i) {
+    if ( gdjs.Percurso_32BicaCode.GDGMObjects2[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+        isConditionTrue_1 = true;
+        gdjs.Percurso_32BicaCode.GDGMObjects2[k] = gdjs.Percurso_32BicaCode.GDGMObjects2[i];
+        ++k;
+    }
+}
+gdjs.Percurso_32BicaCode.GDGMObjects2.length = k;
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+    for (let j = 0, jLen = gdjs.Percurso_32BicaCode.GDGMObjects2.length; j < jLen ; ++j) {
+        if ( gdjs.Percurso_32BicaCode.GDGMObjects1_1final.indexOf(gdjs.Percurso_32BicaCode.GDGMObjects2[j]) === -1 )
+            gdjs.Percurso_32BicaCode.GDGMObjects1_1final.push(gdjs.Percurso_32BicaCode.GDGMObjects2[j]);
+    }
+}
+}
+{
+gdjs.copyArray(gdjs.Percurso_32BicaCode.GDGMObjects1_1final, gdjs.Percurso_32BicaCode.GDGMObjects1);
+}
+}
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(1).add(10);
 }{gdjs.evtTools.leaderboards.savePlayerScore(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(3)), gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(1)), gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(0)));
 }
 { //Subevents
-gdjs.BicaCode.eventsList4(runtimeScene);} //End of subevents
+gdjs.Percurso_32BicaCode.eventsList4(runtimeScene);} //End of subevents
 }
 
 }
@@ -389,7 +765,12 @@ gdjs.BicaCode.eventsList4(runtimeScene);} //End of subevents
 
 
 let isConditionTrue_0 = false;
-{
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(0)) == "GALO DE BARCELOS";
+if (isConditionTrue_0) {
+
+{ //Subevents
+gdjs.Percurso_32BicaCode.eventsList6(runtimeScene);} //End of subevents
 }
 
 }
@@ -397,47 +778,47 @@ let isConditionTrue_0 = false;
 
 };
 
-gdjs.BicaCode.func = function(runtimeScene) {
+gdjs.Percurso_32BicaCode.func = function(runtimeScene) {
 runtimeScene.getOnceTriggers().startNewFrame();
 
-gdjs.BicaCode.GDscoreObjects1.length = 0;
-gdjs.BicaCode.GDscoreObjects2.length = 0;
-gdjs.BicaCode.GDscoreObjects3.length = 0;
-gdjs.BicaCode.GDnext_95sceneObjects1.length = 0;
-gdjs.BicaCode.GDnext_95sceneObjects2.length = 0;
-gdjs.BicaCode.GDnext_95sceneObjects3.length = 0;
-gdjs.BicaCode.GDURLObjects1.length = 0;
-gdjs.BicaCode.GDURLObjects2.length = 0;
-gdjs.BicaCode.GDURLObjects3.length = 0;
-gdjs.BicaCode.GDURLdesvioObjects1.length = 0;
-gdjs.BicaCode.GDURLdesvioObjects2.length = 0;
-gdjs.BicaCode.GDURLdesvioObjects3.length = 0;
-gdjs.BicaCode.GDDesvioObjects1.length = 0;
-gdjs.BicaCode.GDDesvioObjects2.length = 0;
-gdjs.BicaCode.GDDesvioObjects3.length = 0;
-gdjs.BicaCode.GDokdesvioObjects1.length = 0;
-gdjs.BicaCode.GDokdesvioObjects2.length = 0;
-gdjs.BicaCode.GDokdesvioObjects3.length = 0;
-gdjs.BicaCode.GDprox_95localObjects1.length = 0;
-gdjs.BicaCode.GDprox_95localObjects2.length = 0;
-gdjs.BicaCode.GDprox_95localObjects3.length = 0;
-gdjs.BicaCode.GDnoObjects1.length = 0;
-gdjs.BicaCode.GDnoObjects2.length = 0;
-gdjs.BicaCode.GDnoObjects3.length = 0;
-gdjs.BicaCode.GDyesObjects1.length = 0;
-gdjs.BicaCode.GDyesObjects2.length = 0;
-gdjs.BicaCode.GDyesObjects3.length = 0;
-gdjs.BicaCode.GDfundoObjects1.length = 0;
-gdjs.BicaCode.GDfundoObjects2.length = 0;
-gdjs.BicaCode.GDfundoObjects3.length = 0;
-gdjs.BicaCode.GDtask_95confirmationObjects1.length = 0;
-gdjs.BicaCode.GDtask_95confirmationObjects2.length = 0;
-gdjs.BicaCode.GDtask_95confirmationObjects3.length = 0;
+gdjs.Percurso_32BicaCode.GDscoreObjects1.length = 0;
+gdjs.Percurso_32BicaCode.GDscoreObjects2.length = 0;
+gdjs.Percurso_32BicaCode.GDscoreObjects3.length = 0;
+gdjs.Percurso_32BicaCode.GDnext_95sceneObjects1.length = 0;
+gdjs.Percurso_32BicaCode.GDnext_95sceneObjects2.length = 0;
+gdjs.Percurso_32BicaCode.GDnext_95sceneObjects3.length = 0;
+gdjs.Percurso_32BicaCode.GDURLObjects1.length = 0;
+gdjs.Percurso_32BicaCode.GDURLObjects2.length = 0;
+gdjs.Percurso_32BicaCode.GDURLObjects3.length = 0;
+gdjs.Percurso_32BicaCode.GDURLdesvioObjects1.length = 0;
+gdjs.Percurso_32BicaCode.GDURLdesvioObjects2.length = 0;
+gdjs.Percurso_32BicaCode.GDURLdesvioObjects3.length = 0;
+gdjs.Percurso_32BicaCode.GDDesvioObjects1.length = 0;
+gdjs.Percurso_32BicaCode.GDDesvioObjects2.length = 0;
+gdjs.Percurso_32BicaCode.GDDesvioObjects3.length = 0;
+gdjs.Percurso_32BicaCode.GDokdesvioObjects1.length = 0;
+gdjs.Percurso_32BicaCode.GDokdesvioObjects2.length = 0;
+gdjs.Percurso_32BicaCode.GDokdesvioObjects3.length = 0;
+gdjs.Percurso_32BicaCode.GDnoObjects1.length = 0;
+gdjs.Percurso_32BicaCode.GDnoObjects2.length = 0;
+gdjs.Percurso_32BicaCode.GDnoObjects3.length = 0;
+gdjs.Percurso_32BicaCode.GDyesObjects1.length = 0;
+gdjs.Percurso_32BicaCode.GDyesObjects2.length = 0;
+gdjs.Percurso_32BicaCode.GDyesObjects3.length = 0;
+gdjs.Percurso_32BicaCode.GDpercursoObjects1.length = 0;
+gdjs.Percurso_32BicaCode.GDpercursoObjects2.length = 0;
+gdjs.Percurso_32BicaCode.GDpercursoObjects3.length = 0;
+gdjs.Percurso_32BicaCode.GDgmapsObjects1.length = 0;
+gdjs.Percurso_32BicaCode.GDgmapsObjects2.length = 0;
+gdjs.Percurso_32BicaCode.GDgmapsObjects3.length = 0;
+gdjs.Percurso_32BicaCode.GDGMObjects1.length = 0;
+gdjs.Percurso_32BicaCode.GDGMObjects2.length = 0;
+gdjs.Percurso_32BicaCode.GDGMObjects3.length = 0;
 
-gdjs.BicaCode.eventsList5(runtimeScene);
+gdjs.Percurso_32BicaCode.eventsList7(runtimeScene);
 
 return;
 
 }
 
-gdjs['BicaCode'] = gdjs.BicaCode;
+gdjs['Percurso_32BicaCode'] = gdjs.Percurso_32BicaCode;
