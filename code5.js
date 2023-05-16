@@ -8,15 +8,6 @@ gdjs.S_46_32Roque_32EntradaCode.GDnext_95sceneObjects3= [];
 gdjs.S_46_32Roque_32EntradaCode.GDURLObjects1= [];
 gdjs.S_46_32Roque_32EntradaCode.GDURLObjects2= [];
 gdjs.S_46_32Roque_32EntradaCode.GDURLObjects3= [];
-gdjs.S_46_32Roque_32EntradaCode.GDURLdesvioObjects1= [];
-gdjs.S_46_32Roque_32EntradaCode.GDURLdesvioObjects2= [];
-gdjs.S_46_32Roque_32EntradaCode.GDURLdesvioObjects3= [];
-gdjs.S_46_32Roque_32EntradaCode.GDDesvioObjects1= [];
-gdjs.S_46_32Roque_32EntradaCode.GDDesvioObjects2= [];
-gdjs.S_46_32Roque_32EntradaCode.GDDesvioObjects3= [];
-gdjs.S_46_32Roque_32EntradaCode.GDokdesvioObjects1= [];
-gdjs.S_46_32Roque_32EntradaCode.GDokdesvioObjects2= [];
-gdjs.S_46_32Roque_32EntradaCode.GDokdesvioObjects3= [];
 gdjs.S_46_32Roque_32EntradaCode.GDokObjects1= [];
 gdjs.S_46_32Roque_32EntradaCode.GDokObjects2= [];
 gdjs.S_46_32Roque_32EntradaCode.GDokObjects3= [];
@@ -42,6 +33,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.firebaseTools.firestore.writeField("Users", gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Progress", gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2))), runtimeScene.getScene().getVariables().get("error"), true);
+}{gdjs.evtTools.firebaseTools.firestore.writeField("Users", gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Track", gdjs.evtTools.runtimeScene.getSceneName(runtimeScene), runtimeScene.getScene().getVariables().get("error"), true);
 }}
 
 }
@@ -566,7 +558,7 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "next scene") >= 0.5;
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(1).add(10);
+{runtimeScene.getGame().getVariables().getFromIndex(1).add(2);
 }{gdjs.evtTools.leaderboards.savePlayerScore(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(3)), gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(1)), gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(0)));
 }
 { //Subevents
@@ -590,15 +582,6 @@ gdjs.S_46_32Roque_32EntradaCode.GDnext_95sceneObjects3.length = 0;
 gdjs.S_46_32Roque_32EntradaCode.GDURLObjects1.length = 0;
 gdjs.S_46_32Roque_32EntradaCode.GDURLObjects2.length = 0;
 gdjs.S_46_32Roque_32EntradaCode.GDURLObjects3.length = 0;
-gdjs.S_46_32Roque_32EntradaCode.GDURLdesvioObjects1.length = 0;
-gdjs.S_46_32Roque_32EntradaCode.GDURLdesvioObjects2.length = 0;
-gdjs.S_46_32Roque_32EntradaCode.GDURLdesvioObjects3.length = 0;
-gdjs.S_46_32Roque_32EntradaCode.GDDesvioObjects1.length = 0;
-gdjs.S_46_32Roque_32EntradaCode.GDDesvioObjects2.length = 0;
-gdjs.S_46_32Roque_32EntradaCode.GDDesvioObjects3.length = 0;
-gdjs.S_46_32Roque_32EntradaCode.GDokdesvioObjects1.length = 0;
-gdjs.S_46_32Roque_32EntradaCode.GDokdesvioObjects2.length = 0;
-gdjs.S_46_32Roque_32EntradaCode.GDokdesvioObjects3.length = 0;
 gdjs.S_46_32Roque_32EntradaCode.GDokObjects1.length = 0;
 gdjs.S_46_32Roque_32EntradaCode.GDokObjects2.length = 0;
 gdjs.S_46_32Roque_32EntradaCode.GDokObjects3.length = 0;

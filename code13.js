@@ -8,15 +8,6 @@ gdjs.Brasileira_32FimCode.GDnext_95sceneObjects3= [];
 gdjs.Brasileira_32FimCode.GDURLObjects1= [];
 gdjs.Brasileira_32FimCode.GDURLObjects2= [];
 gdjs.Brasileira_32FimCode.GDURLObjects3= [];
-gdjs.Brasileira_32FimCode.GDURLdesvioObjects1= [];
-gdjs.Brasileira_32FimCode.GDURLdesvioObjects2= [];
-gdjs.Brasileira_32FimCode.GDURLdesvioObjects3= [];
-gdjs.Brasileira_32FimCode.GDDesvioObjects1= [];
-gdjs.Brasileira_32FimCode.GDDesvioObjects2= [];
-gdjs.Brasileira_32FimCode.GDDesvioObjects3= [];
-gdjs.Brasileira_32FimCode.GDokdesvioObjects1= [];
-gdjs.Brasileira_32FimCode.GDokdesvioObjects2= [];
-gdjs.Brasileira_32FimCode.GDokdesvioObjects3= [];
 gdjs.Brasileira_32FimCode.GDprox_95localObjects1= [];
 gdjs.Brasileira_32FimCode.GDprox_95localObjects2= [];
 gdjs.Brasileira_32FimCode.GDprox_95localObjects3= [];
@@ -45,6 +36,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.firebaseTools.firestore.writeField("Users", gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Progress", gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2))), runtimeScene.getScene().getVariables().get("error"), true);
+}{gdjs.evtTools.firebaseTools.firestore.writeField("Users", gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Track", gdjs.evtTools.runtimeScene.getSceneName(runtimeScene), runtimeScene.getScene().getVariables().get("error"), true);
 }}
 
 }
@@ -375,21 +367,11 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "next scene") >= 0.5;
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(1).add(10);
+{runtimeScene.getGame().getVariables().getFromIndex(1).add(2);
 }{gdjs.evtTools.leaderboards.savePlayerScore(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(3)), gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(1)), gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(0)));
 }
 { //Subevents
 gdjs.Brasileira_32FimCode.eventsList4(runtimeScene);} //End of subevents
-}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-{
 }
 
 }
@@ -409,15 +391,6 @@ gdjs.Brasileira_32FimCode.GDnext_95sceneObjects3.length = 0;
 gdjs.Brasileira_32FimCode.GDURLObjects1.length = 0;
 gdjs.Brasileira_32FimCode.GDURLObjects2.length = 0;
 gdjs.Brasileira_32FimCode.GDURLObjects3.length = 0;
-gdjs.Brasileira_32FimCode.GDURLdesvioObjects1.length = 0;
-gdjs.Brasileira_32FimCode.GDURLdesvioObjects2.length = 0;
-gdjs.Brasileira_32FimCode.GDURLdesvioObjects3.length = 0;
-gdjs.Brasileira_32FimCode.GDDesvioObjects1.length = 0;
-gdjs.Brasileira_32FimCode.GDDesvioObjects2.length = 0;
-gdjs.Brasileira_32FimCode.GDDesvioObjects3.length = 0;
-gdjs.Brasileira_32FimCode.GDokdesvioObjects1.length = 0;
-gdjs.Brasileira_32FimCode.GDokdesvioObjects2.length = 0;
-gdjs.Brasileira_32FimCode.GDokdesvioObjects3.length = 0;
 gdjs.Brasileira_32FimCode.GDprox_95localObjects1.length = 0;
 gdjs.Brasileira_32FimCode.GDprox_95localObjects2.length = 0;
 gdjs.Brasileira_32FimCode.GDprox_95localObjects3.length = 0;

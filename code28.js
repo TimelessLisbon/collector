@@ -1,84 +1,187 @@
-gdjs.CoordenadasCode = {};
-gdjs.CoordenadasCode.GDscoreObjects1= [];
-gdjs.CoordenadasCode.GDscoreObjects2= [];
-gdjs.CoordenadasCode.GDnext_95sceneObjects1= [];
-gdjs.CoordenadasCode.GDnext_95sceneObjects2= [];
-gdjs.CoordenadasCode.GDURLObjects1= [];
-gdjs.CoordenadasCode.GDURLObjects2= [];
-gdjs.CoordenadasCode.GDURLdesvioObjects1= [];
-gdjs.CoordenadasCode.GDURLdesvioObjects2= [];
-gdjs.CoordenadasCode.GDDesvioObjects1= [];
-gdjs.CoordenadasCode.GDDesvioObjects2= [];
-gdjs.CoordenadasCode.GDokdesvioObjects1= [];
-gdjs.CoordenadasCode.GDokdesvioObjects2= [];
-gdjs.CoordenadasCode.GDlatitudeObjects1= [];
-gdjs.CoordenadasCode.GDlatitudeObjects2= [];
-gdjs.CoordenadasCode.GDlongitudeObjects1= [];
-gdjs.CoordenadasCode.GDlongitudeObjects2= [];
+gdjs.DesvioCode = {};
+gdjs.DesvioCode.GDscoreObjects1= [];
+gdjs.DesvioCode.GDscoreObjects2= [];
+gdjs.DesvioCode.GDscoreObjects3= [];
+gdjs.DesvioCode.GDnext_95sceneObjects1= [];
+gdjs.DesvioCode.GDnext_95sceneObjects2= [];
+gdjs.DesvioCode.GDnext_95sceneObjects3= [];
+gdjs.DesvioCode.GDURLObjects1= [];
+gdjs.DesvioCode.GDURLObjects2= [];
+gdjs.DesvioCode.GDURLObjects3= [];
+gdjs.DesvioCode.GDprox_95localObjects1= [];
+gdjs.DesvioCode.GDprox_95localObjects2= [];
+gdjs.DesvioCode.GDprox_95localObjects3= [];
+gdjs.DesvioCode.GDnoObjects1= [];
+gdjs.DesvioCode.GDnoObjects2= [];
+gdjs.DesvioCode.GDnoObjects3= [];
+gdjs.DesvioCode.GDokdesvioObjects1= [];
+gdjs.DesvioCode.GDokdesvioObjects2= [];
+gdjs.DesvioCode.GDokdesvioObjects3= [];
+gdjs.DesvioCode.GDyesObjects1= [];
+gdjs.DesvioCode.GDyesObjects2= [];
+gdjs.DesvioCode.GDyesObjects3= [];
+gdjs.DesvioCode.GDtask_95confirmationObjects1= [];
+gdjs.DesvioCode.GDtask_95confirmationObjects2= [];
+gdjs.DesvioCode.GDtask_95confirmationObjects3= [];
+gdjs.DesvioCode.GDfundoObjects1= [];
+gdjs.DesvioCode.GDfundoObjects2= [];
+gdjs.DesvioCode.GDfundoObjects3= [];
 
 
-gdjs.CoordenadasCode.userFunc0x9068a0 = function(runtimeScene) {
-"use strict";
-var myVar = runtimeScene.getVariables().get("Longitude");
-function geoFindMe() {
-    function success(position) {
-        const latitude = position.coords.latitude;
-        const longitude = position.coords.longitude;
+gdjs.DesvioCode.eventsList0 = function(runtimeScene) {
 
-        myVar.setNumber(`${longitude}`);
-    }
+{
 
-    function error(error) {
-        myVar.setString("unable to retrieve your location" + error.code + error.message);
-    }
 
-    if (!navigator.geolocation) {
-        myVar.setString('Geolocation is not supported by your browser');
-    } else {
-        navigator.geolocation.getCurrentPosition(success, error);
-    }
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13088428);
+}
+if (isConditionTrue_0) {
+{gdjs.evtTools.firebaseTools.firestore.writeField("Users", gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Track", gdjs.evtTools.runtimeScene.getSceneName(runtimeScene), runtimeScene.getScene().getVariables().get("error"), true);
+}}
 
 }
-geoFindMe();
-};
-gdjs.CoordenadasCode.userFunc0x9016b8 = function(runtimeScene) {
-"use strict";
-var myVar = runtimeScene.getVariables().get("Latitude");
-function geoFindMe() {
-    function success(position) {
-        const latitude = position.coords.latitude;
-        const longitude = position.coords.longitude;
 
-        myVar.setNumber(`${latitude}`);
-    }
 
-    function error(error) {
-        myVar.setString("unable to retrieve your location" + error.code + error.message);
-    }
+{
 
-    if (!navigator.geolocation) {
-        myVar.setString('Geolocation is not supported by your browser');
-    } else {
-        navigator.geolocation.getCurrentPosition(success, error);
-    }
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13089076);
+}
+if (isConditionTrue_0) {
+{gdjs.evtTools.sound.playSound(runtimeScene, "click-21156.mp3", false, 0, 1);
+}{gdjs.evtTools.sound.playSound(runtimeScene, "correct-2-46134.mp3", false, 0, 1);
+}}
 
 }
-geoFindMe();
-};
-gdjs.CoordenadasCode.eventsList0 = function(runtimeScene) {
+
+
+};gdjs.DesvioCode.eventsList1 = function(runtimeScene) {
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13085580);
+}
+if (isConditionTrue_0) {
+{gdjs.evtTools.sound.playSound(runtimeScene, "click-21156.mp3", false, 100, 1);
+}}
+
+}
+
+
+};gdjs.DesvioCode.eventsList2 = function(runtimeScene) {
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13084332);
+}
+if (isConditionTrue_0) {
+{gdjs.evtTools.sound.playSound(runtimeScene, "click-21156.mp3", false, 100, 1);
+}}
+
+}
+
+
+};gdjs.DesvioCode.eventsList3 = function(runtimeScene) {
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13083084);
+}
+if (isConditionTrue_0) {
+{gdjs.evtTools.sound.playSound(runtimeScene, "click-21156.mp3", false, 100, 1);
+}}
+
+}
+
+
+};gdjs.DesvioCode.eventsList4 = function(runtimeScene) {
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13081468);
+}
+if (isConditionTrue_0) {
+{gdjs.evtTools.firebaseTools.firestore.writeField("Users", gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Score", gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(1))), runtimeScene.getScene().getVariables().get("error"), true);
+}{gdjs.evtTools.sound.playSound(runtimeScene, "correct-2-46134.mp3", false, 100, 1);
+}}
+
+}
+
 
 {
 
 
 let isConditionTrue_0 = false;
 {
-gdjs.copyArray(runtimeScene.getObjects("latitude"), gdjs.CoordenadasCode.GDlatitudeObjects1);
-gdjs.copyArray(runtimeScene.getObjects("longitude"), gdjs.CoordenadasCode.GDlongitudeObjects1);
-{for(var i = 0, len = gdjs.CoordenadasCode.GDlatitudeObjects1.length ;i < len;++i) {
-    gdjs.CoordenadasCode.GDlatitudeObjects1[i].setX((gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) - (gdjs.CoordenadasCode.GDlatitudeObjects1[i].getWidth())) / 2);
+{runtimeScene.getGame().getVariables().get("desviodone").setNumber(1);
+}{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "next scene");
+}{gdjs.evtTools.runtimeScene.pauseTimer(runtimeScene, "next scene");
+}{gdjs.evtTools.runtimeScene.popScene(runtimeScene);
+}}
+
 }
-}{for(var i = 0, len = gdjs.CoordenadasCode.GDlongitudeObjects1.length ;i < len;++i) {
-    gdjs.CoordenadasCode.GDlongitudeObjects1[i].setX((gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) - (gdjs.CoordenadasCode.GDlongitudeObjects1[i].getWidth())) / 2);
+
+
+};gdjs.DesvioCode.eventsList5 = function(runtimeScene) {
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("next_scene"), gdjs.DesvioCode.GDnext_95sceneObjects1);
+gdjs.copyArray(runtimeScene.getObjects("no"), gdjs.DesvioCode.GDnoObjects1);
+gdjs.copyArray(runtimeScene.getObjects("task_confirmation"), gdjs.DesvioCode.GDtask_95confirmationObjects1);
+gdjs.copyArray(runtimeScene.getObjects("yes"), gdjs.DesvioCode.GDyesObjects1);
+{for(var i = 0, len = gdjs.DesvioCode.GDnoObjects1.length ;i < len;++i) {
+    gdjs.DesvioCode.GDnoObjects1[i].hide();
+}
+}{for(var i = 0, len = gdjs.DesvioCode.GDyesObjects1.length ;i < len;++i) {
+    gdjs.DesvioCode.GDyesObjects1[i].hide();
+}
+}{for(var i = 0, len = gdjs.DesvioCode.GDtask_95confirmationObjects1.length ;i < len;++i) {
+    gdjs.DesvioCode.GDtask_95confirmationObjects1[i].hide();
+}
+}{for(var i = 0, len = gdjs.DesvioCode.GDnext_95sceneObjects1.length ;i < len;++i) {
+    gdjs.DesvioCode.GDnext_95sceneObjects1[i].hide();
+}
+}{gdjs.evtTools.runtimeScene.pauseTimer(runtimeScene, "next scene");
+}
+{ //Subevents
+gdjs.DesvioCode.eventsList0(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(1)) >= 100;
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("score"), gdjs.DesvioCode.GDscoreObjects1);
+{for(var i = 0, len = gdjs.DesvioCode.GDscoreObjects1.length ;i < len;++i) {
+    gdjs.DesvioCode.GDscoreObjects1[i].setString(gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(1)));
 }
 }}
 
@@ -88,22 +191,19 @@ gdjs.copyArray(runtimeScene.getObjects("longitude"), gdjs.CoordenadasCode.GDlong
 {
 
 
-
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(1)) >= 10;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(1)) < 100;
 }
-
-
-{
-
-
-gdjs.CoordenadasCode.userFunc0x9068a0(runtimeScene);
-
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("score"), gdjs.DesvioCode.GDscoreObjects1);
+{for(var i = 0, len = gdjs.DesvioCode.GDscoreObjects1.length ;i < len;++i) {
+    gdjs.DesvioCode.GDscoreObjects1[i].setString("0" + gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(1)));
 }
-
-
-{
-
-
-gdjs.CoordenadasCode.userFunc0x9016b8(runtimeScene);
+}}
 
 }
 
@@ -112,46 +212,209 @@ gdjs.CoordenadasCode.userFunc0x9016b8(runtimeScene);
 
 
 let isConditionTrue_0 = false;
-{
-gdjs.copyArray(runtimeScene.getObjects("latitude"), gdjs.CoordenadasCode.GDlatitudeObjects1);
-gdjs.copyArray(runtimeScene.getObjects("longitude"), gdjs.CoordenadasCode.GDlongitudeObjects1);
-{for(var i = 0, len = gdjs.CoordenadasCode.GDlatitudeObjects1.length ;i < len;++i) {
-    gdjs.CoordenadasCode.GDlatitudeObjects1[i].setString("LATITUDE: " + gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().get("Latitude")));
-}
-}{for(var i = 0, len = gdjs.CoordenadasCode.GDlongitudeObjects1.length ;i < len;++i) {
-    gdjs.CoordenadasCode.GDlongitudeObjects1[i].setString("LONGITUDE: " + gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().get("Longitude")));
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(1)) < 10;
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("score"), gdjs.DesvioCode.GDscoreObjects1);
+{for(var i = 0, len = gdjs.DesvioCode.GDscoreObjects1.length ;i < len;++i) {
+    gdjs.DesvioCode.GDscoreObjects1[i].setString("00" + gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(1)));
 }
 }}
 
 }
 
 
+{
+
+gdjs.copyArray(runtimeScene.getObjects("okdesvio"), gdjs.DesvioCode.GDokdesvioObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.DesvioCode.GDokdesvioObjects1.length;i<l;++i) {
+    if ( gdjs.DesvioCode.GDokdesvioObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+        isConditionTrue_0 = true;
+        gdjs.DesvioCode.GDokdesvioObjects1[k] = gdjs.DesvioCode.GDokdesvioObjects1[i];
+        ++k;
+    }
+}
+gdjs.DesvioCode.GDokdesvioObjects1.length = k;
+if (isConditionTrue_0) {
+{gdjs.evtTools.window.openURL(gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(6)), runtimeScene);
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("prox_local"), gdjs.DesvioCode.GDprox_95localObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.DesvioCode.GDprox_95localObjects1.length;i<l;++i) {
+    if ( gdjs.DesvioCode.GDprox_95localObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+        isConditionTrue_0 = true;
+        gdjs.DesvioCode.GDprox_95localObjects1[k] = gdjs.DesvioCode.GDprox_95localObjects1[i];
+        ++k;
+    }
+}
+gdjs.DesvioCode.GDprox_95localObjects1.length = k;
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("no"), gdjs.DesvioCode.GDnoObjects1);
+gdjs.copyArray(runtimeScene.getObjects("task_confirmation"), gdjs.DesvioCode.GDtask_95confirmationObjects1);
+gdjs.copyArray(runtimeScene.getObjects("yes"), gdjs.DesvioCode.GDyesObjects1);
+{for(var i = 0, len = gdjs.DesvioCode.GDnoObjects1.length ;i < len;++i) {
+    gdjs.DesvioCode.GDnoObjects1[i].hide(false);
+}
+}{for(var i = 0, len = gdjs.DesvioCode.GDyesObjects1.length ;i < len;++i) {
+    gdjs.DesvioCode.GDyesObjects1[i].hide(false);
+}
+}{for(var i = 0, len = gdjs.DesvioCode.GDtask_95confirmationObjects1.length ;i < len;++i) {
+    gdjs.DesvioCode.GDtask_95confirmationObjects1[i].hide(false);
+}
+}
+{ //Subevents
+gdjs.DesvioCode.eventsList1(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("no"), gdjs.DesvioCode.GDnoObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.DesvioCode.GDnoObjects1.length;i<l;++i) {
+    if ( gdjs.DesvioCode.GDnoObjects1[i].isVisible() ) {
+        isConditionTrue_0 = true;
+        gdjs.DesvioCode.GDnoObjects1[k] = gdjs.DesvioCode.GDnoObjects1[i];
+        ++k;
+    }
+}
+gdjs.DesvioCode.GDnoObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.DesvioCode.GDnoObjects1.length;i<l;++i) {
+    if ( gdjs.DesvioCode.GDnoObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+        isConditionTrue_0 = true;
+        gdjs.DesvioCode.GDnoObjects1[k] = gdjs.DesvioCode.GDnoObjects1[i];
+        ++k;
+    }
+}
+gdjs.DesvioCode.GDnoObjects1.length = k;
+}
+if (isConditionTrue_0) {
+/* Reuse gdjs.DesvioCode.GDnoObjects1 */
+gdjs.copyArray(runtimeScene.getObjects("task_confirmation"), gdjs.DesvioCode.GDtask_95confirmationObjects1);
+gdjs.copyArray(runtimeScene.getObjects("yes"), gdjs.DesvioCode.GDyesObjects1);
+{for(var i = 0, len = gdjs.DesvioCode.GDnoObjects1.length ;i < len;++i) {
+    gdjs.DesvioCode.GDnoObjects1[i].hide();
+}
+}{for(var i = 0, len = gdjs.DesvioCode.GDyesObjects1.length ;i < len;++i) {
+    gdjs.DesvioCode.GDyesObjects1[i].hide();
+}
+}{for(var i = 0, len = gdjs.DesvioCode.GDtask_95confirmationObjects1.length ;i < len;++i) {
+    gdjs.DesvioCode.GDtask_95confirmationObjects1[i].hide();
+}
+}
+{ //Subevents
+gdjs.DesvioCode.eventsList2(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("yes"), gdjs.DesvioCode.GDyesObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.DesvioCode.GDyesObjects1.length;i<l;++i) {
+    if ( gdjs.DesvioCode.GDyesObjects1[i].isVisible() ) {
+        isConditionTrue_0 = true;
+        gdjs.DesvioCode.GDyesObjects1[k] = gdjs.DesvioCode.GDyesObjects1[i];
+        ++k;
+    }
+}
+gdjs.DesvioCode.GDyesObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.DesvioCode.GDyesObjects1.length;i<l;++i) {
+    if ( gdjs.DesvioCode.GDyesObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+        isConditionTrue_0 = true;
+        gdjs.DesvioCode.GDyesObjects1[k] = gdjs.DesvioCode.GDyesObjects1[i];
+        ++k;
+    }
+}
+gdjs.DesvioCode.GDyesObjects1.length = k;
+}
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.unpauseTimer(runtimeScene, "next scene");
+}
+{ //Subevents
+gdjs.DesvioCode.eventsList3(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "next scene") >= 0.5;
+if (isConditionTrue_0) {
+{runtimeScene.getGame().getVariables().getFromIndex(1).add(2);
+}{gdjs.evtTools.leaderboards.savePlayerScore(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(3)), gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(1)), gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(0)));
+}
+{ //Subevents
+gdjs.DesvioCode.eventsList4(runtimeScene);} //End of subevents
+}
+
+}
+
+
 };
 
-gdjs.CoordenadasCode.func = function(runtimeScene) {
+gdjs.DesvioCode.func = function(runtimeScene) {
 runtimeScene.getOnceTriggers().startNewFrame();
 
-gdjs.CoordenadasCode.GDscoreObjects1.length = 0;
-gdjs.CoordenadasCode.GDscoreObjects2.length = 0;
-gdjs.CoordenadasCode.GDnext_95sceneObjects1.length = 0;
-gdjs.CoordenadasCode.GDnext_95sceneObjects2.length = 0;
-gdjs.CoordenadasCode.GDURLObjects1.length = 0;
-gdjs.CoordenadasCode.GDURLObjects2.length = 0;
-gdjs.CoordenadasCode.GDURLdesvioObjects1.length = 0;
-gdjs.CoordenadasCode.GDURLdesvioObjects2.length = 0;
-gdjs.CoordenadasCode.GDDesvioObjects1.length = 0;
-gdjs.CoordenadasCode.GDDesvioObjects2.length = 0;
-gdjs.CoordenadasCode.GDokdesvioObjects1.length = 0;
-gdjs.CoordenadasCode.GDokdesvioObjects2.length = 0;
-gdjs.CoordenadasCode.GDlatitudeObjects1.length = 0;
-gdjs.CoordenadasCode.GDlatitudeObjects2.length = 0;
-gdjs.CoordenadasCode.GDlongitudeObjects1.length = 0;
-gdjs.CoordenadasCode.GDlongitudeObjects2.length = 0;
+gdjs.DesvioCode.GDscoreObjects1.length = 0;
+gdjs.DesvioCode.GDscoreObjects2.length = 0;
+gdjs.DesvioCode.GDscoreObjects3.length = 0;
+gdjs.DesvioCode.GDnext_95sceneObjects1.length = 0;
+gdjs.DesvioCode.GDnext_95sceneObjects2.length = 0;
+gdjs.DesvioCode.GDnext_95sceneObjects3.length = 0;
+gdjs.DesvioCode.GDURLObjects1.length = 0;
+gdjs.DesvioCode.GDURLObjects2.length = 0;
+gdjs.DesvioCode.GDURLObjects3.length = 0;
+gdjs.DesvioCode.GDprox_95localObjects1.length = 0;
+gdjs.DesvioCode.GDprox_95localObjects2.length = 0;
+gdjs.DesvioCode.GDprox_95localObjects3.length = 0;
+gdjs.DesvioCode.GDnoObjects1.length = 0;
+gdjs.DesvioCode.GDnoObjects2.length = 0;
+gdjs.DesvioCode.GDnoObjects3.length = 0;
+gdjs.DesvioCode.GDokdesvioObjects1.length = 0;
+gdjs.DesvioCode.GDokdesvioObjects2.length = 0;
+gdjs.DesvioCode.GDokdesvioObjects3.length = 0;
+gdjs.DesvioCode.GDyesObjects1.length = 0;
+gdjs.DesvioCode.GDyesObjects2.length = 0;
+gdjs.DesvioCode.GDyesObjects3.length = 0;
+gdjs.DesvioCode.GDtask_95confirmationObjects1.length = 0;
+gdjs.DesvioCode.GDtask_95confirmationObjects2.length = 0;
+gdjs.DesvioCode.GDtask_95confirmationObjects3.length = 0;
+gdjs.DesvioCode.GDfundoObjects1.length = 0;
+gdjs.DesvioCode.GDfundoObjects2.length = 0;
+gdjs.DesvioCode.GDfundoObjects3.length = 0;
 
-gdjs.CoordenadasCode.eventsList0(runtimeScene);
+gdjs.DesvioCode.eventsList5(runtimeScene);
 
 return;
 
 }
 
-gdjs['CoordenadasCode'] = gdjs.CoordenadasCode;
+gdjs['DesvioCode'] = gdjs.DesvioCode;

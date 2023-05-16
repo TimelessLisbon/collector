@@ -26,15 +26,6 @@ gdjs.Camoes_32EnigmaCode.GDnext_95sceneObjects3= [];
 gdjs.Camoes_32EnigmaCode.GDURLObjects1= [];
 gdjs.Camoes_32EnigmaCode.GDURLObjects2= [];
 gdjs.Camoes_32EnigmaCode.GDURLObjects3= [];
-gdjs.Camoes_32EnigmaCode.GDURLdesvioObjects1= [];
-gdjs.Camoes_32EnigmaCode.GDURLdesvioObjects2= [];
-gdjs.Camoes_32EnigmaCode.GDURLdesvioObjects3= [];
-gdjs.Camoes_32EnigmaCode.GDDesvioObjects1= [];
-gdjs.Camoes_32EnigmaCode.GDDesvioObjects2= [];
-gdjs.Camoes_32EnigmaCode.GDDesvioObjects3= [];
-gdjs.Camoes_32EnigmaCode.GDokdesvioObjects1= [];
-gdjs.Camoes_32EnigmaCode.GDokdesvioObjects2= [];
-gdjs.Camoes_32EnigmaCode.GDokdesvioObjects3= [];
 gdjs.Camoes_32EnigmaCode.GDokObjects1= [];
 gdjs.Camoes_32EnigmaCode.GDokObjects2= [];
 gdjs.Camoes_32EnigmaCode.GDokObjects3= [];
@@ -84,6 +75,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.firebaseTools.firestore.writeField("Users", gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Progress", gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2))), runtimeScene.getScene().getVariables().get("error"), true);
+}{gdjs.evtTools.firebaseTools.firestore.writeField("Users", gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Track", gdjs.evtTools.runtimeScene.getSceneName(runtimeScene), runtimeScene.getScene().getVariables().get("error"), true);
 }}
 
 }
@@ -2107,15 +2099,6 @@ gdjs.Camoes_32EnigmaCode.GDnext_95sceneObjects3.length = 0;
 gdjs.Camoes_32EnigmaCode.GDURLObjects1.length = 0;
 gdjs.Camoes_32EnigmaCode.GDURLObjects2.length = 0;
 gdjs.Camoes_32EnigmaCode.GDURLObjects3.length = 0;
-gdjs.Camoes_32EnigmaCode.GDURLdesvioObjects1.length = 0;
-gdjs.Camoes_32EnigmaCode.GDURLdesvioObjects2.length = 0;
-gdjs.Camoes_32EnigmaCode.GDURLdesvioObjects3.length = 0;
-gdjs.Camoes_32EnigmaCode.GDDesvioObjects1.length = 0;
-gdjs.Camoes_32EnigmaCode.GDDesvioObjects2.length = 0;
-gdjs.Camoes_32EnigmaCode.GDDesvioObjects3.length = 0;
-gdjs.Camoes_32EnigmaCode.GDokdesvioObjects1.length = 0;
-gdjs.Camoes_32EnigmaCode.GDokdesvioObjects2.length = 0;
-gdjs.Camoes_32EnigmaCode.GDokdesvioObjects3.length = 0;
 gdjs.Camoes_32EnigmaCode.GDokObjects1.length = 0;
 gdjs.Camoes_32EnigmaCode.GDokObjects2.length = 0;
 gdjs.Camoes_32EnigmaCode.GDokObjects3.length = 0;

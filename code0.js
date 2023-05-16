@@ -8,15 +8,6 @@ gdjs.StartCode.GDnext_95sceneObjects3= [];
 gdjs.StartCode.GDURLObjects1= [];
 gdjs.StartCode.GDURLObjects2= [];
 gdjs.StartCode.GDURLObjects3= [];
-gdjs.StartCode.GDURLdesvioObjects1= [];
-gdjs.StartCode.GDURLdesvioObjects2= [];
-gdjs.StartCode.GDURLdesvioObjects3= [];
-gdjs.StartCode.GDDesvioObjects1= [];
-gdjs.StartCode.GDDesvioObjects2= [];
-gdjs.StartCode.GDDesvioObjects3= [];
-gdjs.StartCode.GDokdesvioObjects1= [];
-gdjs.StartCode.GDokdesvioObjects2= [];
-gdjs.StartCode.GDokdesvioObjects3= [];
 gdjs.StartCode.GDUIDObjects1= [];
 gdjs.StartCode.GDUIDObjects2= [];
 gdjs.StartCode.GDUIDObjects3= [];
@@ -65,6 +56,8 @@ if (isConditionTrue_0) {
 {gdjs.evtTools.firebaseTools.firestore.getField("Users", gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Team_Name", runtimeScene.getScene().getVariables().getFromIndex(1), runtimeScene.getScene().getVariables().getFromIndex(5));
 }{gdjs.evtTools.firebaseTools.firestore.getField("Users", gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Score", runtimeScene.getScene().getVariables().getFromIndex(2), runtimeScene.getScene().getVariables().getFromIndex(4));
 }{gdjs.evtTools.firebaseTools.firestore.getField("Users", gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Progress", runtimeScene.getScene().getVariables().getFromIndex(3), runtimeScene.getScene().getVariables().getFromIndex(4));
+}{gdjs.evtTools.firebaseTools.firestore.getField("Users", gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Hour", runtimeScene.getScene().getVariables().get("hour_start"), runtimeScene.getScene().getVariables().getFromIndex(4));
+}{gdjs.evtTools.firebaseTools.firestore.getField("Users", gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Minutes", runtimeScene.getScene().getVariables().get("min_start"), runtimeScene.getScene().getVariables().getFromIndex(4));
 }
 { //Subevents
 gdjs.StartCode.eventsList0(runtimeScene);} //End of subevents
@@ -467,15 +460,6 @@ gdjs.StartCode.GDnext_95sceneObjects3.length = 0;
 gdjs.StartCode.GDURLObjects1.length = 0;
 gdjs.StartCode.GDURLObjects2.length = 0;
 gdjs.StartCode.GDURLObjects3.length = 0;
-gdjs.StartCode.GDURLdesvioObjects1.length = 0;
-gdjs.StartCode.GDURLdesvioObjects2.length = 0;
-gdjs.StartCode.GDURLdesvioObjects3.length = 0;
-gdjs.StartCode.GDDesvioObjects1.length = 0;
-gdjs.StartCode.GDDesvioObjects2.length = 0;
-gdjs.StartCode.GDDesvioObjects3.length = 0;
-gdjs.StartCode.GDokdesvioObjects1.length = 0;
-gdjs.StartCode.GDokdesvioObjects2.length = 0;
-gdjs.StartCode.GDokdesvioObjects3.length = 0;
 gdjs.StartCode.GDUIDObjects1.length = 0;
 gdjs.StartCode.GDUIDObjects2.length = 0;
 gdjs.StartCode.GDUIDObjects3.length = 0;

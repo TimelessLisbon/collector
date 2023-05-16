@@ -10,15 +10,6 @@ gdjs.RegistoCode.GDnext_95sceneObjects3= [];
 gdjs.RegistoCode.GDURLObjects1= [];
 gdjs.RegistoCode.GDURLObjects2= [];
 gdjs.RegistoCode.GDURLObjects3= [];
-gdjs.RegistoCode.GDURLdesvioObjects1= [];
-gdjs.RegistoCode.GDURLdesvioObjects2= [];
-gdjs.RegistoCode.GDURLdesvioObjects3= [];
-gdjs.RegistoCode.GDDesvioObjects1= [];
-gdjs.RegistoCode.GDDesvioObjects2= [];
-gdjs.RegistoCode.GDDesvioObjects3= [];
-gdjs.RegistoCode.GDokdesvioObjects1= [];
-gdjs.RegistoCode.GDokdesvioObjects2= [];
-gdjs.RegistoCode.GDokdesvioObjects3= [];
 gdjs.RegistoCode.GDanswerObjects1= [];
 gdjs.RegistoCode.GDanswerObjects2= [];
 gdjs.RegistoCode.GDanswerObjects3= [];
@@ -140,6 +131,8 @@ if (isConditionTrue_0) {
 {gdjs.evtTools.firebaseTools.firestore.writeField("Users", gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Team_Name", gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(0)), runtimeScene.getScene().getVariables().getFromIndex(0), true);
 }{gdjs.evtTools.firebaseTools.firestore.writeField("Users", gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Score", gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(1))), runtimeScene.getScene().getVariables().getFromIndex(0), true);
 }{gdjs.evtTools.firebaseTools.firestore.writeField("Users", gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Progress", gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2))), runtimeScene.getScene().getVariables().getFromIndex(0), true);
+}{gdjs.evtTools.firebaseTools.firestore.writeField("Users", gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Hour", gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(4))), runtimeScene.getScene().getVariables().getFromIndex(0), true);
+}{gdjs.evtTools.firebaseTools.firestore.writeField("Users", gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Minutes", gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(5))), runtimeScene.getScene().getVariables().getFromIndex(0), true);
 }}
 
 }
@@ -177,6 +170,8 @@ gdjs.copyArray(runtimeScene.getObjects("ok"), gdjs.RegistoCode.GDokObjects1);
 }{gdjs.evtTools.runtimeScene.pauseTimer(runtimeScene, "invalid");
 }{gdjs.evtTools.runtimeScene.pauseTimer(runtimeScene, "next scene");
 }{runtimeScene.getGame().getVariables().getFromIndex(2).setNumber(1);
+}{runtimeScene.getGame().getVariables().getFromIndex(4).setNumber(gdjs.evtTools.runtimeScene.getTime(runtimeScene, "hour"));
+}{runtimeScene.getGame().getVariables().getFromIndex(5).setNumber(gdjs.evtTools.runtimeScene.getTime(runtimeScene, "min"));
 }
 { //Subevents
 gdjs.RegistoCode.eventsList0(runtimeScene);} //End of subevents
@@ -554,7 +549,6 @@ gdjs.copyArray(runtimeScene.getObjects("loading"), gdjs.RegistoCode.GDloadingObj
 gdjs.copyArray(runtimeScene.getObjects("loading_animation"), gdjs.RegistoCode.GDloading_95animationObjects1);
 /* Reuse gdjs.RegistoCode.GDokObjects1 */
 {runtimeScene.getGame().getVariables().getFromIndex(0).setString((( gdjs.RegistoCode.GDanswerObjects1.length === 0 ) ? "" :gdjs.RegistoCode.GDanswerObjects1[0].getString()));
-}{runtimeScene.getGame().getVariables().getFromIndex(1).add(10);
 }{for(var i = 0, len = gdjs.RegistoCode.GDanswerObjects1.length ;i < len;++i) {
     gdjs.RegistoCode.GDanswerObjects1[i].hide();
 }
@@ -647,8 +641,7 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "next scene") >= 2;
 if (isConditionTrue_0) {
-{gdjs.evtTools.leaderboards.savePlayerScore(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(3)), gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(1)), gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(0)));
-}{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "next scene");
+{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "next scene");
 }{gdjs.evtTools.runtimeScene.pauseTimer(runtimeScene, "next scene");
 }{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "S. Pedro Alcantara", false);
 }}
@@ -670,15 +663,6 @@ gdjs.RegistoCode.GDnext_95sceneObjects3.length = 0;
 gdjs.RegistoCode.GDURLObjects1.length = 0;
 gdjs.RegistoCode.GDURLObjects2.length = 0;
 gdjs.RegistoCode.GDURLObjects3.length = 0;
-gdjs.RegistoCode.GDURLdesvioObjects1.length = 0;
-gdjs.RegistoCode.GDURLdesvioObjects2.length = 0;
-gdjs.RegistoCode.GDURLdesvioObjects3.length = 0;
-gdjs.RegistoCode.GDDesvioObjects1.length = 0;
-gdjs.RegistoCode.GDDesvioObjects2.length = 0;
-gdjs.RegistoCode.GDDesvioObjects3.length = 0;
-gdjs.RegistoCode.GDokdesvioObjects1.length = 0;
-gdjs.RegistoCode.GDokdesvioObjects2.length = 0;
-gdjs.RegistoCode.GDokdesvioObjects3.length = 0;
 gdjs.RegistoCode.GDanswerObjects1.length = 0;
 gdjs.RegistoCode.GDanswerObjects2.length = 0;
 gdjs.RegistoCode.GDanswerObjects3.length = 0;

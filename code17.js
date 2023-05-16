@@ -10,15 +10,6 @@ gdjs.Sta_32Catarina_32EnigmaCode.GDnext_95sceneObjects3= [];
 gdjs.Sta_32Catarina_32EnigmaCode.GDURLObjects1= [];
 gdjs.Sta_32Catarina_32EnigmaCode.GDURLObjects2= [];
 gdjs.Sta_32Catarina_32EnigmaCode.GDURLObjects3= [];
-gdjs.Sta_32Catarina_32EnigmaCode.GDURLdesvioObjects1= [];
-gdjs.Sta_32Catarina_32EnigmaCode.GDURLdesvioObjects2= [];
-gdjs.Sta_32Catarina_32EnigmaCode.GDURLdesvioObjects3= [];
-gdjs.Sta_32Catarina_32EnigmaCode.GDDesvioObjects1= [];
-gdjs.Sta_32Catarina_32EnigmaCode.GDDesvioObjects2= [];
-gdjs.Sta_32Catarina_32EnigmaCode.GDDesvioObjects3= [];
-gdjs.Sta_32Catarina_32EnigmaCode.GDokdesvioObjects1= [];
-gdjs.Sta_32Catarina_32EnigmaCode.GDokdesvioObjects2= [];
-gdjs.Sta_32Catarina_32EnigmaCode.GDokdesvioObjects3= [];
 gdjs.Sta_32Catarina_32EnigmaCode.GDokObjects1= [];
 gdjs.Sta_32Catarina_32EnigmaCode.GDokObjects2= [];
 gdjs.Sta_32Catarina_32EnigmaCode.GDokObjects3= [];
@@ -44,6 +35,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.firebaseTools.firestore.writeField("Users", gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Progress", gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2))), runtimeScene.getScene().getVariables().get("error"), true);
+}{gdjs.evtTools.firebaseTools.firestore.writeField("Users", gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Track", gdjs.evtTools.runtimeScene.getSceneName(runtimeScene), runtimeScene.getScene().getVariables().get("error"), true);
 }}
 
 }
@@ -820,8 +812,12 @@ isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getSce
 }
 }
 if (isConditionTrue_0) {
+/* Reuse gdjs.Sta_32Catarina_32EnigmaCode.GDanswerObjects1 */
 {runtimeScene.getGame().getVariables().getFromIndex(1).add(10);
 }{gdjs.evtTools.runtimeScene.unpauseTimer(runtimeScene, "next scene");
+}{for(var i = 0, len = gdjs.Sta_32Catarina_32EnigmaCode.GDanswerObjects1.length ;i < len;++i) {
+    gdjs.Sta_32Catarina_32EnigmaCode.GDanswerObjects1[i].setString("CORRECT");
+}
 }
 { //Subevents
 gdjs.Sta_32Catarina_32EnigmaCode.eventsList8(runtimeScene);} //End of subevents
@@ -909,8 +905,12 @@ isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getSce
 }
 }
 if (isConditionTrue_0) {
+/* Reuse gdjs.Sta_32Catarina_32EnigmaCode.GDanswerObjects1 */
 {runtimeScene.getGame().getVariables().getFromIndex(1).add(7);
 }{gdjs.evtTools.runtimeScene.unpauseTimer(runtimeScene, "next scene");
+}{for(var i = 0, len = gdjs.Sta_32Catarina_32EnigmaCode.GDanswerObjects1.length ;i < len;++i) {
+    gdjs.Sta_32Catarina_32EnigmaCode.GDanswerObjects1[i].setString("CORRECT");
+}
 }
 { //Subevents
 gdjs.Sta_32Catarina_32EnigmaCode.eventsList9(runtimeScene);} //End of subevents
@@ -998,8 +998,12 @@ isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getSce
 }
 }
 if (isConditionTrue_0) {
+/* Reuse gdjs.Sta_32Catarina_32EnigmaCode.GDanswerObjects1 */
 {runtimeScene.getGame().getVariables().getFromIndex(1).add(5);
 }{gdjs.evtTools.runtimeScene.unpauseTimer(runtimeScene, "next scene");
+}{for(var i = 0, len = gdjs.Sta_32Catarina_32EnigmaCode.GDanswerObjects1.length ;i < len;++i) {
+    gdjs.Sta_32Catarina_32EnigmaCode.GDanswerObjects1[i].setString("CORRECT");
+}
 }
 { //Subevents
 gdjs.Sta_32Catarina_32EnigmaCode.eventsList10(runtimeScene);} //End of subevents
@@ -1087,8 +1091,12 @@ isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getSce
 }
 }
 if (isConditionTrue_0) {
+/* Reuse gdjs.Sta_32Catarina_32EnigmaCode.GDanswerObjects1 */
 {runtimeScene.getGame().getVariables().getFromIndex(1).add(3);
 }{gdjs.evtTools.runtimeScene.unpauseTimer(runtimeScene, "next scene");
+}{for(var i = 0, len = gdjs.Sta_32Catarina_32EnigmaCode.GDanswerObjects1.length ;i < len;++i) {
+    gdjs.Sta_32Catarina_32EnigmaCode.GDanswerObjects1[i].setString("CORRECT");
+}
 }
 { //Subevents
 gdjs.Sta_32Catarina_32EnigmaCode.eventsList11(runtimeScene);} //End of subevents
@@ -1127,15 +1135,6 @@ gdjs.Sta_32Catarina_32EnigmaCode.GDnext_95sceneObjects3.length = 0;
 gdjs.Sta_32Catarina_32EnigmaCode.GDURLObjects1.length = 0;
 gdjs.Sta_32Catarina_32EnigmaCode.GDURLObjects2.length = 0;
 gdjs.Sta_32Catarina_32EnigmaCode.GDURLObjects3.length = 0;
-gdjs.Sta_32Catarina_32EnigmaCode.GDURLdesvioObjects1.length = 0;
-gdjs.Sta_32Catarina_32EnigmaCode.GDURLdesvioObjects2.length = 0;
-gdjs.Sta_32Catarina_32EnigmaCode.GDURLdesvioObjects3.length = 0;
-gdjs.Sta_32Catarina_32EnigmaCode.GDDesvioObjects1.length = 0;
-gdjs.Sta_32Catarina_32EnigmaCode.GDDesvioObjects2.length = 0;
-gdjs.Sta_32Catarina_32EnigmaCode.GDDesvioObjects3.length = 0;
-gdjs.Sta_32Catarina_32EnigmaCode.GDokdesvioObjects1.length = 0;
-gdjs.Sta_32Catarina_32EnigmaCode.GDokdesvioObjects2.length = 0;
-gdjs.Sta_32Catarina_32EnigmaCode.GDokdesvioObjects3.length = 0;
 gdjs.Sta_32Catarina_32EnigmaCode.GDokObjects1.length = 0;
 gdjs.Sta_32Catarina_32EnigmaCode.GDokObjects2.length = 0;
 gdjs.Sta_32Catarina_32EnigmaCode.GDokObjects3.length = 0;

@@ -14,15 +14,6 @@ gdjs.Percurso_32S_46_32RoqueCode.GDnext_95sceneObjects3= [];
 gdjs.Percurso_32S_46_32RoqueCode.GDURLObjects1= [];
 gdjs.Percurso_32S_46_32RoqueCode.GDURLObjects2= [];
 gdjs.Percurso_32S_46_32RoqueCode.GDURLObjects3= [];
-gdjs.Percurso_32S_46_32RoqueCode.GDURLdesvioObjects1= [];
-gdjs.Percurso_32S_46_32RoqueCode.GDURLdesvioObjects2= [];
-gdjs.Percurso_32S_46_32RoqueCode.GDURLdesvioObjects3= [];
-gdjs.Percurso_32S_46_32RoqueCode.GDDesvioObjects1= [];
-gdjs.Percurso_32S_46_32RoqueCode.GDDesvioObjects2= [];
-gdjs.Percurso_32S_46_32RoqueCode.GDDesvioObjects3= [];
-gdjs.Percurso_32S_46_32RoqueCode.GDokdesvioObjects1= [];
-gdjs.Percurso_32S_46_32RoqueCode.GDokdesvioObjects2= [];
-gdjs.Percurso_32S_46_32RoqueCode.GDokdesvioObjects3= [];
 gdjs.Percurso_32S_46_32RoqueCode.GDnoObjects1= [];
 gdjs.Percurso_32S_46_32RoqueCode.GDnoObjects2= [];
 gdjs.Percurso_32S_46_32RoqueCode.GDnoObjects3= [];
@@ -51,6 +42,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.firebaseTools.firestore.writeField("Users", gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Progress", gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2))), runtimeScene.getScene().getVariables().get("error"), true);
+}{gdjs.evtTools.firebaseTools.firestore.writeField("Users", gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Track", gdjs.evtTools.runtimeScene.getSceneName(runtimeScene), runtimeScene.getScene().getVariables().get("error"), true);
 }}
 
 }
@@ -72,7 +64,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.Percurso_32S_46_32RoqueCode.userFunc0x901468 = function(runtimeScene) {
+};gdjs.Percurso_32S_46_32RoqueCode.userFunc0xb544c8 = function(runtimeScene) {
 "use strict";
 var myVar = runtimeScene.getVariables().get("Longitude");
 function geoFindMe() {
@@ -96,7 +88,7 @@ function geoFindMe() {
 }
 geoFindMe();
 };
-gdjs.Percurso_32S_46_32RoqueCode.userFunc0x901510 = function(runtimeScene) {
+gdjs.Percurso_32S_46_32RoqueCode.userFunc0xb54570 = function(runtimeScene) {
 "use strict";
 var myVar = runtimeScene.getVariables().get("Latitude");
 function geoFindMe() {
@@ -250,115 +242,8 @@ gdjs.copyArray(runtimeScene.getObjects("next_scene"), gdjs.Percurso_32S_46_32Roq
 
 
 let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12818196);
-}
-if (isConditionTrue_0) {
-{gdjs.evtTools.sound.playSound(runtimeScene, "message-incoming-132126.mp3", false, 100, 1);
-}}
-
-}
-
-
-};gdjs.Percurso_32S_46_32RoqueCode.eventsList6 = function(runtimeScene) {
-
-{
-
-
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "desvio") >= 0.3;
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("Desvio"), gdjs.Percurso_32S_46_32RoqueCode.GDDesvioObjects2);
-gdjs.copyArray(runtimeScene.getObjects("okdesvio"), gdjs.Percurso_32S_46_32RoqueCode.GDokdesvioObjects2);
-{for(var i = 0, len = gdjs.Percurso_32S_46_32RoqueCode.GDDesvioObjects2.length ;i < len;++i) {
-    gdjs.Percurso_32S_46_32RoqueCode.GDDesvioObjects2[i].hide(false);
-}
-}{gdjs.evtTools.runtimeScene.pauseTimer(runtimeScene, "maps");
-}{for(var i = 0, len = gdjs.Percurso_32S_46_32RoqueCode.GDokdesvioObjects2.length ;i < len;++i) {
-    gdjs.Percurso_32S_46_32RoqueCode.GDokdesvioObjects2[i].hide(false);
-}
-}{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "desvio");
-}{gdjs.evtTools.runtimeScene.pauseTimer(runtimeScene, "desvio");
-}
-{ //Subevents
-gdjs.Percurso_32S_46_32RoqueCode.eventsList5(runtimeScene);} //End of subevents
-}
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("Desvio"), gdjs.Percurso_32S_46_32RoqueCode.GDDesvioObjects2);
-gdjs.copyArray(runtimeScene.getObjects("okdesvio"), gdjs.Percurso_32S_46_32RoqueCode.GDokdesvioObjects2);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.Percurso_32S_46_32RoqueCode.GDDesvioObjects2.length;i<l;++i) {
-    if ( gdjs.Percurso_32S_46_32RoqueCode.GDDesvioObjects2[i].isVisible() ) {
-        isConditionTrue_0 = true;
-        gdjs.Percurso_32S_46_32RoqueCode.GDDesvioObjects2[k] = gdjs.Percurso_32S_46_32RoqueCode.GDDesvioObjects2[i];
-        ++k;
-    }
-}
-gdjs.Percurso_32S_46_32RoqueCode.GDDesvioObjects2.length = k;
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.Percurso_32S_46_32RoqueCode.GDokdesvioObjects2.length;i<l;++i) {
-    if ( gdjs.Percurso_32S_46_32RoqueCode.GDokdesvioObjects2[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
-        isConditionTrue_0 = true;
-        gdjs.Percurso_32S_46_32RoqueCode.GDokdesvioObjects2[k] = gdjs.Percurso_32S_46_32RoqueCode.GDokdesvioObjects2[i];
-        ++k;
-    }
-}
-gdjs.Percurso_32S_46_32RoqueCode.GDokdesvioObjects2.length = k;
-}
-if (isConditionTrue_0) {
-/* Reuse gdjs.Percurso_32S_46_32RoqueCode.GDDesvioObjects2 */
-gdjs.copyArray(runtimeScene.getObjects("URLdesvio"), gdjs.Percurso_32S_46_32RoqueCode.GDURLdesvioObjects2);
-/* Reuse gdjs.Percurso_32S_46_32RoqueCode.GDokdesvioObjects2 */
-{for(var i = 0, len = gdjs.Percurso_32S_46_32RoqueCode.GDDesvioObjects2.length ;i < len;++i) {
-    gdjs.Percurso_32S_46_32RoqueCode.GDDesvioObjects2[i].hide();
-}
-}{for(var i = 0, len = gdjs.Percurso_32S_46_32RoqueCode.GDokdesvioObjects2.length ;i < len;++i) {
-    gdjs.Percurso_32S_46_32RoqueCode.GDokdesvioObjects2[i].hide();
-}
-}{gdjs.evtTools.window.openURL((( gdjs.Percurso_32S_46_32RoqueCode.GDURLdesvioObjects2.length === 0 ) ? "" :gdjs.Percurso_32S_46_32RoqueCode.GDURLdesvioObjects2[0].getString()), runtimeScene);
-}}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustResumed(runtimeScene);
-if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "maps");
-}}
-
-}
-
-
-};gdjs.Percurso_32S_46_32RoqueCode.eventsList7 = function(runtimeScene) {
-
-{
-
-
-let isConditionTrue_0 = false;
 {
 gdjs.copyArray(runtimeScene.getObjects("URL"), gdjs.Percurso_32S_46_32RoqueCode.GDURLObjects1);
-gdjs.copyArray(runtimeScene.getObjects("URLdesvio"), gdjs.Percurso_32S_46_32RoqueCode.GDURLdesvioObjects1);
 gdjs.copyArray(runtimeScene.getObjects("next_scene"), gdjs.Percurso_32S_46_32RoqueCode.GDnext_95sceneObjects1);
 {runtimeScene.getGame().getVariables().getFromIndex(2).setNumber(3);
 }{for(var i = 0, len = gdjs.Percurso_32S_46_32RoqueCode.GDnext_95sceneObjects1.length ;i < len;++i) {
@@ -366,9 +251,6 @@ gdjs.copyArray(runtimeScene.getObjects("next_scene"), gdjs.Percurso_32S_46_32Roq
 }
 }{for(var i = 0, len = gdjs.Percurso_32S_46_32RoqueCode.GDURLObjects1.length ;i < len;++i) {
     gdjs.Percurso_32S_46_32RoqueCode.GDURLObjects1[i].setString("https://www.google.com/maps/dir/Miradouro+de+S%C3%A3o+Pedro+de+Alc%C3%A2ntara,+Rua+de+S%C3%A3o+Pedro+de+Alc%C3%A2ntara,+Lisboa/38.713334,-9.1434176/@38.7137349,-9.144673,19.36z/data=!4m9!4m8!1m5!1m1!1s0xd19338037000861:0x1beb7972336de3a1!2m2!1d-9.1441708!2d38.7152302!1m0!3e2");
-}
-}{for(var i = 0, len = gdjs.Percurso_32S_46_32RoqueCode.GDURLdesvioObjects1.length ;i < len;++i) {
-    gdjs.Percurso_32S_46_32RoqueCode.GDURLdesvioObjects1[i].setString("https://www.google.com/maps/dir/Miradouro+de+S%C3%A3o+Pedro+de+Alc%C3%A2ntara,+Rua+de+S%C3%A3o+Pedro+de+Alc%C3%A2ntara,+Lisbon/R.+do+Gremio+Lusitano,+1200-212+Lisboa/@38.7096385,-9.1423492,16.56z/data=!4m14!4m13!1m5!1m1!1s0xd19338037000861:0x1beb7972336de3a1!2m2!1d-9.1441708!2d38.7152302!1m5!1m1!1s0xd1933800c8ea64f:0xd440c22e6438a440!2m2!1d-9.1443372!2d38.7133613!3e2");
 }
 }{runtimeScene.getScene().getVariables().get("latif").setNumber(38.7128);
 }{runtimeScene.getScene().getVariables().get("latsup").setNumber(38.7136);
@@ -431,13 +313,10 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("Desvio"), gdjs.Percurso_32S_46_32RoqueCode.GDDesvioObjects1);
 gdjs.copyArray(runtimeScene.getObjects("URL"), gdjs.Percurso_32S_46_32RoqueCode.GDURLObjects1);
-gdjs.copyArray(runtimeScene.getObjects("URLdesvio"), gdjs.Percurso_32S_46_32RoqueCode.GDURLdesvioObjects1);
 gdjs.copyArray(runtimeScene.getObjects("gmaps"), gdjs.Percurso_32S_46_32RoqueCode.GDgmapsObjects1);
 gdjs.copyArray(runtimeScene.getObjects("next_scene"), gdjs.Percurso_32S_46_32RoqueCode.GDnext_95sceneObjects1);
 gdjs.copyArray(runtimeScene.getObjects("no"), gdjs.Percurso_32S_46_32RoqueCode.GDnoObjects1);
-gdjs.copyArray(runtimeScene.getObjects("okdesvio"), gdjs.Percurso_32S_46_32RoqueCode.GDokdesvioObjects1);
 gdjs.copyArray(runtimeScene.getObjects("yes"), gdjs.Percurso_32S_46_32RoqueCode.GDyesObjects1);
 {for(var i = 0, len = gdjs.Percurso_32S_46_32RoqueCode.GDnoObjects1.length ;i < len;++i) {
     gdjs.Percurso_32S_46_32RoqueCode.GDnoObjects1[i].hide();
@@ -445,14 +324,8 @@ gdjs.copyArray(runtimeScene.getObjects("yes"), gdjs.Percurso_32S_46_32RoqueCode.
 }{for(var i = 0, len = gdjs.Percurso_32S_46_32RoqueCode.GDyesObjects1.length ;i < len;++i) {
     gdjs.Percurso_32S_46_32RoqueCode.GDyesObjects1[i].hide();
 }
-}{for(var i = 0, len = gdjs.Percurso_32S_46_32RoqueCode.GDokdesvioObjects1.length ;i < len;++i) {
-    gdjs.Percurso_32S_46_32RoqueCode.GDokdesvioObjects1[i].hide();
-}
 }{for(var i = 0, len = gdjs.Percurso_32S_46_32RoqueCode.GDgmapsObjects1.length ;i < len;++i) {
     gdjs.Percurso_32S_46_32RoqueCode.GDgmapsObjects1[i].hide();
-}
-}{for(var i = 0, len = gdjs.Percurso_32S_46_32RoqueCode.GDDesvioObjects1.length ;i < len;++i) {
-    gdjs.Percurso_32S_46_32RoqueCode.GDDesvioObjects1[i].hide();
 }
 }{for(var i = 0, len = gdjs.Percurso_32S_46_32RoqueCode.GDnext_95sceneObjects1.length ;i < len;++i) {
     gdjs.Percurso_32S_46_32RoqueCode.GDnext_95sceneObjects1[i].hide();
@@ -460,16 +333,10 @@ gdjs.copyArray(runtimeScene.getObjects("yes"), gdjs.Percurso_32S_46_32RoqueCode.
 }{for(var i = 0, len = gdjs.Percurso_32S_46_32RoqueCode.GDURLObjects1.length ;i < len;++i) {
     gdjs.Percurso_32S_46_32RoqueCode.GDURLObjects1[i].hide();
 }
-}{for(var i = 0, len = gdjs.Percurso_32S_46_32RoqueCode.GDURLdesvioObjects1.length ;i < len;++i) {
-    gdjs.Percurso_32S_46_32RoqueCode.GDURLdesvioObjects1[i].hide();
-}
 }{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "desvio");
 }{gdjs.evtTools.runtimeScene.pauseTimer(runtimeScene, "next scene");
 }{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "maps");
 }{gdjs.evtTools.runtimeScene.pauseTimer(runtimeScene, "maps2");
-}{for(var i = 0, len = gdjs.Percurso_32S_46_32RoqueCode.GDokdesvioObjects1.length ;i < len;++i) {
-    gdjs.Percurso_32S_46_32RoqueCode.GDokdesvioObjects1[i].setX((gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) - (gdjs.Percurso_32S_46_32RoqueCode.GDokdesvioObjects1[i].getWidth())) / 2);
-}
 }
 { //Subevents
 gdjs.Percurso_32S_46_32RoqueCode.eventsList0(runtimeScene);} //End of subevents
@@ -540,7 +407,7 @@ gdjs.copyArray(runtimeScene.getObjects("score"), gdjs.Percurso_32S_46_32RoqueCod
 {
 
 
-gdjs.Percurso_32S_46_32RoqueCode.userFunc0x901468(runtimeScene);
+gdjs.Percurso_32S_46_32RoqueCode.userFunc0xb544c8(runtimeScene);
 
 }
 
@@ -548,30 +415,19 @@ gdjs.Percurso_32S_46_32RoqueCode.userFunc0x901468(runtimeScene);
 {
 
 
-gdjs.Percurso_32S_46_32RoqueCode.userFunc0x901510(runtimeScene);
+gdjs.Percurso_32S_46_32RoqueCode.userFunc0xb54570(runtimeScene);
 
 }
 
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("Desvio"), gdjs.Percurso_32S_46_32RoqueCode.GDDesvioObjects1);
 gdjs.Percurso_32S_46_32RoqueCode.GDgmapsObjects1.length = 0;
 
 gdjs.Percurso_32S_46_32RoqueCode.GDpercursoObjects1.length = 0;
 
 
 let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.Percurso_32S_46_32RoqueCode.GDDesvioObjects1.length;i<l;++i) {
-    if ( !(gdjs.Percurso_32S_46_32RoqueCode.GDDesvioObjects1[i].isVisible()) ) {
-        isConditionTrue_0 = true;
-        gdjs.Percurso_32S_46_32RoqueCode.GDDesvioObjects1[k] = gdjs.Percurso_32S_46_32RoqueCode.GDDesvioObjects1[i];
-        ++k;
-    }
-}
-gdjs.Percurso_32S_46_32RoqueCode.GDDesvioObjects1.length = k;
-if (isConditionTrue_0) {
 isConditionTrue_0 = false;
 {gdjs.Percurso_32S_46_32RoqueCode.GDgmapsObjects1_1final.length = 0;
 gdjs.Percurso_32S_46_32RoqueCode.GDpercursoObjects1_1final.length = 0;
@@ -621,7 +477,6 @@ if(isConditionTrue_1) {
 {
 gdjs.copyArray(gdjs.Percurso_32S_46_32RoqueCode.GDgmapsObjects1_1final, gdjs.Percurso_32S_46_32RoqueCode.GDgmapsObjects1);
 gdjs.copyArray(gdjs.Percurso_32S_46_32RoqueCode.GDpercursoObjects1_1final, gdjs.Percurso_32S_46_32RoqueCode.GDpercursoObjects1);
-}
 }
 }
 if (isConditionTrue_0) {
@@ -789,7 +644,7 @@ gdjs.copyArray(gdjs.Percurso_32S_46_32RoqueCode.GDGMObjects1_1final, gdjs.Percur
 }
 }
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(1).add(10);
+{runtimeScene.getGame().getVariables().getFromIndex(1).add(1);
 }{gdjs.evtTools.leaderboards.savePlayerScore(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(3)), gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(1)), gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(0)));
 }
 { //Subevents
@@ -804,12 +659,15 @@ gdjs.Percurso_32S_46_32RoqueCode.eventsList4(runtimeScene);} //End of subevents
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(0)) == "SARDINHAS";
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().get("desviodone")) == 0;
 if (isConditionTrue_0) {
-
-{ //Subevents
-gdjs.Percurso_32S_46_32RoqueCode.eventsList6(runtimeScene);} //End of subevents
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(0)) == "SARDINHAS";
 }
+if (isConditionTrue_0) {
+{runtimeScene.getGame().getVariables().getFromIndex(6).setString("https://www.google.com/maps/dir/Miradouro+de+S%C3%A3o+Pedro+de+Alc%C3%A2ntara,+Rua+de+S%C3%A3o+Pedro+de+Alc%C3%A2ntara,+Lisbon/R.+do+Gremio+Lusitano,+1200-212+Lisboa/@38.7096385,-9.1423492,16.56z/data=!4m14!4m13!1m5!1m1!1s0xd19338037000861:0x1beb7972336de3a1!2m2!1d-9.1441708!2d38.7152302!1m5!1m1!1s0xd1933800c8ea64f:0xd440c22e6438a440!2m2!1d-9.1443372!2d38.7133613!3e2");
+}{gdjs.evtTools.runtimeScene.pushScene(runtimeScene, "Desvio");
+}}
 
 }
 
@@ -828,15 +686,6 @@ gdjs.Percurso_32S_46_32RoqueCode.GDnext_95sceneObjects3.length = 0;
 gdjs.Percurso_32S_46_32RoqueCode.GDURLObjects1.length = 0;
 gdjs.Percurso_32S_46_32RoqueCode.GDURLObjects2.length = 0;
 gdjs.Percurso_32S_46_32RoqueCode.GDURLObjects3.length = 0;
-gdjs.Percurso_32S_46_32RoqueCode.GDURLdesvioObjects1.length = 0;
-gdjs.Percurso_32S_46_32RoqueCode.GDURLdesvioObjects2.length = 0;
-gdjs.Percurso_32S_46_32RoqueCode.GDURLdesvioObjects3.length = 0;
-gdjs.Percurso_32S_46_32RoqueCode.GDDesvioObjects1.length = 0;
-gdjs.Percurso_32S_46_32RoqueCode.GDDesvioObjects2.length = 0;
-gdjs.Percurso_32S_46_32RoqueCode.GDDesvioObjects3.length = 0;
-gdjs.Percurso_32S_46_32RoqueCode.GDokdesvioObjects1.length = 0;
-gdjs.Percurso_32S_46_32RoqueCode.GDokdesvioObjects2.length = 0;
-gdjs.Percurso_32S_46_32RoqueCode.GDokdesvioObjects3.length = 0;
 gdjs.Percurso_32S_46_32RoqueCode.GDnoObjects1.length = 0;
 gdjs.Percurso_32S_46_32RoqueCode.GDnoObjects2.length = 0;
 gdjs.Percurso_32S_46_32RoqueCode.GDnoObjects3.length = 0;
@@ -853,7 +702,7 @@ gdjs.Percurso_32S_46_32RoqueCode.GDGMObjects1.length = 0;
 gdjs.Percurso_32S_46_32RoqueCode.GDGMObjects2.length = 0;
 gdjs.Percurso_32S_46_32RoqueCode.GDGMObjects3.length = 0;
 
-gdjs.Percurso_32S_46_32RoqueCode.eventsList7(runtimeScene);
+gdjs.Percurso_32S_46_32RoqueCode.eventsList5(runtimeScene);
 
 return;
 

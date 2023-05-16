@@ -14,15 +14,6 @@ gdjs.Percurso_32CamoesCode.GDnext_95sceneObjects3= [];
 gdjs.Percurso_32CamoesCode.GDURLObjects1= [];
 gdjs.Percurso_32CamoesCode.GDURLObjects2= [];
 gdjs.Percurso_32CamoesCode.GDURLObjects3= [];
-gdjs.Percurso_32CamoesCode.GDURLdesvioObjects1= [];
-gdjs.Percurso_32CamoesCode.GDURLdesvioObjects2= [];
-gdjs.Percurso_32CamoesCode.GDURLdesvioObjects3= [];
-gdjs.Percurso_32CamoesCode.GDDesvioObjects1= [];
-gdjs.Percurso_32CamoesCode.GDDesvioObjects2= [];
-gdjs.Percurso_32CamoesCode.GDDesvioObjects3= [];
-gdjs.Percurso_32CamoesCode.GDokdesvioObjects1= [];
-gdjs.Percurso_32CamoesCode.GDokdesvioObjects2= [];
-gdjs.Percurso_32CamoesCode.GDokdesvioObjects3= [];
 gdjs.Percurso_32CamoesCode.GDnoObjects1= [];
 gdjs.Percurso_32CamoesCode.GDnoObjects2= [];
 gdjs.Percurso_32CamoesCode.GDnoObjects3= [];
@@ -51,6 +42,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.firebaseTools.firestore.writeField("Users", gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Progress", gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2))), runtimeScene.getScene().getVariables().get("error"), true);
+}{gdjs.evtTools.firebaseTools.firestore.writeField("Users", gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Track", gdjs.evtTools.runtimeScene.getSceneName(runtimeScene), runtimeScene.getScene().getVariables().get("error"), true);
 }}
 
 }
@@ -72,7 +64,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.Percurso_32CamoesCode.userFunc0x810fc8 = function(runtimeScene) {
+};gdjs.Percurso_32CamoesCode.userFunc0x9066e8 = function(runtimeScene) {
 "use strict";
 var myVar = runtimeScene.getVariables().get("Longitude");
 function geoFindMe() {
@@ -96,7 +88,7 @@ function geoFindMe() {
 }
 geoFindMe();
 };
-gdjs.Percurso_32CamoesCode.userFunc0x8110f8 = function(runtimeScene) {
+gdjs.Percurso_32CamoesCode.userFunc0x906818 = function(runtimeScene) {
 "use strict";
 var myVar = runtimeScene.getVariables().get("Latitude");
 function geoFindMe() {
@@ -283,13 +275,10 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("Desvio"), gdjs.Percurso_32CamoesCode.GDDesvioObjects1);
 gdjs.copyArray(runtimeScene.getObjects("URL"), gdjs.Percurso_32CamoesCode.GDURLObjects1);
-gdjs.copyArray(runtimeScene.getObjects("URLdesvio"), gdjs.Percurso_32CamoesCode.GDURLdesvioObjects1);
 gdjs.copyArray(runtimeScene.getObjects("gmaps"), gdjs.Percurso_32CamoesCode.GDgmapsObjects1);
 gdjs.copyArray(runtimeScene.getObjects("next_scene"), gdjs.Percurso_32CamoesCode.GDnext_95sceneObjects1);
 gdjs.copyArray(runtimeScene.getObjects("no"), gdjs.Percurso_32CamoesCode.GDnoObjects1);
-gdjs.copyArray(runtimeScene.getObjects("okdesvio"), gdjs.Percurso_32CamoesCode.GDokdesvioObjects1);
 gdjs.copyArray(runtimeScene.getObjects("yes"), gdjs.Percurso_32CamoesCode.GDyesObjects1);
 {for(var i = 0, len = gdjs.Percurso_32CamoesCode.GDnoObjects1.length ;i < len;++i) {
     gdjs.Percurso_32CamoesCode.GDnoObjects1[i].hide();
@@ -297,14 +286,8 @@ gdjs.copyArray(runtimeScene.getObjects("yes"), gdjs.Percurso_32CamoesCode.GDyesO
 }{for(var i = 0, len = gdjs.Percurso_32CamoesCode.GDyesObjects1.length ;i < len;++i) {
     gdjs.Percurso_32CamoesCode.GDyesObjects1[i].hide();
 }
-}{for(var i = 0, len = gdjs.Percurso_32CamoesCode.GDokdesvioObjects1.length ;i < len;++i) {
-    gdjs.Percurso_32CamoesCode.GDokdesvioObjects1[i].hide();
-}
 }{for(var i = 0, len = gdjs.Percurso_32CamoesCode.GDgmapsObjects1.length ;i < len;++i) {
     gdjs.Percurso_32CamoesCode.GDgmapsObjects1[i].hide();
-}
-}{for(var i = 0, len = gdjs.Percurso_32CamoesCode.GDDesvioObjects1.length ;i < len;++i) {
-    gdjs.Percurso_32CamoesCode.GDDesvioObjects1[i].hide();
 }
 }{for(var i = 0, len = gdjs.Percurso_32CamoesCode.GDnext_95sceneObjects1.length ;i < len;++i) {
     gdjs.Percurso_32CamoesCode.GDnext_95sceneObjects1[i].hide();
@@ -312,16 +295,10 @@ gdjs.copyArray(runtimeScene.getObjects("yes"), gdjs.Percurso_32CamoesCode.GDyesO
 }{for(var i = 0, len = gdjs.Percurso_32CamoesCode.GDURLObjects1.length ;i < len;++i) {
     gdjs.Percurso_32CamoesCode.GDURLObjects1[i].hide();
 }
-}{for(var i = 0, len = gdjs.Percurso_32CamoesCode.GDURLdesvioObjects1.length ;i < len;++i) {
-    gdjs.Percurso_32CamoesCode.GDURLdesvioObjects1[i].hide();
-}
 }{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "desvio");
 }{gdjs.evtTools.runtimeScene.pauseTimer(runtimeScene, "next scene");
 }{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "maps");
 }{gdjs.evtTools.runtimeScene.pauseTimer(runtimeScene, "maps2");
-}{for(var i = 0, len = gdjs.Percurso_32CamoesCode.GDokdesvioObjects1.length ;i < len;++i) {
-    gdjs.Percurso_32CamoesCode.GDokdesvioObjects1[i].setX((gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) - (gdjs.Percurso_32CamoesCode.GDokdesvioObjects1[i].getWidth())) / 2);
-}
 }
 { //Subevents
 gdjs.Percurso_32CamoesCode.eventsList0(runtimeScene);} //End of subevents
@@ -392,7 +369,7 @@ gdjs.copyArray(runtimeScene.getObjects("score"), gdjs.Percurso_32CamoesCode.GDsc
 {
 
 
-gdjs.Percurso_32CamoesCode.userFunc0x810fc8(runtimeScene);
+gdjs.Percurso_32CamoesCode.userFunc0x9066e8(runtimeScene);
 
 }
 
@@ -400,30 +377,19 @@ gdjs.Percurso_32CamoesCode.userFunc0x810fc8(runtimeScene);
 {
 
 
-gdjs.Percurso_32CamoesCode.userFunc0x8110f8(runtimeScene);
+gdjs.Percurso_32CamoesCode.userFunc0x906818(runtimeScene);
 
 }
 
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("Desvio"), gdjs.Percurso_32CamoesCode.GDDesvioObjects1);
 gdjs.Percurso_32CamoesCode.GDgmapsObjects1.length = 0;
 
 gdjs.Percurso_32CamoesCode.GDpercursoObjects1.length = 0;
 
 
 let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.Percurso_32CamoesCode.GDDesvioObjects1.length;i<l;++i) {
-    if ( !(gdjs.Percurso_32CamoesCode.GDDesvioObjects1[i].isVisible()) ) {
-        isConditionTrue_0 = true;
-        gdjs.Percurso_32CamoesCode.GDDesvioObjects1[k] = gdjs.Percurso_32CamoesCode.GDDesvioObjects1[i];
-        ++k;
-    }
-}
-gdjs.Percurso_32CamoesCode.GDDesvioObjects1.length = k;
-if (isConditionTrue_0) {
 isConditionTrue_0 = false;
 {gdjs.Percurso_32CamoesCode.GDgmapsObjects1_1final.length = 0;
 gdjs.Percurso_32CamoesCode.GDpercursoObjects1_1final.length = 0;
@@ -473,7 +439,6 @@ if(isConditionTrue_1) {
 {
 gdjs.copyArray(gdjs.Percurso_32CamoesCode.GDgmapsObjects1_1final, gdjs.Percurso_32CamoesCode.GDgmapsObjects1);
 gdjs.copyArray(gdjs.Percurso_32CamoesCode.GDpercursoObjects1_1final, gdjs.Percurso_32CamoesCode.GDpercursoObjects1);
-}
 }
 }
 if (isConditionTrue_0) {
@@ -641,7 +606,7 @@ gdjs.copyArray(gdjs.Percurso_32CamoesCode.GDGMObjects1_1final, gdjs.Percurso_32C
 }
 }
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(1).add(10);
+{runtimeScene.getGame().getVariables().getFromIndex(1).add(1);
 }{gdjs.evtTools.leaderboards.savePlayerScore(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(3)), gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(1)), gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(0)));
 }
 { //Subevents
@@ -665,15 +630,6 @@ gdjs.Percurso_32CamoesCode.GDnext_95sceneObjects3.length = 0;
 gdjs.Percurso_32CamoesCode.GDURLObjects1.length = 0;
 gdjs.Percurso_32CamoesCode.GDURLObjects2.length = 0;
 gdjs.Percurso_32CamoesCode.GDURLObjects3.length = 0;
-gdjs.Percurso_32CamoesCode.GDURLdesvioObjects1.length = 0;
-gdjs.Percurso_32CamoesCode.GDURLdesvioObjects2.length = 0;
-gdjs.Percurso_32CamoesCode.GDURLdesvioObjects3.length = 0;
-gdjs.Percurso_32CamoesCode.GDDesvioObjects1.length = 0;
-gdjs.Percurso_32CamoesCode.GDDesvioObjects2.length = 0;
-gdjs.Percurso_32CamoesCode.GDDesvioObjects3.length = 0;
-gdjs.Percurso_32CamoesCode.GDokdesvioObjects1.length = 0;
-gdjs.Percurso_32CamoesCode.GDokdesvioObjects2.length = 0;
-gdjs.Percurso_32CamoesCode.GDokdesvioObjects3.length = 0;
 gdjs.Percurso_32CamoesCode.GDnoObjects1.length = 0;
 gdjs.Percurso_32CamoesCode.GDnoObjects2.length = 0;
 gdjs.Percurso_32CamoesCode.GDnoObjects3.length = 0;

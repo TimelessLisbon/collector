@@ -8,15 +8,6 @@ gdjs.BicaCode.GDnext_95sceneObjects3= [];
 gdjs.BicaCode.GDURLObjects1= [];
 gdjs.BicaCode.GDURLObjects2= [];
 gdjs.BicaCode.GDURLObjects3= [];
-gdjs.BicaCode.GDURLdesvioObjects1= [];
-gdjs.BicaCode.GDURLdesvioObjects2= [];
-gdjs.BicaCode.GDURLdesvioObjects3= [];
-gdjs.BicaCode.GDDesvioObjects1= [];
-gdjs.BicaCode.GDDesvioObjects2= [];
-gdjs.BicaCode.GDDesvioObjects3= [];
-gdjs.BicaCode.GDokdesvioObjects1= [];
-gdjs.BicaCode.GDokdesvioObjects2= [];
-gdjs.BicaCode.GDokdesvioObjects3= [];
 gdjs.BicaCode.GDprox_95localObjects1= [];
 gdjs.BicaCode.GDprox_95localObjects2= [];
 gdjs.BicaCode.GDprox_95localObjects3= [];
@@ -45,6 +36,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.firebaseTools.firestore.writeField("Users", gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Progress", gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2))), runtimeScene.getScene().getVariables().get("error"), true);
+}{gdjs.evtTools.firebaseTools.firestore.writeField("Users", gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Track", gdjs.evtTools.runtimeScene.getSceneName(runtimeScene), runtimeScene.getScene().getVariables().get("error"), true);
 }}
 
 }
@@ -375,21 +367,11 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "next scene") >= 0.5;
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(1).add(10);
+{runtimeScene.getGame().getVariables().getFromIndex(1).add(2);
 }{gdjs.evtTools.leaderboards.savePlayerScore(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(3)), gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(1)), gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(0)));
 }
 { //Subevents
 gdjs.BicaCode.eventsList4(runtimeScene);} //End of subevents
-}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-{
 }
 
 }
@@ -409,15 +391,6 @@ gdjs.BicaCode.GDnext_95sceneObjects3.length = 0;
 gdjs.BicaCode.GDURLObjects1.length = 0;
 gdjs.BicaCode.GDURLObjects2.length = 0;
 gdjs.BicaCode.GDURLObjects3.length = 0;
-gdjs.BicaCode.GDURLdesvioObjects1.length = 0;
-gdjs.BicaCode.GDURLdesvioObjects2.length = 0;
-gdjs.BicaCode.GDURLdesvioObjects3.length = 0;
-gdjs.BicaCode.GDDesvioObjects1.length = 0;
-gdjs.BicaCode.GDDesvioObjects2.length = 0;
-gdjs.BicaCode.GDDesvioObjects3.length = 0;
-gdjs.BicaCode.GDokdesvioObjects1.length = 0;
-gdjs.BicaCode.GDokdesvioObjects2.length = 0;
-gdjs.BicaCode.GDokdesvioObjects3.length = 0;
 gdjs.BicaCode.GDprox_95localObjects1.length = 0;
 gdjs.BicaCode.GDprox_95localObjects2.length = 0;
 gdjs.BicaCode.GDprox_95localObjects3.length = 0;

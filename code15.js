@@ -8,15 +8,6 @@ gdjs.ManteigariaCode.GDnext_95sceneObjects3= [];
 gdjs.ManteigariaCode.GDURLObjects1= [];
 gdjs.ManteigariaCode.GDURLObjects2= [];
 gdjs.ManteigariaCode.GDURLObjects3= [];
-gdjs.ManteigariaCode.GDURLdesvioObjects1= [];
-gdjs.ManteigariaCode.GDURLdesvioObjects2= [];
-gdjs.ManteigariaCode.GDURLdesvioObjects3= [];
-gdjs.ManteigariaCode.GDDesvioObjects1= [];
-gdjs.ManteigariaCode.GDDesvioObjects2= [];
-gdjs.ManteigariaCode.GDDesvioObjects3= [];
-gdjs.ManteigariaCode.GDokdesvioObjects1= [];
-gdjs.ManteigariaCode.GDokdesvioObjects2= [];
-gdjs.ManteigariaCode.GDokdesvioObjects3= [];
 gdjs.ManteigariaCode.GDokObjects1= [];
 gdjs.ManteigariaCode.GDokObjects2= [];
 gdjs.ManteigariaCode.GDokObjects3= [];
@@ -42,6 +33,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.firebaseTools.firestore.writeField("Users", gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Progress", gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2))), runtimeScene.getScene().getVariables().get("error"), true);
+}{gdjs.evtTools.firebaseTools.firestore.writeField("Users", gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Track", gdjs.evtTools.runtimeScene.getSceneName(runtimeScene), runtimeScene.getScene().getVariables().get("error"), true);
 }}
 
 }
@@ -470,7 +462,7 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "next scene") >= 0.5;
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(1).add(10);
+{runtimeScene.getGame().getVariables().getFromIndex(1).add(2);
 }{gdjs.evtTools.leaderboards.savePlayerScore(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(3)), gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(1)), gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(0)));
 }
 { //Subevents
@@ -494,15 +486,6 @@ gdjs.ManteigariaCode.GDnext_95sceneObjects3.length = 0;
 gdjs.ManteigariaCode.GDURLObjects1.length = 0;
 gdjs.ManteigariaCode.GDURLObjects2.length = 0;
 gdjs.ManteigariaCode.GDURLObjects3.length = 0;
-gdjs.ManteigariaCode.GDURLdesvioObjects1.length = 0;
-gdjs.ManteigariaCode.GDURLdesvioObjects2.length = 0;
-gdjs.ManteigariaCode.GDURLdesvioObjects3.length = 0;
-gdjs.ManteigariaCode.GDDesvioObjects1.length = 0;
-gdjs.ManteigariaCode.GDDesvioObjects2.length = 0;
-gdjs.ManteigariaCode.GDDesvioObjects3.length = 0;
-gdjs.ManteigariaCode.GDokdesvioObjects1.length = 0;
-gdjs.ManteigariaCode.GDokdesvioObjects2.length = 0;
-gdjs.ManteigariaCode.GDokdesvioObjects3.length = 0;
 gdjs.ManteigariaCode.GDokObjects1.length = 0;
 gdjs.ManteigariaCode.GDokObjects2.length = 0;
 gdjs.ManteigariaCode.GDokObjects3.length = 0;

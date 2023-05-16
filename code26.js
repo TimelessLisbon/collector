@@ -5,12 +5,6 @@ gdjs.FimCode.GDnext_95sceneObjects1= [];
 gdjs.FimCode.GDnext_95sceneObjects2= [];
 gdjs.FimCode.GDURLObjects1= [];
 gdjs.FimCode.GDURLObjects2= [];
-gdjs.FimCode.GDURLdesvioObjects1= [];
-gdjs.FimCode.GDURLdesvioObjects2= [];
-gdjs.FimCode.GDDesvioObjects1= [];
-gdjs.FimCode.GDDesvioObjects2= [];
-gdjs.FimCode.GDokdesvioObjects1= [];
-gdjs.FimCode.GDokdesvioObjects2= [];
 gdjs.FimCode.GDvideoObjects1= [];
 gdjs.FimCode.GDvideoObjects2= [];
 gdjs.FimCode.GDNewSpriteObjects1= [];
@@ -32,6 +26,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.firebaseTools.firestore.writeField("Users", gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Progress", gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2))), runtimeScene.getScene().getVariables().get("error"), true);
+}{gdjs.evtTools.firebaseTools.firestore.writeField("Users", gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Track", gdjs.evtTools.runtimeScene.getSceneName(runtimeScene), runtimeScene.getScene().getVariables().get("error"), true);
 }}
 
 }
@@ -48,7 +43,7 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.FimCode.mapOfGDgdjs_46FimCode_46GDlinkObjects1Objects, runtimeScene, true, false);
 if (isConditionTrue_0) {
-{gdjs.evtTools.window.openURL("https://drive.google.com/file/d/1MPsL2r0SDqu2TcAnTEnH7ioJtdjuRusE/view?usp=share_link", runtimeScene);
+{gdjs.evtTools.window.openURL("https://drive.google.com/file/d/1P2WK5SXRBqiwyfkfwi7X34bczk8fza_6/view?usp=share_link", runtimeScene);
 }{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Leaderboard", false);
 }}
 
@@ -164,12 +159,6 @@ gdjs.FimCode.GDnext_95sceneObjects1.length = 0;
 gdjs.FimCode.GDnext_95sceneObjects2.length = 0;
 gdjs.FimCode.GDURLObjects1.length = 0;
 gdjs.FimCode.GDURLObjects2.length = 0;
-gdjs.FimCode.GDURLdesvioObjects1.length = 0;
-gdjs.FimCode.GDURLdesvioObjects2.length = 0;
-gdjs.FimCode.GDDesvioObjects1.length = 0;
-gdjs.FimCode.GDDesvioObjects2.length = 0;
-gdjs.FimCode.GDokdesvioObjects1.length = 0;
-gdjs.FimCode.GDokdesvioObjects2.length = 0;
 gdjs.FimCode.GDvideoObjects1.length = 0;
 gdjs.FimCode.GDvideoObjects2.length = 0;
 gdjs.FimCode.GDNewSpriteObjects1.length = 0;

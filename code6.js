@@ -8,15 +8,6 @@ gdjs.S_46_32Roque_32fimCode.GDnext_95sceneObjects3= [];
 gdjs.S_46_32Roque_32fimCode.GDURLObjects1= [];
 gdjs.S_46_32Roque_32fimCode.GDURLObjects2= [];
 gdjs.S_46_32Roque_32fimCode.GDURLObjects3= [];
-gdjs.S_46_32Roque_32fimCode.GDURLdesvioObjects1= [];
-gdjs.S_46_32Roque_32fimCode.GDURLdesvioObjects2= [];
-gdjs.S_46_32Roque_32fimCode.GDURLdesvioObjects3= [];
-gdjs.S_46_32Roque_32fimCode.GDDesvioObjects1= [];
-gdjs.S_46_32Roque_32fimCode.GDDesvioObjects2= [];
-gdjs.S_46_32Roque_32fimCode.GDDesvioObjects3= [];
-gdjs.S_46_32Roque_32fimCode.GDokdesvioObjects1= [];
-gdjs.S_46_32Roque_32fimCode.GDokdesvioObjects2= [];
-gdjs.S_46_32Roque_32fimCode.GDokdesvioObjects3= [];
 gdjs.S_46_32Roque_32fimCode.GDprox_95localObjects1= [];
 gdjs.S_46_32Roque_32fimCode.GDprox_95localObjects2= [];
 gdjs.S_46_32Roque_32fimCode.GDprox_95localObjects3= [];
@@ -45,6 +36,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.firebaseTools.firestore.writeField("Users", gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Progress", gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2))), runtimeScene.getScene().getVariables().get("error"), true);
+}{gdjs.evtTools.firebaseTools.firestore.writeField("Users", gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Track", gdjs.evtTools.runtimeScene.getSceneName(runtimeScene), runtimeScene.getScene().getVariables().get("error"), true);
 }}
 
 }
@@ -375,21 +367,11 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "next scene") >= 0.5;
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(1).add(10);
+{runtimeScene.getGame().getVariables().getFromIndex(1).add(2);
 }{gdjs.evtTools.leaderboards.savePlayerScore(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(3)), gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(1)), gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(0)));
 }
 { //Subevents
 gdjs.S_46_32Roque_32fimCode.eventsList4(runtimeScene);} //End of subevents
-}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-{
 }
 
 }
@@ -409,15 +391,6 @@ gdjs.S_46_32Roque_32fimCode.GDnext_95sceneObjects3.length = 0;
 gdjs.S_46_32Roque_32fimCode.GDURLObjects1.length = 0;
 gdjs.S_46_32Roque_32fimCode.GDURLObjects2.length = 0;
 gdjs.S_46_32Roque_32fimCode.GDURLObjects3.length = 0;
-gdjs.S_46_32Roque_32fimCode.GDURLdesvioObjects1.length = 0;
-gdjs.S_46_32Roque_32fimCode.GDURLdesvioObjects2.length = 0;
-gdjs.S_46_32Roque_32fimCode.GDURLdesvioObjects3.length = 0;
-gdjs.S_46_32Roque_32fimCode.GDDesvioObjects1.length = 0;
-gdjs.S_46_32Roque_32fimCode.GDDesvioObjects2.length = 0;
-gdjs.S_46_32Roque_32fimCode.GDDesvioObjects3.length = 0;
-gdjs.S_46_32Roque_32fimCode.GDokdesvioObjects1.length = 0;
-gdjs.S_46_32Roque_32fimCode.GDokdesvioObjects2.length = 0;
-gdjs.S_46_32Roque_32fimCode.GDokdesvioObjects3.length = 0;
 gdjs.S_46_32Roque_32fimCode.GDprox_95localObjects1.length = 0;
 gdjs.S_46_32Roque_32fimCode.GDprox_95localObjects2.length = 0;
 gdjs.S_46_32Roque_32fimCode.GDprox_95localObjects3.length = 0;

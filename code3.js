@@ -8,15 +8,6 @@ gdjs.S_46_32Pedro_32AlcantaraCode.GDnext_95sceneObjects3= [];
 gdjs.S_46_32Pedro_32AlcantaraCode.GDURLObjects1= [];
 gdjs.S_46_32Pedro_32AlcantaraCode.GDURLObjects2= [];
 gdjs.S_46_32Pedro_32AlcantaraCode.GDURLObjects3= [];
-gdjs.S_46_32Pedro_32AlcantaraCode.GDURLdesvioObjects1= [];
-gdjs.S_46_32Pedro_32AlcantaraCode.GDURLdesvioObjects2= [];
-gdjs.S_46_32Pedro_32AlcantaraCode.GDURLdesvioObjects3= [];
-gdjs.S_46_32Pedro_32AlcantaraCode.GDDesvioObjects1= [];
-gdjs.S_46_32Pedro_32AlcantaraCode.GDDesvioObjects2= [];
-gdjs.S_46_32Pedro_32AlcantaraCode.GDDesvioObjects3= [];
-gdjs.S_46_32Pedro_32AlcantaraCode.GDokdesvioObjects1= [];
-gdjs.S_46_32Pedro_32AlcantaraCode.GDokdesvioObjects2= [];
-gdjs.S_46_32Pedro_32AlcantaraCode.GDokdesvioObjects3= [];
 gdjs.S_46_32Pedro_32AlcantaraCode.GDprox_95localObjects1= [];
 gdjs.S_46_32Pedro_32AlcantaraCode.GDprox_95localObjects2= [];
 gdjs.S_46_32Pedro_32AlcantaraCode.GDprox_95localObjects3= [];
@@ -45,6 +36,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.firebaseTools.firestore.writeField("Users", gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Progress", gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2))), runtimeScene.getScene().getVariables().get("error"), true);
+}{gdjs.evtTools.firebaseTools.firestore.writeField("Users", gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Track", gdjs.evtTools.runtimeScene.getSceneName(runtimeScene), runtimeScene.getScene().getVariables().get("error"), true);
 }}
 
 }
@@ -413,21 +405,11 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "next scene") >= 0.5;
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(1).add(10);
+{runtimeScene.getGame().getVariables().getFromIndex(1).add(2);
 }{gdjs.evtTools.leaderboards.savePlayerScore(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(3)), gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(1)), gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(0)));
 }
 { //Subevents
 gdjs.S_46_32Pedro_32AlcantaraCode.eventsList4(runtimeScene);} //End of subevents
-}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-{
 }
 
 }
@@ -447,15 +429,6 @@ gdjs.S_46_32Pedro_32AlcantaraCode.GDnext_95sceneObjects3.length = 0;
 gdjs.S_46_32Pedro_32AlcantaraCode.GDURLObjects1.length = 0;
 gdjs.S_46_32Pedro_32AlcantaraCode.GDURLObjects2.length = 0;
 gdjs.S_46_32Pedro_32AlcantaraCode.GDURLObjects3.length = 0;
-gdjs.S_46_32Pedro_32AlcantaraCode.GDURLdesvioObjects1.length = 0;
-gdjs.S_46_32Pedro_32AlcantaraCode.GDURLdesvioObjects2.length = 0;
-gdjs.S_46_32Pedro_32AlcantaraCode.GDURLdesvioObjects3.length = 0;
-gdjs.S_46_32Pedro_32AlcantaraCode.GDDesvioObjects1.length = 0;
-gdjs.S_46_32Pedro_32AlcantaraCode.GDDesvioObjects2.length = 0;
-gdjs.S_46_32Pedro_32AlcantaraCode.GDDesvioObjects3.length = 0;
-gdjs.S_46_32Pedro_32AlcantaraCode.GDokdesvioObjects1.length = 0;
-gdjs.S_46_32Pedro_32AlcantaraCode.GDokdesvioObjects2.length = 0;
-gdjs.S_46_32Pedro_32AlcantaraCode.GDokdesvioObjects3.length = 0;
 gdjs.S_46_32Pedro_32AlcantaraCode.GDprox_95localObjects1.length = 0;
 gdjs.S_46_32Pedro_32AlcantaraCode.GDprox_95localObjects2.length = 0;
 gdjs.S_46_32Pedro_32AlcantaraCode.GDprox_95localObjects3.length = 0;
