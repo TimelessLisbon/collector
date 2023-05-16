@@ -38,7 +38,7 @@ gdjs.Percurso_32CarmoCode.eventsList0 = function(runtimeScene) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12790860);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13190740);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.firebaseTools.firestore.writeField("Users", gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Progress", gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2))), runtimeScene.getScene().getVariables().get("error"), true);
@@ -56,7 +56,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12791660);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13192660);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.sound.playSound(runtimeScene, "click-21156.mp3", false, 0, 1);
@@ -67,7 +67,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.Percurso_32CarmoCode.userFunc0xd2c4c0 = function(runtimeScene) {
+};gdjs.Percurso_32CarmoCode.userFunc0x7f3060 = function(runtimeScene) {
 "use strict";
 var myVar = runtimeScene.getVariables().get("Longitude");
 function geoFindMe() {
@@ -91,7 +91,7 @@ function geoFindMe() {
 }
 geoFindMe();
 };
-gdjs.Percurso_32CarmoCode.userFunc0xd2c7d0 = function(runtimeScene) {
+gdjs.Percurso_32CarmoCode.userFunc0x7f3108 = function(runtimeScene) {
 "use strict";
 var myVar = runtimeScene.getVariables().get("Latitude");
 function geoFindMe() {
@@ -123,7 +123,7 @@ gdjs.Percurso_32CarmoCode.eventsList1 = function(runtimeScene) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12802892);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13201404);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.sound.playSound(runtimeScene, "notification-140376.mp3", false, 100, 1);
@@ -162,7 +162,7 @@ gdjs.copyArray(runtimeScene.getObjects("yes"), gdjs.Percurso_32CarmoCode.GDyesOb
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12805652);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13203772);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.sound.playSound(runtimeScene, "click-21156.mp3", false, 100, 1);
@@ -178,7 +178,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12807540);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13205516);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.sound.playSound(runtimeScene, "click-21156.mp3", false, 100, 1);
@@ -218,7 +218,7 @@ gdjs.copyArray(runtimeScene.getObjects("no"), gdjs.Percurso_32CarmoCode.GDnoObje
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12814940);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13209548);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.firebaseTools.firestore.writeField("Users", gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Score", gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(1))), runtimeScene.getScene().getVariables().get("error"), true);
@@ -372,7 +372,7 @@ gdjs.copyArray(runtimeScene.getObjects("score"), gdjs.Percurso_32CarmoCode.GDsco
 {
 
 
-gdjs.Percurso_32CarmoCode.userFunc0xd2c4c0(runtimeScene);
+gdjs.Percurso_32CarmoCode.userFunc0x7f3060(runtimeScene);
 
 }
 
@@ -380,7 +380,7 @@ gdjs.Percurso_32CarmoCode.userFunc0xd2c4c0(runtimeScene);
 {
 
 
-gdjs.Percurso_32CarmoCode.userFunc0xd2c7d0(runtimeScene);
+gdjs.Percurso_32CarmoCode.userFunc0x7f3108(runtimeScene);
 
 }
 
