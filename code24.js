@@ -46,6 +46,7 @@ if (isConditionTrue_0) {
 }{gdjs.evtTools.firebaseTools.firestore.writeField("Users", gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Team_Name", gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(0)), runtimeScene.getScene().getVariables().get("error"), true);
 }{gdjs.evtTools.firebaseTools.firestore.writeField("Users", gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Hour", gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(4))), runtimeScene.getScene().getVariables().get("error"), true);
 }{gdjs.evtTools.firebaseTools.firestore.writeField("Users", gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Minutes", gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(5))), runtimeScene.getScene().getVariables().get("error"), true);
+}{gdjs.evtTools.firebaseTools.firestore.writeField("Users", gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Team_Nr", gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().get("team_nr")), runtimeScene.getScene().getVariables().get("error"), true);
 }}
 
 }
@@ -67,7 +68,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.Percurso_32S_46_32CarlosCode.userFunc0xb41038 = function(runtimeScene) {
+};gdjs.Percurso_32S_46_32CarlosCode.userFunc0x7b6ba8 = function(runtimeScene) {
 "use strict";
 var myVar = runtimeScene.getVariables().get("Longitude");
 function geoFindMe() {
@@ -91,7 +92,7 @@ function geoFindMe() {
 }
 geoFindMe();
 };
-gdjs.Percurso_32S_46_32CarlosCode.userFunc0xb40208 = function(runtimeScene) {
+gdjs.Percurso_32S_46_32CarlosCode.userFunc0x7b6cd8 = function(runtimeScene) {
 "use strict";
 var myVar = runtimeScene.getVariables().get("Latitude");
 function geoFindMe() {
@@ -372,7 +373,7 @@ gdjs.copyArray(runtimeScene.getObjects("score"), gdjs.Percurso_32S_46_32CarlosCo
 {
 
 
-gdjs.Percurso_32S_46_32CarlosCode.userFunc0xb41038(runtimeScene);
+gdjs.Percurso_32S_46_32CarlosCode.userFunc0x7b6ba8(runtimeScene);
 
 }
 
@@ -380,7 +381,7 @@ gdjs.Percurso_32S_46_32CarlosCode.userFunc0xb41038(runtimeScene);
 {
 
 
-gdjs.Percurso_32S_46_32CarlosCode.userFunc0xb40208(runtimeScene);
+gdjs.Percurso_32S_46_32CarlosCode.userFunc0x7b6cd8(runtimeScene);
 
 }
 
