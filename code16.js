@@ -72,7 +72,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14210244);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11257652);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.firebaseTools.database.updateField(gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Track", gdjs.evtTools.runtimeScene.getSceneName(runtimeScene), runtimeScene.getScene().getVariables().get("error"));
@@ -91,7 +91,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14214748);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11259988);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.sound.playSound(runtimeScene, "click-21156.mp3", false, 0, 1);
@@ -108,7 +108,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14220788);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11250228);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.sound.playSound(runtimeScene, "click-21156.mp3", false, 100, 1);
@@ -124,7 +124,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14222772);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11242540);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.sound.playSound(runtimeScene, "click-21156.mp3", false, 100, 1);
@@ -140,7 +140,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14223868);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11215772);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.sound.playSound(runtimeScene, "click-21156.mp3", false, 100, 1);
@@ -156,7 +156,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14226540);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11209036);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.firebaseTools.database.updateField(gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Score", gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(1)), runtimeScene.getScene().getVariables().get("error"));

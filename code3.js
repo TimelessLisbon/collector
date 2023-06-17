@@ -78,7 +78,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(10212180);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11273684);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.sound.playSound(runtimeScene, "wrong-47985.mp3", false, 0, 1);
@@ -103,7 +103,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(10229180);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11290548);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.sound.playSound(runtimeScene, "correct-2-46134.mp3", false, 100, 1);
@@ -130,7 +130,7 @@ let isConditionTrue_0 = false;
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(10232076);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11293444);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.sound.playSound(runtimeScene, "correct-2-46134.mp3", false, 100, 1);
@@ -146,7 +146,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(10233212);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11294580);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.firebaseTools.database.writeField(gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Team", gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(0)), runtimeScene.getScene().getVariables().getFromIndex(0));

@@ -50,7 +50,7 @@ gdjs.CodeCode.eventsList0 = function(runtimeScene) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9911300);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11088620);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.firebaseTools.auth.anonymSignIn(runtimeScene.getScene().getVariables().get("error"));
@@ -66,7 +66,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9932716);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11109996);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.sound.playSound(runtimeScene, "correct-2-46134.mp3", false, 100, 1);
@@ -258,7 +258,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9904732);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11124284);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.sound.playSound(runtimeScene, "wrong-47985.mp3", false, 100, 1);
@@ -274,7 +274,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9924580);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11128252);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.sound.playSound(runtimeScene, "notification-140376.mp3", false, 100, 1);

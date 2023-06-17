@@ -74,7 +74,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14244012);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14326020);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.firebaseTools.database.updateField(gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Clues", gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("clue"))), runtimeScene.getScene().getVariables().get("error"));
@@ -94,7 +94,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14246324);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14328516);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.sound.playSound(runtimeScene, "click-21156.mp3", false, 0, 1);
@@ -112,7 +112,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14251164);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14333356);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.sound.playSound(runtimeScene, "click-21156.mp3", false, 100, 1);
@@ -128,7 +128,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14252956);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14335148);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.sound.playSound(runtimeScene, "click-21156.mp3", false, 100, 1);
@@ -144,7 +144,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14257372);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14339564);
 }
 if (isConditionTrue_0) {
 gdjs.copyArray(gdjs.S_46_32CarlosCode.GDanswerObjects1, gdjs.S_46_32CarlosCode.GDanswerObjects2);
@@ -161,7 +161,7 @@ gdjs.copyArray(gdjs.S_46_32CarlosCode.GDanswerObjects1, gdjs.S_46_32CarlosCode.G
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14258348);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14340540);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.sound.playSound(runtimeScene, "click-21156.mp3", false, 100, 1);
@@ -177,7 +177,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14260084);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14342276);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.sound.playSound(runtimeScene, "wrong-47985.mp3", false, 100, 1);
@@ -193,7 +193,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14261916);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14344108);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.sound.playSound(runtimeScene, "wrong-47985.mp3", false, 100, 1);
@@ -209,7 +209,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14263748);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14345940);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.sound.playSound(runtimeScene, "wrong-47985.mp3", false, 100, 1);
@@ -225,7 +225,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14265436);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14347628);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.sound.playSound(runtimeScene, "click-21156.mp3", false, 100, 1);
@@ -241,7 +241,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14269516);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14351708);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.firebaseTools.database.updateField(gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Score", gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(1)), runtimeScene.getScene().getVariables().get("error"));
@@ -260,7 +260,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14273100);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14355292);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.firebaseTools.database.updateField(gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Score", gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(1)), runtimeScene.getScene().getVariables().get("error"));
@@ -279,7 +279,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14274228);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14356420);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.firebaseTools.database.updateField(gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Score", gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(1)), runtimeScene.getScene().getVariables().get("error"));
@@ -298,7 +298,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14276996);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14359188);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.firebaseTools.database.updateField(gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Score", gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(1)), runtimeScene.getScene().getVariables().get("error"));
@@ -333,7 +333,7 @@ gdjs.copyArray(runtimeScene.getObjects("next_scene"), gdjs.S_46_32CarlosCode.GDn
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(10186972);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11201644);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.sound.playSound(runtimeScene, "click-21156.mp3", false, 100, 1);
@@ -349,7 +349,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14160988);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11207596);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.firebaseTools.database.updateField(gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Score", gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(1)), runtimeScene.getScene().getVariables().get("error"));
@@ -365,7 +365,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14160196);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11206436);
 }
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(1).add(90 - (60 - (gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(5)) - gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("min_finish")))));
@@ -384,7 +384,7 @@ gdjs.S_46_32CarlosCode.eventsList15(runtimeScene);} //End of subevents
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14162740);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11211108);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.firebaseTools.database.updateField(gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Score", gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(1)), runtimeScene.getScene().getVariables().get("error"));
@@ -400,7 +400,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14162180);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11209948);
 }
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(1).add(90 - (60 + (60 - (gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(5)) - gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("min_finish"))))));
@@ -453,7 +453,7 @@ gdjs.S_46_32CarlosCode.eventsList18(runtimeScene);} //End of subevents
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14165180);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11215364);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.firebaseTools.database.updateField(gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Score", gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(1)), runtimeScene.getScene().getVariables().get("error"));
@@ -469,7 +469,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14164388);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11214204);
 }
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(1).add(90 - (gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("min_finish")) - gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(5))));
@@ -488,7 +488,7 @@ gdjs.S_46_32CarlosCode.eventsList20(runtimeScene);} //End of subevents
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14166932);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11218876);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.firebaseTools.database.updateField(gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Score", gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(1)), runtimeScene.getScene().getVariables().get("error"));
@@ -504,7 +504,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14166372);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11217716);
 }
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(1).add(90 - (60 + (gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("min_finish")) - gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(5)))));
@@ -523,7 +523,7 @@ gdjs.S_46_32CarlosCode.eventsList22(runtimeScene);} //End of subevents
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14168844);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11222412);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.firebaseTools.database.updateField(gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Score", gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(1)), runtimeScene.getScene().getVariables().get("error"));
@@ -539,7 +539,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14167756);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11221252);
 }
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(1).add(90 - (120 + (gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("min_finish")) - gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(5)))));

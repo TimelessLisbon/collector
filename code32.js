@@ -118,7 +118,7 @@ let isConditionTrue_0 = false;
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14194804);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11249188);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.firebaseTools.database.updateField(gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Track", gdjs.evtTools.runtimeScene.getSceneName(runtimeScene), runtimeScene.getScene().getVariables().get("error"));
