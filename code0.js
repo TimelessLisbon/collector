@@ -39,26 +39,6 @@ gdjs.IntroCode.eventsList0 = function(runtimeScene) {
 
 
 let isConditionTrue_0 = false;
-{
-gdjs.copyArray(runtimeScene.getObjects("no"), gdjs.IntroCode.GDnoObjects1);
-gdjs.copyArray(runtimeScene.getObjects("yes"), gdjs.IntroCode.GDyesObjects1);
-{for(var i = 0, len = gdjs.IntroCode.GDyesObjects1.length ;i < len;++i) {
-    gdjs.IntroCode.GDyesObjects1[i].hide(false);
-}
-}{for(var i = 0, len = gdjs.IntroCode.GDnoObjects1.length ;i < len;++i) {
-    gdjs.IntroCode.GDnoObjects1[i].hide(false);
-}
-}}
-
-}
-
-
-};gdjs.IntroCode.eventsList1 = function(runtimeScene) {
-
-{
-
-
-let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("iphone")) == 1;
 if (isConditionTrue_0) {
@@ -81,7 +61,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.IntroCode.eventsList2 = function(runtimeScene) {
+};gdjs.IntroCode.eventsList1 = function(runtimeScene) {
 
 {
 
@@ -116,7 +96,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.IntroCode.eventsList3 = function(runtimeScene) {
+};gdjs.IntroCode.eventsList2 = function(runtimeScene) {
 
 {
 
@@ -132,7 +112,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.IntroCode.eventsList4 = function(runtimeScene) {
+};gdjs.IntroCode.eventsList3 = function(runtimeScene) {
 
 {
 
@@ -158,6 +138,7 @@ gdjs.copyArray(runtimeScene.getObjects("yes"), gdjs.IntroCode.GDyesObjects1);
 }
 }{gdjs.evtTools.runtimeScene.pauseTimer(runtimeScene, "next scene");
 }{gdjs.evtTools.runtimeScene.pauseTimer(runtimeScene, "fundo");
+}{gdjs.evtTools.runtimeScene.pauseTimer(runtimeScene, "yes_no");
 }{for(var i = 0, len = gdjs.IntroCode.GDyesObjects1.length ;i < len;++i) {
     gdjs.IntroCode.GDyesObjects1[i].hide();
 }
@@ -354,8 +335,6 @@ isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getSce
 }
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("chrome"), gdjs.IntroCode.GDchromeObjects1);
-gdjs.copyArray(runtimeScene.getObjects("fundo"), gdjs.IntroCode.GDfundoObjects1);
-gdjs.copyArray(runtimeScene.getObjects("fundo2"), gdjs.IntroCode.GDfundo2Objects1);
 /* Reuse gdjs.IntroCode.GDokObjects1 */
 {gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "chrome");
 }{gdjs.evtTools.runtimeScene.pauseTimer(runtimeScene, "chrome");
@@ -363,19 +342,41 @@ gdjs.copyArray(runtimeScene.getObjects("fundo2"), gdjs.IntroCode.GDfundo2Objects
     gdjs.IntroCode.GDchromeObjects1[i].setOpacity(0);
 }
 }{runtimeScene.getScene().getVariables().get("chrome").setNumber(0);
-}{for(var i = 0, len = gdjs.IntroCode.GDfundo2Objects1.length ;i < len;++i) {
-    gdjs.IntroCode.GDfundo2Objects1[i].hide();
-}
 }{for(var i = 0, len = gdjs.IntroCode.GDokObjects1.length ;i < len;++i) {
     gdjs.IntroCode.GDokObjects1[i].hide();
+}
+}{gdjs.evtTools.runtimeScene.unpauseTimer(runtimeScene, "yes_no");
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "yes_no") >= 0.5;
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("fundo"), gdjs.IntroCode.GDfundoObjects1);
+gdjs.copyArray(runtimeScene.getObjects("fundo2"), gdjs.IntroCode.GDfundo2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("no"), gdjs.IntroCode.GDnoObjects1);
+gdjs.copyArray(runtimeScene.getObjects("yes"), gdjs.IntroCode.GDyesObjects1);
+{for(var i = 0, len = gdjs.IntroCode.GDfundo2Objects1.length ;i < len;++i) {
+    gdjs.IntroCode.GDfundo2Objects1[i].hide();
 }
 }{for(var i = 0, len = gdjs.IntroCode.GDfundoObjects1.length ;i < len;++i) {
     gdjs.IntroCode.GDfundoObjects1[i].hide(false);
 }
+}{for(var i = 0, len = gdjs.IntroCode.GDyesObjects1.length ;i < len;++i) {
+    gdjs.IntroCode.GDyesObjects1[i].hide(false);
 }
-{ //Subevents
-gdjs.IntroCode.eventsList0(runtimeScene);} //End of subevents
+}{for(var i = 0, len = gdjs.IntroCode.GDnoObjects1.length ;i < len;++i) {
+    gdjs.IntroCode.GDnoObjects1[i].hide(false);
 }
+}{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "yes_no");
+}{gdjs.evtTools.runtimeScene.pauseTimer(runtimeScene, "yes_no");
+}}
 
 }
 
@@ -652,7 +653,7 @@ gdjs.IntroCode.GDnoObjects1.length = k;
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.IntroCode.eventsList1(runtimeScene);} //End of subevents
+gdjs.IntroCode.eventsList0(runtimeScene);} //End of subevents
 }
 
 }
@@ -702,7 +703,7 @@ gdjs.copyArray(runtimeScene.getObjects("ok"), gdjs.IntroCode.GDokObjects1);
 }
 }
 { //Subevents
-gdjs.IntroCode.eventsList2(runtimeScene);} //End of subevents
+gdjs.IntroCode.eventsList1(runtimeScene);} //End of subevents
 }
 
 }
@@ -991,7 +992,7 @@ gdjs.copyArray(runtimeScene.getObjects("ok"), gdjs.IntroCode.GDokObjects1);
 }
 }
 { //Subevents
-gdjs.IntroCode.eventsList3(runtimeScene);} //End of subevents
+gdjs.IntroCode.eventsList2(runtimeScene);} //End of subevents
 }
 
 }
@@ -1048,7 +1049,7 @@ gdjs.IntroCode.GDfundoObjects1.length = 0;
 gdjs.IntroCode.GDfundoObjects2.length = 0;
 gdjs.IntroCode.GDfundoObjects3.length = 0;
 
-gdjs.IntroCode.eventsList4(runtimeScene);
+gdjs.IntroCode.eventsList3(runtimeScene);
 
 return;
 
