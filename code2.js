@@ -65,7 +65,7 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 0;
 if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Video", false);
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Registo", false);
 }}
 
 }
@@ -78,7 +78,7 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 1;
 if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Registo", false);
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Video", false);
 }}
 
 }
