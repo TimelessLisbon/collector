@@ -92,7 +92,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.VideoCode.mapOfGDgdjs_46VideoCode_46GDlinkObjects1Objects, runtimeScene, true, false);
 if (isConditionTrue_0) {
 {gdjs.evtTools.window.openURL("https://drive.google.com/file/d/1HKuKMqxR7ye-j8GG_UPTrhzdMd2TMGNU/view?usp=sharing", runtimeScene);
-}{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Registo", false);
+}{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "S. Pedro Alcantara", false);
 }}
 
 }
