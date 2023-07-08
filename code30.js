@@ -108,7 +108,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.Percurso_32S_46_32CarlosCode.userFunc0x9b5138 = function(runtimeScene) {
+};gdjs.Percurso_32S_46_32CarlosCode.userFunc0xb22080 = function(runtimeScene) {
 "use strict";
 var myVar = runtimeScene.getVariables().get("Longitude");
 function geoFindMe() {
@@ -132,7 +132,7 @@ function geoFindMe() {
 }
 geoFindMe();
 };
-gdjs.Percurso_32S_46_32CarlosCode.userFunc0x9b51e0 = function(runtimeScene) {
+gdjs.Percurso_32S_46_32CarlosCode.userFunc0x7f0348 = function(runtimeScene) {
 "use strict";
 var myVar = runtimeScene.getVariables().get("Latitude");
 function geoFindMe() {
@@ -495,7 +495,7 @@ gdjs.copyArray(runtimeScene.getObjects("score"), gdjs.Percurso_32S_46_32CarlosCo
 {
 
 
-gdjs.Percurso_32S_46_32CarlosCode.userFunc0x9b5138(runtimeScene);
+gdjs.Percurso_32S_46_32CarlosCode.userFunc0xb22080(runtimeScene);
 
 }
 
@@ -503,7 +503,7 @@ gdjs.Percurso_32S_46_32CarlosCode.userFunc0x9b5138(runtimeScene);
 {
 
 
-gdjs.Percurso_32S_46_32CarlosCode.userFunc0x9b51e0(runtimeScene);
+gdjs.Percurso_32S_46_32CarlosCode.userFunc0x7f0348(runtimeScene);
 
 }
 
