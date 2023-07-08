@@ -1,4 +1,6 @@
 gdjs.Sta_32Catarina_32FimCode = {};
+gdjs.Sta_32Catarina_32FimCode.GDyesObjects1_1final = [];
+
 gdjs.Sta_32Catarina_32FimCode.GDscoreObjects1= [];
 gdjs.Sta_32Catarina_32FimCode.GDscoreObjects2= [];
 gdjs.Sta_32Catarina_32FimCode.GDscoreObjects3= [];
@@ -296,6 +298,7 @@ let isConditionTrue_0 = false;
 {
 {runtimeScene.getGame().getVariables().getFromIndex(4).setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("hour")));
 }{runtimeScene.getGame().getVariables().getFromIndex(5).setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("minute")));
+}{gdjs.evtTools.firebaseTools.database.getField(gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Next", runtimeScene.getScene().getVariables().get("next"), runtimeScene.getScene().getVariables().get("error"));
 }}
 
 }
@@ -436,28 +439,56 @@ gdjs.Sta_32Catarina_32FimCode.eventsList3(runtimeScene);} //End of subevents
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("yes"), gdjs.Sta_32Catarina_32FimCode.GDyesObjects1);
+gdjs.Sta_32Catarina_32FimCode.GDyesObjects1.length = 0;
+
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.Sta_32Catarina_32FimCode.GDyesObjects1.length;i<l;++i) {
-    if ( gdjs.Sta_32Catarina_32FimCode.GDyesObjects1[i].isVisible() ) {
-        isConditionTrue_0 = true;
-        gdjs.Sta_32Catarina_32FimCode.GDyesObjects1[k] = gdjs.Sta_32Catarina_32FimCode.GDyesObjects1[i];
-        ++k;
-    }
-}
-gdjs.Sta_32Catarina_32FimCode.GDyesObjects1.length = k;
-if (isConditionTrue_0) {
+{gdjs.Sta_32Catarina_32FimCode.GDyesObjects1_1final.length = 0;
+let isConditionTrue_1 = false;
 isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.Sta_32Catarina_32FimCode.GDyesObjects1.length;i<l;++i) {
-    if ( gdjs.Sta_32Catarina_32FimCode.GDyesObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
-        isConditionTrue_0 = true;
-        gdjs.Sta_32Catarina_32FimCode.GDyesObjects1[k] = gdjs.Sta_32Catarina_32FimCode.GDyesObjects1[i];
+{
+gdjs.copyArray(runtimeScene.getObjects("yes"), gdjs.Sta_32Catarina_32FimCode.GDyesObjects2);
+{let isConditionTrue_2 = false;
+isConditionTrue_2 = false;
+for (var i = 0, k = 0, l = gdjs.Sta_32Catarina_32FimCode.GDyesObjects2.length;i<l;++i) {
+    if ( gdjs.Sta_32Catarina_32FimCode.GDyesObjects2[i].isVisible() ) {
+        isConditionTrue_2 = true;
+        gdjs.Sta_32Catarina_32FimCode.GDyesObjects2[k] = gdjs.Sta_32Catarina_32FimCode.GDyesObjects2[i];
         ++k;
     }
 }
-gdjs.Sta_32Catarina_32FimCode.GDyesObjects1.length = k;
+gdjs.Sta_32Catarina_32FimCode.GDyesObjects2.length = k;
+if (isConditionTrue_2) {
+isConditionTrue_2 = false;
+for (var i = 0, k = 0, l = gdjs.Sta_32Catarina_32FimCode.GDyesObjects2.length;i<l;++i) {
+    if ( gdjs.Sta_32Catarina_32FimCode.GDyesObjects2[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+        isConditionTrue_2 = true;
+        gdjs.Sta_32Catarina_32FimCode.GDyesObjects2[k] = gdjs.Sta_32Catarina_32FimCode.GDyesObjects2[i];
+        ++k;
+    }
+}
+gdjs.Sta_32Catarina_32FimCode.GDyesObjects2.length = k;
+}
+isConditionTrue_1 = isConditionTrue_2;
+}
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+    for (let j = 0, jLen = gdjs.Sta_32Catarina_32FimCode.GDyesObjects2.length; j < jLen ; ++j) {
+        if ( gdjs.Sta_32Catarina_32FimCode.GDyesObjects1_1final.indexOf(gdjs.Sta_32Catarina_32FimCode.GDyesObjects2[j]) === -1 )
+            gdjs.Sta_32Catarina_32FimCode.GDyesObjects1_1final.push(gdjs.Sta_32Catarina_32FimCode.GDyesObjects2[j]);
+    }
+}
+}
+{
+isConditionTrue_1 = gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().get("next")) == gdjs.evtTools.firebaseTools.auth.userManagement.getUID();
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+}
+}
+{
+gdjs.copyArray(gdjs.Sta_32Catarina_32FimCode.GDyesObjects1_1final, gdjs.Sta_32Catarina_32FimCode.GDyesObjects1);
+}
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.unpauseTimer(runtimeScene, "next scene");
