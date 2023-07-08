@@ -288,6 +288,27 @@ gdjs.copyArray(runtimeScene.getObjects("link"), gdjs.VideoCode.GDlinkObjects1);
 
 {
 
+gdjs.copyArray(runtimeScene.getObjects("video"), gdjs.VideoCode.GDvideoObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.VideoCode.GDvideoObjects1.length;i<l;++i) {
+    if ( gdjs.VideoCode.GDvideoObjects1[i].isEnded() ) {
+        isConditionTrue_0 = true;
+        gdjs.VideoCode.GDvideoObjects1[k] = gdjs.VideoCode.GDvideoObjects1[i];
+        ++k;
+    }
+}
+gdjs.VideoCode.GDvideoObjects1.length = k;
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.unpauseTimer(runtimeScene, "next scene");
+}}
+
+}
+
+
+{
+
 gdjs.copyArray(runtimeScene.getObjects("link"), gdjs.VideoCode.GDlinkObjects1);
 
 let isConditionTrue_0 = false;
@@ -346,7 +367,11 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().get("next")) == gdjs.evtTools.firebaseTools.auth.userManagement.getUID();
 if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("video"), gdjs.VideoCode.GDvideoObjects1);
 {gdjs.evtTools.runtimeScene.unpauseTimer(runtimeScene, "next scene");
+}{for(var i = 0, len = gdjs.VideoCode.GDvideoObjects1.length ;i < len;++i) {
+    gdjs.VideoCode.GDvideoObjects1[i].pause();
+}
 }}
 
 }
