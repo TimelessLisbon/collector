@@ -108,7 +108,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.Percurso_32Sta_32CatarinaCode.userFunc0x817380 = function(runtimeScene) {
+};gdjs.Percurso_32Sta_32CatarinaCode.userFunc0xa1a8f0 = function(runtimeScene) {
 "use strict";
 var myVar = runtimeScene.getVariables().get("Longitude");
 function geoFindMe() {
@@ -132,7 +132,7 @@ function geoFindMe() {
 }
 geoFindMe();
 };
-gdjs.Percurso_32Sta_32CatarinaCode.userFunc0x817690 = function(runtimeScene) {
+gdjs.Percurso_32Sta_32CatarinaCode.userFunc0xa1ac00 = function(runtimeScene) {
 "use strict";
 var myVar = runtimeScene.getVariables().get("Latitude");
 function geoFindMe() {
@@ -268,18 +268,6 @@ if (isConditionTrue_0) {
 }
 
 
-{
-
-
-let isConditionTrue_0 = false;
-{
-gdjs.copyArray(runtimeScene.getObjects("next_scene"), gdjs.Percurso_32Sta_32CatarinaCode.GDnext_95sceneObjects1);
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, (( gdjs.Percurso_32Sta_32CatarinaCode.GDnext_95sceneObjects1.length === 0 ) ? "" :gdjs.Percurso_32Sta_32CatarinaCode.GDnext_95sceneObjects1[0].getString()), false);
-}}
-
-}
-
-
 };gdjs.Percurso_32Sta_32CatarinaCode.eventsList6 = function(runtimeScene) {
 
 {
@@ -408,7 +396,9 @@ gdjs.Percurso_32Sta_32CatarinaCode.eventsList1(runtimeScene);} //End of subevent
 
 
 let isConditionTrue_0 = false;
-{
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "next scene") <= 0;
+if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(4).setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("hour")));
 }{runtimeScene.getGame().getVariables().getFromIndex(5).setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("minute")));
 }{gdjs.evtTools.firebaseTools.database.getField(gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Next", runtimeScene.getScene().getVariables().get("next"), runtimeScene.getScene().getVariables().get("error"));
@@ -495,7 +485,7 @@ gdjs.copyArray(runtimeScene.getObjects("score"), gdjs.Percurso_32Sta_32CatarinaC
 {
 
 
-gdjs.Percurso_32Sta_32CatarinaCode.userFunc0x817380(runtimeScene);
+gdjs.Percurso_32Sta_32CatarinaCode.userFunc0xa1a8f0(runtimeScene);
 
 }
 
@@ -503,7 +493,7 @@ gdjs.Percurso_32Sta_32CatarinaCode.userFunc0x817380(runtimeScene);
 {
 
 
-gdjs.Percurso_32Sta_32CatarinaCode.userFunc0x817690(runtimeScene);
+gdjs.Percurso_32Sta_32CatarinaCode.userFunc0xa1ac00(runtimeScene);
 
 }
 
@@ -762,10 +752,28 @@ gdjs.copyArray(gdjs.Percurso_32Sta_32CatarinaCode.GDGMObjects1_1final, gdjs.Perc
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(1).add(1);
 }{gdjs.evtTools.leaderboards.savePlayerScore(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(3)), gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(1)), gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(0)));
+}{gdjs.evtTools.runtimeScene.unpauseTimer(runtimeScene, "next scene");
+}{runtimeScene.getScene().getVariables().get("next").setString("");
 }
 { //Subevents
 gdjs.Percurso_32Sta_32CatarinaCode.eventsList5(runtimeScene);} //End of subevents
 }
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "next scene") >= 0.5;
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("next_scene"), gdjs.Percurso_32Sta_32CatarinaCode.GDnext_95sceneObjects1);
+{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "next scene");
+}{gdjs.evtTools.runtimeScene.pauseTimer(runtimeScene, "next scene");
+}{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, (( gdjs.Percurso_32Sta_32CatarinaCode.GDnext_95sceneObjects1.length === 0 ) ? "" :gdjs.Percurso_32Sta_32CatarinaCode.GDnext_95sceneObjects1[0].getString()), false);
+}}
 
 }
 
