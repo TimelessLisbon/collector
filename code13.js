@@ -953,6 +953,17 @@ for (var i = 0, k = 0, l = gdjs.Carmo_32EnigmaCode.GDanswerObjects1.length;i<l;+
     }
 }
 gdjs.Carmo_32EnigmaCode.GDanswerObjects1.length = k;
+if (isConditionTrue_1) {
+isConditionTrue_1 = false;
+for (var i = 0, k = 0, l = gdjs.Carmo_32EnigmaCode.GDanswerObjects1.length;i<l;++i) {
+    if ( gdjs.Carmo_32EnigmaCode.GDanswerObjects1[i].getString() != gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().get("answer")) + " " ) {
+        isConditionTrue_1 = true;
+        gdjs.Carmo_32EnigmaCode.GDanswerObjects1[k] = gdjs.Carmo_32EnigmaCode.GDanswerObjects1[i];
+        ++k;
+    }
+}
+gdjs.Carmo_32EnigmaCode.GDanswerObjects1.length = k;
+}
 }
 isConditionTrue_0 = isConditionTrue_1;
 }
@@ -1231,6 +1242,24 @@ if(isConditionTrue_1) {
 }
 }
 {
+gdjs.copyArray(runtimeScene.getObjects("answer"), gdjs.Carmo_32EnigmaCode.GDanswerObjects2);
+for (var i = 0, k = 0, l = gdjs.Carmo_32EnigmaCode.GDanswerObjects2.length;i<l;++i) {
+    if ( gdjs.Carmo_32EnigmaCode.GDanswerObjects2[i].getString() == gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().get("answer")) + " " ) {
+        isConditionTrue_1 = true;
+        gdjs.Carmo_32EnigmaCode.GDanswerObjects2[k] = gdjs.Carmo_32EnigmaCode.GDanswerObjects2[i];
+        ++k;
+    }
+}
+gdjs.Carmo_32EnigmaCode.GDanswerObjects2.length = k;
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+    for (let j = 0, jLen = gdjs.Carmo_32EnigmaCode.GDanswerObjects2.length; j < jLen ; ++j) {
+        if ( gdjs.Carmo_32EnigmaCode.GDanswerObjects1_1final.indexOf(gdjs.Carmo_32EnigmaCode.GDanswerObjects2[j]) === -1 )
+            gdjs.Carmo_32EnigmaCode.GDanswerObjects1_1final.push(gdjs.Carmo_32EnigmaCode.GDanswerObjects2[j]);
+    }
+}
+}
+{
 gdjs.copyArray(gdjs.Carmo_32EnigmaCode.GDanswerObjects1_1final, gdjs.Carmo_32EnigmaCode.GDanswerObjects1);
 }
 }
@@ -1324,6 +1353,24 @@ if(isConditionTrue_1) {
 }
 }
 {
+gdjs.copyArray(runtimeScene.getObjects("answer"), gdjs.Carmo_32EnigmaCode.GDanswerObjects2);
+for (var i = 0, k = 0, l = gdjs.Carmo_32EnigmaCode.GDanswerObjects2.length;i<l;++i) {
+    if ( gdjs.Carmo_32EnigmaCode.GDanswerObjects2[i].getString() == gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().get("answer")) + " " ) {
+        isConditionTrue_1 = true;
+        gdjs.Carmo_32EnigmaCode.GDanswerObjects2[k] = gdjs.Carmo_32EnigmaCode.GDanswerObjects2[i];
+        ++k;
+    }
+}
+gdjs.Carmo_32EnigmaCode.GDanswerObjects2.length = k;
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+    for (let j = 0, jLen = gdjs.Carmo_32EnigmaCode.GDanswerObjects2.length; j < jLen ; ++j) {
+        if ( gdjs.Carmo_32EnigmaCode.GDanswerObjects1_1final.indexOf(gdjs.Carmo_32EnigmaCode.GDanswerObjects2[j]) === -1 )
+            gdjs.Carmo_32EnigmaCode.GDanswerObjects1_1final.push(gdjs.Carmo_32EnigmaCode.GDanswerObjects2[j]);
+    }
+}
+}
+{
 gdjs.copyArray(gdjs.Carmo_32EnigmaCode.GDanswerObjects1_1final, gdjs.Carmo_32EnigmaCode.GDanswerObjects1);
 }
 }
@@ -1402,6 +1449,24 @@ if(isConditionTrue_1) {
 gdjs.copyArray(runtimeScene.getObjects("answer"), gdjs.Carmo_32EnigmaCode.GDanswerObjects2);
 for (var i = 0, k = 0, l = gdjs.Carmo_32EnigmaCode.GDanswerObjects2.length;i<l;++i) {
     if ( gdjs.Carmo_32EnigmaCode.GDanswerObjects2[i].getString() == "A " + gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().get("answer")) ) {
+        isConditionTrue_1 = true;
+        gdjs.Carmo_32EnigmaCode.GDanswerObjects2[k] = gdjs.Carmo_32EnigmaCode.GDanswerObjects2[i];
+        ++k;
+    }
+}
+gdjs.Carmo_32EnigmaCode.GDanswerObjects2.length = k;
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+    for (let j = 0, jLen = gdjs.Carmo_32EnigmaCode.GDanswerObjects2.length; j < jLen ; ++j) {
+        if ( gdjs.Carmo_32EnigmaCode.GDanswerObjects1_1final.indexOf(gdjs.Carmo_32EnigmaCode.GDanswerObjects2[j]) === -1 )
+            gdjs.Carmo_32EnigmaCode.GDanswerObjects1_1final.push(gdjs.Carmo_32EnigmaCode.GDanswerObjects2[j]);
+    }
+}
+}
+{
+gdjs.copyArray(runtimeScene.getObjects("answer"), gdjs.Carmo_32EnigmaCode.GDanswerObjects2);
+for (var i = 0, k = 0, l = gdjs.Carmo_32EnigmaCode.GDanswerObjects2.length;i<l;++i) {
+    if ( gdjs.Carmo_32EnigmaCode.GDanswerObjects2[i].getString() == gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().get("answer")) + " " ) {
         isConditionTrue_1 = true;
         gdjs.Carmo_32EnigmaCode.GDanswerObjects2[k] = gdjs.Carmo_32EnigmaCode.GDanswerObjects2[i];
         ++k;
