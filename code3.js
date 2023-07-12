@@ -8,6 +8,12 @@ gdjs.RegistoCode.GDnext_95sceneObjects3= [];
 gdjs.RegistoCode.GDURLObjects1= [];
 gdjs.RegistoCode.GDURLObjects2= [];
 gdjs.RegistoCode.GDURLObjects3= [];
+gdjs.RegistoCode.GDfundopistagmObjects1= [];
+gdjs.RegistoCode.GDfundopistagmObjects2= [];
+gdjs.RegistoCode.GDfundopistagmObjects3= [];
+gdjs.RegistoCode.GDpistagmObjects1= [];
+gdjs.RegistoCode.GDpistagmObjects2= [];
+gdjs.RegistoCode.GDpistagmObjects3= [];
 gdjs.RegistoCode.GDanswerObjects1= [];
 gdjs.RegistoCode.GDanswerObjects2= [];
 gdjs.RegistoCode.GDanswerObjects3= [];
@@ -78,7 +84,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13953556);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11507284);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.sound.playSound(runtimeScene, "wrong-47985.mp3", false, 0, 1);
@@ -103,7 +109,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14015564);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11524148);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.sound.playSound(runtimeScene, "correct-2-46134.mp3", false, 100, 1);
@@ -130,7 +136,7 @@ let isConditionTrue_0 = false;
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14017780);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11526908);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.sound.playSound(runtimeScene, "correct-2-46134.mp3", false, 100, 1);
@@ -146,7 +152,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14018908);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11528044);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.firebaseTools.database.writeField(gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Team", gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(0)), runtimeScene.getScene().getVariables().getFromIndex(0));
@@ -492,6 +498,12 @@ gdjs.RegistoCode.GDnext_95sceneObjects3.length = 0;
 gdjs.RegistoCode.GDURLObjects1.length = 0;
 gdjs.RegistoCode.GDURLObjects2.length = 0;
 gdjs.RegistoCode.GDURLObjects3.length = 0;
+gdjs.RegistoCode.GDfundopistagmObjects1.length = 0;
+gdjs.RegistoCode.GDfundopistagmObjects2.length = 0;
+gdjs.RegistoCode.GDfundopistagmObjects3.length = 0;
+gdjs.RegistoCode.GDpistagmObjects1.length = 0;
+gdjs.RegistoCode.GDpistagmObjects2.length = 0;
+gdjs.RegistoCode.GDpistagmObjects3.length = 0;
 gdjs.RegistoCode.GDanswerObjects1.length = 0;
 gdjs.RegistoCode.GDanswerObjects2.length = 0;
 gdjs.RegistoCode.GDanswerObjects3.length = 0;

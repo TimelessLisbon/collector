@@ -8,6 +8,12 @@ gdjs.CodeCode.GDnext_95sceneObjects3= [];
 gdjs.CodeCode.GDURLObjects1= [];
 gdjs.CodeCode.GDURLObjects2= [];
 gdjs.CodeCode.GDURLObjects3= [];
+gdjs.CodeCode.GDfundopistagmObjects1= [];
+gdjs.CodeCode.GDfundopistagmObjects2= [];
+gdjs.CodeCode.GDfundopistagmObjects3= [];
+gdjs.CodeCode.GDpistagmObjects1= [];
+gdjs.CodeCode.GDpistagmObjects2= [];
+gdjs.CodeCode.GDpistagmObjects3= [];
 gdjs.CodeCode.GDfundoObjects1= [];
 gdjs.CodeCode.GDfundoObjects2= [];
 gdjs.CodeCode.GDfundoObjects3= [];
@@ -44,7 +50,7 @@ gdjs.CodeCode.eventsList0 = function(runtimeScene) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13901764);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11410364);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.firebaseTools.auth.anonymSignIn(runtimeScene.getScene().getVariables().get("error"));
@@ -60,7 +66,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13921092);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11432836);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.sound.playSound(runtimeScene, "correct-2-46134.mp3", false, 100, 1);
@@ -252,7 +258,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13932172);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11446636);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.sound.playSound(runtimeScene, "wrong-47985.mp3", false, 100, 1);
@@ -268,7 +274,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13936244);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11450604);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.sound.playSound(runtimeScene, "notification-140376.mp3", false, 100, 1);
@@ -602,6 +608,9 @@ if (isConditionTrue_0) {
 {gdjs.evtTools.firebaseTools.database.getField(gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().get("UID")), "Team", runtimeScene.getScene().getVariables().get("team_name"), runtimeScene.getScene().getVariables().get("error"));
 }{gdjs.evtTools.firebaseTools.database.getField(gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().get("UID")), "Score", runtimeScene.getScene().getVariables().get("score"), runtimeScene.getScene().getVariables().get("error"));
 }{gdjs.evtTools.firebaseTools.database.getField(gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().get("UID")), "Progress", runtimeScene.getScene().getVariables().get("progress"), runtimeScene.getScene().getVariables().get("error"));
+}{gdjs.evtTools.firebaseTools.database.getField(gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().get("UID")), "Progress", runtimeScene.getScene().getVariables().get("progress"), runtimeScene.getScene().getVariables().get("error"));
+}{gdjs.evtTools.firebaseTools.database.updateField(gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "ClueGM", "", runtimeScene.getScene().getVariables().get("error"));
+}{gdjs.evtTools.firebaseTools.database.updateField(gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "EstadoClueGM", "", runtimeScene.getScene().getVariables().get("error"));
 }}
 
 }
@@ -1271,6 +1280,12 @@ gdjs.CodeCode.GDnext_95sceneObjects3.length = 0;
 gdjs.CodeCode.GDURLObjects1.length = 0;
 gdjs.CodeCode.GDURLObjects2.length = 0;
 gdjs.CodeCode.GDURLObjects3.length = 0;
+gdjs.CodeCode.GDfundopistagmObjects1.length = 0;
+gdjs.CodeCode.GDfundopistagmObjects2.length = 0;
+gdjs.CodeCode.GDfundopistagmObjects3.length = 0;
+gdjs.CodeCode.GDpistagmObjects1.length = 0;
+gdjs.CodeCode.GDpistagmObjects2.length = 0;
+gdjs.CodeCode.GDpistagmObjects3.length = 0;
 gdjs.CodeCode.GDfundoObjects1.length = 0;
 gdjs.CodeCode.GDfundoObjects2.length = 0;
 gdjs.CodeCode.GDfundoObjects3.length = 0;

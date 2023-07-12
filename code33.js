@@ -5,6 +5,10 @@ gdjs.LeaderboardCode.GDnext_95sceneObjects1= [];
 gdjs.LeaderboardCode.GDnext_95sceneObjects2= [];
 gdjs.LeaderboardCode.GDURLObjects1= [];
 gdjs.LeaderboardCode.GDURLObjects2= [];
+gdjs.LeaderboardCode.GDfundopistagmObjects1= [];
+gdjs.LeaderboardCode.GDfundopistagmObjects2= [];
+gdjs.LeaderboardCode.GDpistagmObjects1= [];
+gdjs.LeaderboardCode.GDpistagmObjects2= [];
 
 
 gdjs.LeaderboardCode.eventsList0 = function(runtimeScene) {
@@ -119,7 +123,7 @@ let isConditionTrue_0 = false;
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14480356);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15012100);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.firebaseTools.database.updateField(gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Track", gdjs.evtTools.runtimeScene.getSceneName(runtimeScene), runtimeScene.getScene().getVariables().get("error"));
@@ -144,6 +148,10 @@ gdjs.LeaderboardCode.GDnext_95sceneObjects1.length = 0;
 gdjs.LeaderboardCode.GDnext_95sceneObjects2.length = 0;
 gdjs.LeaderboardCode.GDURLObjects1.length = 0;
 gdjs.LeaderboardCode.GDURLObjects2.length = 0;
+gdjs.LeaderboardCode.GDfundopistagmObjects1.length = 0;
+gdjs.LeaderboardCode.GDfundopistagmObjects2.length = 0;
+gdjs.LeaderboardCode.GDpistagmObjects1.length = 0;
+gdjs.LeaderboardCode.GDpistagmObjects2.length = 0;
 
 gdjs.LeaderboardCode.eventsList1(runtimeScene);
 

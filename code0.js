@@ -10,6 +10,12 @@ gdjs.IntroCode.GDnext_95sceneObjects3= [];
 gdjs.IntroCode.GDURLObjects1= [];
 gdjs.IntroCode.GDURLObjects2= [];
 gdjs.IntroCode.GDURLObjects3= [];
+gdjs.IntroCode.GDfundopistagmObjects1= [];
+gdjs.IntroCode.GDfundopistagmObjects2= [];
+gdjs.IntroCode.GDfundopistagmObjects3= [];
+gdjs.IntroCode.GDpistagmObjects1= [];
+gdjs.IntroCode.GDpistagmObjects2= [];
+gdjs.IntroCode.GDpistagmObjects3= [];
 gdjs.IntroCode.GDfundo2Objects1= [];
 gdjs.IntroCode.GDfundo2Objects2= [];
 gdjs.IntroCode.GDfundo2Objects3= [];
@@ -103,7 +109,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13873708);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11373260);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.sound.playSound(runtimeScene, "correct-2-46134.mp3", false, 100, 1);
@@ -1027,6 +1033,12 @@ gdjs.IntroCode.GDnext_95sceneObjects3.length = 0;
 gdjs.IntroCode.GDURLObjects1.length = 0;
 gdjs.IntroCode.GDURLObjects2.length = 0;
 gdjs.IntroCode.GDURLObjects3.length = 0;
+gdjs.IntroCode.GDfundopistagmObjects1.length = 0;
+gdjs.IntroCode.GDfundopistagmObjects2.length = 0;
+gdjs.IntroCode.GDfundopistagmObjects3.length = 0;
+gdjs.IntroCode.GDpistagmObjects1.length = 0;
+gdjs.IntroCode.GDpistagmObjects2.length = 0;
+gdjs.IntroCode.GDpistagmObjects3.length = 0;
 gdjs.IntroCode.GDfundo2Objects1.length = 0;
 gdjs.IntroCode.GDfundo2Objects2.length = 0;
 gdjs.IntroCode.GDfundo2Objects3.length = 0;

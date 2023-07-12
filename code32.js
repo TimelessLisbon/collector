@@ -5,6 +5,10 @@ gdjs.FimCode.GDnext_95sceneObjects1= [];
 gdjs.FimCode.GDnext_95sceneObjects2= [];
 gdjs.FimCode.GDURLObjects1= [];
 gdjs.FimCode.GDURLObjects2= [];
+gdjs.FimCode.GDfundopistagmObjects1= [];
+gdjs.FimCode.GDfundopistagmObjects2= [];
+gdjs.FimCode.GDpistagmObjects1= [];
+gdjs.FimCode.GDpistagmObjects2= [];
 gdjs.FimCode.GDvideoObjects1= [];
 gdjs.FimCode.GDvideoObjects2= [];
 gdjs.FimCode.GDNewSpriteObjects1= [];
@@ -62,7 +66,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14321228);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14997068);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.firebaseTools.database.updateField(gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), "Track", gdjs.evtTools.runtimeScene.getSceneName(runtimeScene), runtimeScene.getScene().getVariables().get("error"));
@@ -325,6 +329,10 @@ gdjs.FimCode.GDnext_95sceneObjects1.length = 0;
 gdjs.FimCode.GDnext_95sceneObjects2.length = 0;
 gdjs.FimCode.GDURLObjects1.length = 0;
 gdjs.FimCode.GDURLObjects2.length = 0;
+gdjs.FimCode.GDfundopistagmObjects1.length = 0;
+gdjs.FimCode.GDfundopistagmObjects2.length = 0;
+gdjs.FimCode.GDpistagmObjects1.length = 0;
+gdjs.FimCode.GDpistagmObjects2.length = 0;
 gdjs.FimCode.GDvideoObjects1.length = 0;
 gdjs.FimCode.GDvideoObjects2.length = 0;
 gdjs.FimCode.GDNewSpriteObjects1.length = 0;
